@@ -4,59 +4,126 @@ description: General formatting of hologram line content.
 
 # 📃 Format
 
-## Content
+## Hologram Line Types
 
-There are multiple different types of Hologram Line content. Type of a certain line must be in it's content.
+There are multiple different types of Hologram Line content. If other than text, the type must be defined in the lines content. (#\<type>: ...)
 
-| Type      | Declaration                                           |
-| --------- | ----------------------------------------------------- |
-| TEXT      | Any content, that doesn't identify as any other type. |
-| ICON      | #ICON: ITEM\_FORMAT                                   |
-| HEAD      | #HEAD: ITEM\_FORMAT                                   |
-| SMALLHEAD | #SMALLHEAD: ITEM\_FORMAT                              |
-| ENTITY    | #ENTITY: \<entityType>                                |
+![](../../.gitbook/assets/image.png)
 
-{% hint style="info" %}
-In the game, the HAND declaration can be used to set the ITEM\_FORMAT in a given type.&#x20;
+### Text
 
-For example: `/dh line add <hologram> <page> #ICON: <HAND>`
+Just a text line, you can enter any text, use PAPI placeholders, [colors](colors.md) and [animations](../../advanced/animations.md).&#x20;
+
+#### Example text line:
+
+{% hint style="success" %}
+\&fThis is a \&btext line\&f.
 {% endhint %}
 
-### Entity Type List
+### Icon
 
-**Link:** [https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html)
+Icon line is just a floating item. You can use any material, create player heads, use PAPI placeholders or modify NBT data.
 
-### Item Format
+#### Format:
 
-`<material>:[data_value] [NBT] (!ENCHANTED)`
+{% hint style="success" %}
+\#ICON: MATERIAL:DATA\_VALUE (skull\_texture) {NBT}
+{% endhint %}
 
-* [ ] \<material> - Material of the item.
-* [ ] :\[data\_value] - Data Value (durability) of the item. (Optional)
-* [ ] \[NBT] - NBT data of the item. (Optional)
-* [ ] (!ENCHANTED) - '!ENCHANTED' makes the item enchanted. (Optional)
+Of course, you don't have to enter all of the parameters. Here are a few examples:
 
-#### Example Items:
+{% hint style="info" %}
+_// Red Wool (<1.13):_
 
-`STONE !ENCHANTED`
+\#ICON: WOOL:14
 
-`WOOL:14`
+_// Light Blue Leather Chestplate:_
 
-`LEATHER_CHESTPLATE {display:{color:3847130}}`
+\#ICON: LEATHER\_CHESTPLATE {display:{color:3847130}}
+{% endhint %}
 
-### `Player/Custom Heads:`
+### Head
 
-#### **You can use the player's name**
+Head lines are displayed as a helmet of normal-size armor stand.
 
-* `#ICON PLAYER_HEAD (LixCisCZ)`
+Format is the same as format for [Icons](./#icon) except that you start with:
 
-**You can use a placeholder (if you have a placeholderAPI on your server)**
+{% hint style="success" %}
+\#HEAD:
+{% endhint %}
 
-* `#ICON PLAYER_HEAD (%player_name%)`
+#### Examples:
 
-**You can use head value**
+{% hint style="info" %}
+_// d0by's head (1.13+, use SKULL\_ITEM in lower versions):_
 
-* `#ICON PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE2ZjAwNzNjNTg3MDNkOGQ0MWU1NWUwYTNhYmIwNDJiNzNmOGMxMDViYzQxYzJmMDJmZmUzM2YwMzgzY2YwYSJ9fX0=)`
+\#HEAD: PLAYER\_HEAD (d0by)
+
+_// Grass block:_
+
+\#HEAD: GRASS\_BLOCK
+{% endhint %}
+
+### Small Head
+
+The same thing as [Head](./#head) but on a small armor stand.
+
+{% hint style="success" %}
+\#SMALLHEAD:
+{% endhint %}
+
+### Entity
+
+Yes, you can even display entities. All entity types can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html). Not all entity types will work on all versions, it depends on your server version.
+
+#### Format:
+
+{% hint style="success" %}
+\#ENTITY: ENTITY\_TYPE
+{% endhint %}
+
+#### Examples:
+
+{% hint style="info" %}
+\#ENTITY: PIG
+
+\#ENTITY: AXOLOTL
+{% endhint %}
+
+## Additional Information
+
+Some Materials and Entity Types will only work on certain versions. For example, you can't use Entity Type AXOLOTL on 1.8 server.
+
+### Player Heads
+
+There are three ways you can create player heads.
 
 {% hint style="warning" %}
-If you have a lower version than 1.13, you must use`SKULL_ITEM`instead of`PLAYER_HEAD`
+For versions below 1.13, use SKULL\_ITEM instead of PLAYER\_HEAD material.
+{% endhint %}
+
+{% hint style="info" %}
+We used ICON as the line type but these will also work with HEAD and SMALLHEAD.
+{% endhint %}
+
+#### Player Name:
+
+{% hint style="success" %}
+\#ICON: PLAYER\_HEAD (d0by)
+{% endhint %}
+
+#### PAPI Placeholder:
+
+This would display a different head to each player.
+
+{% hint style="success" %}
+\#ICON: PLAYER\_HEAD (%player\_name%)
+{% endhint %}
+
+#### Texture:
+
+You can use a Base64 string textures.
+
+{% hint style="success" %}
+\#ICON: PLAYER\_HEAD (`eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE2ZjAwNzNjNTg3MDNkOGQ0MWU1NWUwYTNhYmIwNDJiNzNmOGMxMDViYzQxYzJmMDJmZmUzM2YwMzgzY2YwYSJ9fX0=`)
 {% endhint %}
