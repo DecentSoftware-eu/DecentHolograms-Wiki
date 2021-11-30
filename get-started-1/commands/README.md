@@ -2,7 +2,7 @@
 description: General usage of commands.
 ---
 
-# General
+# ❕ Commands
 
 In DecentHolograms, you can edit almost everything just by commands and editting config files is not required at all. Also, all the commands have Tab-Complete functionality, so it's even easier to use them.
 
@@ -17,12 +17,13 @@ In DecentHolograms, you can edit almost everything just by commands and editting
 
 There is just one, main command that has many subcommands. To speed things up, there are some useful aliases that will make your life easier. These aliases are visible in Help messages and Tab Complete. Some of the most important ones are in the table below.
 
-| (Sub)command name               | Aliases                    |
-| ------------------------------- | -------------------------- |
-| Main command - /decentholograms | /holograms, /hologram, /dh |
-| Hologram  - holograms           | hologram, holo, h          |
-| Lines - lines                   | line, l                    |
-| Features - features             | feature, f                 |
+| (Sub)command name               | Aliases                           |
+| ------------------------------- | --------------------------------- |
+| Main command - /decentholograms | /holograms, /hologram, /holo, /dh |
+| Hologram  - holograms           | hologram, holo, h                 |
+| Lines - lines                   | line, l                           |
+| Features - features             | feature, f                        |
+| Pages - pages                   | page, p                           |
 
 {% hint style="info" %}
 For example, instead of:

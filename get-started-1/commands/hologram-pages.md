@@ -11,7 +11,7 @@ You can simply view all commands for hologram pages using the following command.
 Add a new page into hologram.
 
 * \<hologram> - Name of the hologram.
-* \[content] - [Content](../get-started/lines.md) of the first line.
+* \[content] - [Content](../format/) of the first line.
 
 ### <mark style="color:blue;">/dh p insert \<hologram> \<index></mark>
 

@@ -1,8 +1,8 @@
 ---
-description: General usage and editting of Hologram Lines.
+description: General formatting of hologram line content.
 ---
 
-# Lines
+# 📃 Format
 
 ## Content
 

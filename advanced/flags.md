@@ -2,7 +2,7 @@
 description: General usage of flags.
 ---
 
-# Flags
+# 🚩 Flags
 
 In DecentHolograms, you can configure various flags on holograms and hologram lines. These flags mostly disable some functionality that you don't want or need.
 

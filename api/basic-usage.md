@@ -1,4 +1,4 @@
-# Basic Usage
+# ⚙ Basic Usage
 
 ## Using DHAPI class
 

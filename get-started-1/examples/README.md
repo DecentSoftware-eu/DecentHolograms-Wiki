@@ -2,7 +2,7 @@
 description: Hologram examples.
 ---
 
-# Example Holograms
+# 🔨 Example Holograms
 
 There are some example holograms you can download and put on your server.
 

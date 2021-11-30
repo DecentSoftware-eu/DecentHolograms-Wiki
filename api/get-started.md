@@ -1,4 +1,4 @@
-# Get Started
+# ⚙ Get Started
 
 How to get DecentHolograms API into your project:
 

@@ -2,22 +2,24 @@
 description: General usage of colors in hologram lines.
 ---
 
-# Colors
+# 🤡 Colors
 
-## RGB
+## RGB (1.16+)
 
 There are multiple supported formats for RGB colors.
 
-* Brackets #1:  <#RRGGBB>
-* Brackets #2: {#RRGGBB}
-* With '&': \&#RRGGBB
-* Plain: #RRGGBB
+* \#RRGGBB
+* \&#RRGGBB&#x20;
+* <#RRGGBB>&#x20;
+* {#RRGGBB}&#x20;
 
 ## Gradients
 
 Gradients are defined with the format below. You can use both curly '{}' and angle '<>' brackets.
 
-> <#RRGGBB>This text is going to have a gradient.\</#RRGGBB>
+{% hint style="success" %}
+<#RRGGBB>This text is going to have a gradient.\</#RRGGBB>
+{% endhint %}
 
 Example gradient:
 
@@ -31,7 +33,9 @@ You can use special color codes inside the gradients.
 
 Rainbows are defined with the format below. You can use both curly '{}' and angle '<>' brackets.
 
-> \<RAINBOW1>Rainbow Text\</RAINBOW>
+{% hint style="success" %}
+\<RAINBOW1>Rainbow Text\</RAINBOW>
+{% endhint %}
 
 {% hint style="info" %}
 You can also put another number (0-999) instead of the 1 to make the rainbow different.
@@ -41,7 +45,9 @@ You can also put another number (0-999) instead of the 1 to make the rainbow dif
 
 Rainbow color is an animated color where all colors alternate gradually.
 
-> \&uSome color-changing text
+{% hint style="success" %}
+\&uSome color-changing text
+{% endhint %}
 
 ## Minecraft Colors
 
