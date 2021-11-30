@@ -10,7 +10,7 @@ In DecentHolograms, you can configure various flags on holograms and hologram li
 A flag in Hologram affects all its Lines but different Lines can have different flags without affecting each other or the parent Hologram.&#x20;
 {% endhint %}
 
-### List Of Flags
+### List of Flags
 
 These are the flags, that are currently available.
 
@@ -25,19 +25,24 @@ You can configure flags using the following commands. All these commands have Ta
 
 For holograms:
 
-> /dh h addflag \<hologram> \<flag>
->
-> /dh h removeflag \<hologram> \<flag>
+{% hint style="success" %}
+/dh h addflag \<hologram> \<flag>
+
+/dh h removeflag \<hologram> \<flag>
+{% endhint %}
 
 * [ ] \<hologram> - Name of the hologram.
 * [ ] \<flag> - Name of the flag.
 
 For hologram lines:
 
-> /dh l addflag \<hologram> \<line> \<flag>
->
-> /dh l removeflag \<hologram> \<line> \<flag>
+{% hint style="success" %}
+/dh l addflag \<hologram> \<page> \<line> \<flag>
+
+/dh l removeflag \<hologram> \<page> \<line> \<flag>
+{% endhint %}
 
 * [ ] \<hologram> - Name of the hologram.
+* [ ] \<page> - Index of the hologram page, this line is located on.
 * [ ] \<line> - Number of line in the hologram.
 * [ ] \<flag> - Name of the flag.
