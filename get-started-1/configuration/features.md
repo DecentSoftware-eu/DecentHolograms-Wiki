@@ -8,7 +8,9 @@ description: Default features.
 
 You can simply view all commands for features using the following command.
 
-> /dh features help
+{% hint style="success" %}
+/dh features help
+{% endhint %}
 
 ## Damage Display
 
