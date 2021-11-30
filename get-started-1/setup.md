@@ -75,7 +75,7 @@ You can add more pages and navigate between them.
 
 ## Hologram Creation Example
 
-Here is a little example of how you could create a new holograms with some lines.
+Here is a little example of how you could create a new hologram with some lines and pages.
 
 ### Create the hologram
 
