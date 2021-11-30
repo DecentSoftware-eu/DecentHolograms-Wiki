@@ -77,7 +77,7 @@ You can add more pages and navigate between them.
 
 Here is a little example of how you could create a new holograms with some lines.
 
-### First, we create the hologram
+### Create the hologram
 
 {% hint style="success" %}
 /dh create example
@@ -85,7 +85,7 @@ Here is a little example of how you could create a new holograms with some lines
 
 ![](../.gitbook/assets/2021-11-30\_19.25.58.png)
 
-### Now, lets edit lines
+### Edit lines
 
 {% hint style="success" %}
 /dh line set example 1 1 &3\&lDECENT HOLOGRAMS
@@ -95,7 +95,7 @@ Here is a little example of how you could create a new holograms with some lines
 
 ![](../.gitbook/assets/2021-11-30\_19.30.18.png)
 
-### Another page?
+### Add another page
 
 You can have as many pages as you'd like.
 
