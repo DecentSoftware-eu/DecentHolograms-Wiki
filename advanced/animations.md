@@ -7,7 +7,7 @@ There are two types of animations, preset and custom. Custom animations are expl
 General format of animations is:
 
 {% hint style="success" %}
-\<ANIM:\<animation>:\<args>>Text\</ANIM>
+<#ANIM:\<name>:\<args>>Text\</#ANIM>
 {% endhint %}
 
 ## Preset Animations
