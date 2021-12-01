@@ -6,7 +6,7 @@ description: General usage and editting of Holograms.
 
 ## Features
 
-* Holograms are done 100% using packets, there are no real entites in your worlds which gives us a lot of possibilities when it comes to per-player behaviour.
+* Holograms are made 100% using packets, there are no real entites in your worlds which gives us a lot of possibilities when it comes to per-player behaviour.
 * Holograms can have multiple pages.
 * Holograms can be clickable with many click action options.
 * Hologram lines have a system for text animations.
