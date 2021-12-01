@@ -23,7 +23,9 @@ Gradients are defined with the format below. You can use both curly '{}' and ang
 
 Example gradient:
 
-> <#00FFFF>\&l\&nDECENT HOLOGRAMS\</#FF00FF>
+{% hint style="success" %}
+<#00FFFF>\&l\&nDECENT HOLOGRAMS\</#FF00FF>
+{% endhint %}
 
 {% hint style="info" %}
 You can use special color codes inside the gradients.
