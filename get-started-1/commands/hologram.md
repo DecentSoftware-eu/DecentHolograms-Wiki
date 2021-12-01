@@ -8,7 +8,9 @@ description: General usage and editting of Holograms.
 
 There is a lot of commands for editting holograms so we put them in its own category. You can access all of them using the command below.
 
-> /dh holograms \<subcommand>
+{% hint style="success" %}
+/dh holograms \<subcommand>
+{% endhint %}
 
 {% hint style="info" %}
 Aliases: 'holograms', 'hologram', 'holo', 'h'

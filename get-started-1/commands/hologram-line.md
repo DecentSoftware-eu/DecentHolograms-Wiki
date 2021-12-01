@@ -4,7 +4,9 @@
 
 You can simply view all commands for hologram lines using the following command.
 
-> /dh lines help
+{% hint style="success" %}
+/dh lines help
+{% endhint %}
 
 
 

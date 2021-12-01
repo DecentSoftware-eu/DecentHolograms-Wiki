@@ -4,7 +4,9 @@
 
 You can simply view all commands for hologram pages using the following command.
 
-> /dh pages help
+{% hint style="success" %}
+/dh pages help
+{% endhint %}
 
 ### <mark style="color:blue;">/dh p add \<hologram> \[content]</mark>
 
