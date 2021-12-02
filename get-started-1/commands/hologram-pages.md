@@ -77,3 +77,10 @@ View actions set on specified click type in page.
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page to view.
 * \<clickType> - The ClickType.
+
+### <mark style="color:blue;">/dh h alwaysfaceplayer \<hologram> \<page> \<true|false></mark>
+
+Set the value of always-face-player. If true, hologram line offsets will be relative to players location, meaning that the player will see the lines aligned the same from any angle.
+
+* \<hologram> -  Name of the Hologram.
+* \<page> -  Index of the hologram page.
