@@ -15,6 +15,12 @@ description: General usage and editting of Holograms.
 * There are a few preset features like Damage & Heal displays.
 * And much more...
 
+## Permissions
+
+DecentHolograms is a plugin made for server admins, therefore it doesn't need multiple different permissions for different actions. So, there is just one permission you need to be able to do everything with DecentHolograms. And that is:
+
+> `dh.admin`
+
 ## Editting Holograms
 
 This is a simple tutorial to get started with editting holograms. Full list of all commands is [here](commands/).
