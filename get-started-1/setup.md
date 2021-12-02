@@ -17,7 +17,7 @@ description: General usage and editting of Holograms.
 
 ## Permissions
 
-DecentHolograms is a plugin made for server admins, therefore it doesn't need multiple different permissions for different actions. So, there is just one permission you need to be able to do everything with DecentHolograms. And that is:
+DecentHolograms is a plugin made for server admins, therefore it doesn't need multiple different permission nodes for different actions. So, there is just one permission node you need to be able to do everything with DecentHolograms. And that is:
 
 {% hint style="success" %}
 dh.admin
