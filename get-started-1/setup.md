@@ -19,7 +19,9 @@ description: General usage and editting of Holograms.
 
 DecentHolograms is a plugin made for server admins, therefore it doesn't need multiple different permissions for different actions. So, there is just one permission you need to be able to do everything with DecentHolograms. And that is:
 
-> `dh.admin`
+{% hint style="success" %}
+dh.admin
+{% endhint %}
 
 ## Editting Holograms
 
