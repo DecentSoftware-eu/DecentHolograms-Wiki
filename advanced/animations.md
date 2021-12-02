@@ -24,36 +24,24 @@ Or:
 
 ### Wave
 
-{% hint style="success" %}
-<#ANIM:wave:\<color1>,\<color2>>Text\</#ANIM>
-{% endhint %}
+`<#ANIM:wave:<color1>,<color2>>Text</#ANIM>`
 
 Example:
 
-{% hint style="info" %}
-<#ANIM:wave:\&f,\&b\&l>Text\</#ANIM>
-{% endhint %}
+`<#ANIM:wave:&f,&b&l>Text</#ANIM>`
 
 ### Burn
 
-{% hint style="success" %}
-<#ANIM:burn:\<color1>,\<color2>>Text\</#ANIM>
-{% endhint %}
+`<#ANIM:burn:<color1>,<color2>>Text</#ANIM>`
 
 Example:
 
-{% hint style="info" %}
-<#ANIM:burn:\&f,\&b\&l>Text\</#ANIM>
-{% endhint %}
+`<#ANIM:burn:&f,&b&l>Text</#ANIM>`
 
 ### Typewriter
 
-{% hint style="success" %}
-<#ANIM:typewriter>Text\</#ANIM>
-{% endhint %}
+`<#ANIM:typewriter>Text</#ANIM>`
 
 ### Scroll
 
-{% hint style="success" %}
-<#ANIM:scroll>Text\</#ANIM>
-{% endhint %}
+`<#ANIM:scroll>Text</#ANIM>`
