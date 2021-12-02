@@ -4,7 +4,9 @@
 
 General format of actions is:
 
-> \<actionType>:\<args>
+{% hint style="success" %}
+\<actionType>:\<args>
+{% endhint %}
 
 ### Click Types
 

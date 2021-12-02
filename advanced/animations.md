@@ -16,15 +16,11 @@ There are some preset animations you can use, that will work with any text.
 
 ### Colors
 
-{% hint style="success" %}
-<#ANIM:colors>Text\</#ANIM>
-{% endhint %}
+`<#ANIM:colors>Text</#ANIM>`
 
 Or:
 
-{% hint style="success" %}
-\&uText
-{% endhint %}
+`&uText`
 
 ### Wave
 
