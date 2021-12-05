@@ -12,6 +12,14 @@ Convert hologram from HD to DecentHolograms using the following command.
 /dh convert HolographicDisplays
 {% endhint %}
 
+### GHolo
+
+Convert hologram from GHolo to DecentHolograms using the following command.
+
+{% hint style="success" %}
+/dh convert GHolo
+{% endhint %}
+
 ### PlaceholderAPI
 
 DecentHolograms fully support PAPI and you can use its placeholders almost anywhere.
