@@ -19,11 +19,11 @@
   * [Hologram](get-started-1/configuration/hologram.md)
   * [Lang](get-started-1/configuration/lang.md)
 * [🔨 Example Holograms](get-started-1/examples/README.md)
-  * [Example #1](get-started-1/examples/example-1.md)
-  * [Example #2](get-started-1/examples/example-2.md)
-  * [Example #3](get-started-1/examples/example-3.md)
-  * [Example #4](get-started-1/examples/example-4.md)
-  * [Example #5](get-started-1/examples/example-5.md)
+  * [Example - Demo](get-started-1/examples/example-demo.md)
+  * [Example - Entity](get-started-1/examples/example-entity.md)
+  * [Example - Recipe with Offsets](get-started-1/examples/example-recipe-with-offsets.md)
+  * [Example - Tree](get-started-1/examples/example-tree.md)
+  * [Example - Actions](get-started-1/examples/example-actions.md)
 
 ## advanced
 
