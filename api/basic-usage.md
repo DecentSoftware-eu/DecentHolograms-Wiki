@@ -2,7 +2,7 @@
 
 ## Using DHAPI class
 
-You can create or edit holograms very easily using the DHAPI class. Here are some examples on how to use it. (You can find this class on [GitHub](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/src/main/java/eu/decentsoftware/holograms/api/DHAPI.java))
+You can create or edit holograms very easily using the DHAPI class. Here are some examples on how to use it. (You can find this class on [GitHub](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/src/main/java/eu/decentsoftware/holograms/api/DHAPI.java) with javadoc.)
 
 ```java
 // Create a hologram with lines
