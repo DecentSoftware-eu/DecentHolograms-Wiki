@@ -93,7 +93,6 @@ HologramLine line = DHAPI.removeHologramLine(hologram, pageIndex, lineIndex);
 ### Pages
 
 ```java
-// Most of the methods below also work with just a name but we will use this
 Hologram hologram = DHAPI.getHologram("hologramName");
 List<String> lines = Arrays.asList("Line 1", "Line 2");
 int pageIndex = 0; // First page
