@@ -86,7 +86,7 @@ Set a new height to hologram line.
 * \<line> - Index of the line.
 * \<height> - New height. (0.0 - 2.5)
 
-### <mark style="color:blue;">/dh l offset \<hologram> \<page> \<line> \<offset></mark>
+### <mark style="color:blue;">/dh l offsetX \<hologram> \<page> \<line> \<offset></mark>
 
 Set a new X offset to hologram line.
 
@@ -95,14 +95,14 @@ Set a new X offset to hologram line.
 * \<line> - Index of the line.
 * \<offset> - New X offset. (0.0 - 2.5)
 
-### <mark style="color:blue;">/dh l offset \<hologram> \<page> \<line> \<offset></mark>
+### <mark style="color:blue;">/dh l offsetZ \<hologram> \<page> \<line> \<offset></mark>
 
-Set a new  offset to hologram line.
+Set a new Z offset to hologram line.
 
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page, on which the line is.
 * \<line> - Index of the line.
-* \<offset> - New  offset. (0.0 - 2.5)
+* \<offset> - New Z offset. (0.0 - 2.5)
 
 ### <mark style="color:blue;">/dh l setfacing \<hologram> \<page> \<line> \<facing></mark>
 
