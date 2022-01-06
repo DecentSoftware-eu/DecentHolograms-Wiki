@@ -10,21 +10,21 @@ You can simply view all commands for hologram pages using the following command.
 
 ### <mark style="color:blue;">/dh p add \<hologram> \[content]</mark>
 
-Add a new page into hologram.
+Add a new page to a hologram.
 
 * \<hologram> - Name of the hologram.
 * \[content] - [Content](../format/) of the first line.
 
 ### <mark style="color:blue;">/dh p insert \<hologram> \<index></mark>
 
-Insert a new page into hologram.
+Insert a new page into a hologram.
 
 * \<hologram> - Name of the hologram.
 * \<index> - Index of the new page.
 
 ### <mark style="color:blue;">/dh p remove \<hologram> \<page></mark>
 
-Remove a page from hologram.
+Remove a page from a hologram.
 
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page to remove.
@@ -46,12 +46,12 @@ Switch to another page in a hologram.
 
 ### <mark style="color:blue;">/dh p addaction \<hologram> \<page> \<clickType> \<action></mark>
 
-Add action to page.
+Add an action to a hologram page.
 
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page.
-* \<clickType> - ClickType that triggers this action.
-* \<action> - The action.
+* \<clickType> - ClickType that triggers this action. [\[Available ClickTypes\]](/advanced/actions.md#click-types)
+* \<action> - The action. [\[Available Actions\]](/advanced/actions.md)
 
 ### <mark style="color:blue;">/dh p removeaction \<hologram> \<page> \<clickType> \<index></mark>
 
@@ -59,7 +59,7 @@ Remove action from page.
 
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page to view.
-* \<clickType> - ClickType that triggers this action.
+* \<clickType> - ClickType that triggers this action. [\[Available ClickTypes\]](/advanced/actions.md#click-types)
 * \<index> - Index of the action.
 
 ### <mark style="color:blue;">/dh p clearactions \<hologram> \<page> \<clickType></mark>
@@ -68,7 +68,7 @@ Clear actions on specified click type in page.
 
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page to view.
-* \<clickType> - The ClickType.
+* \<clickType> - The ClickType. [\[Available ClickTypes\]](/advanced/actions.md#click-types)
 
 ### <mark style="color:blue;">/dh p actions \<hologram> \<page> \<clickType></mark>
 
@@ -76,7 +76,7 @@ View actions set on specified click type in page.
 
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page to view.
-* \<clickType> - The ClickType.
+* \<clickType> - The ClickType. [\[Available ClickTypes\]](/advanced/actions.md#click-types)
 
 ### <mark style="color:blue;">/dh h alwaysfaceplayer \<hologram> \<page> \<true|false></mark>
 
