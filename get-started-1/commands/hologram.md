@@ -168,12 +168,6 @@ Set the value of down origin. If true, hologram's location will be relative to i
 
 * \<hologram> -  Name of the Hologram.
 
-### <mark style="color:blue;">/dh h alwaysfaceplayer \<hologram> \<true|false></mark>
-
-Set the value of always-face-player. If true, hologram line offsets will be relative to players location, meaning that the player will see the lines aligned the same from any angle.
-
-* \<hologram> -  Name of the Hologram.
-
 ### <mark style="color:blue;">/dh h near \<distance></mark>
 
 List of holograms in the specified distance from you.
