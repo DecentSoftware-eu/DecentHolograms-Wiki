@@ -25,7 +25,7 @@ Convert hologram from GHolo to DecentHolograms using the following command.
 Convert hologram from CMI to DecentHolograms using the following command.
 
 {% hint style="success" %}
-/dh convert cmi
+/dh convert CMI
 {% endhint %}
 
 ### PlaceholderAPI
