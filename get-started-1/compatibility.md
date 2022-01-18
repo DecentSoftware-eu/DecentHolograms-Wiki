@@ -20,6 +20,14 @@ Convert hologram from GHolo to DecentHolograms using the following command.
 /dh convert GHolo
 {% endhint %}
 
+### CMI
+
+Convert hologram from CMI to DecentHolograms using the following command.
+
+{% hint style="success" %}
+/dh convert CMI
+{% endhint %}
+
 ### PlaceholderAPI
 
 DecentHolograms fully support PAPI and you can use its placeholders almost anywhere.
