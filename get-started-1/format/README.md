@@ -99,11 +99,11 @@ Some Materials and Entity Types will only work on certain versions. For example,
 There are three ways you can create player heads.
 
 {% hint style="warning" %}
-For versions below 1.13, use SKULL\_ITEM instead of PLAYER\_HEAD material.
+For versions below 1.13, use SKULL\_ITEM instead of PLAYER\_HEAD as material.
 {% endhint %}
 
 {% hint style="info" %}
-We used ICON as the line type but these will also work with HEAD and SMALLHEAD.
+The below examples use ICON as the line type, but you can also use HEAD and SMALLHEAD for them.
 {% endhint %}
 
 #### Player Name:
