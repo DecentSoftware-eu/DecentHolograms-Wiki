@@ -127,3 +127,11 @@ You can use a Base64 string textures.
 {% hint style="success" %}
 \#ICON: PLAYER\_HEAD (`eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE2ZjAwNzNjNTg3MDNkOGQ0MWU1NWUwYTNhYmIwNDJiNzNmOGMxMDViYzQxYzJmMDJmZmUzM2YwMzgzY2YwYSJ9fX0=`)
 {% endhint %}
+
+#### HeadDatabase Texture:
+
+This requires the plugin [HeadDatabase](https://www.spigotmc.org/resources/14280/) to be installed.
+
+{% hint style="success" %}
+\#ICON: PLAYER\_HEAD (HEADDATABASE\_1)
+{% endhint %}
