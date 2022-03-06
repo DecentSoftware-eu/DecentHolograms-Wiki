@@ -45,7 +45,15 @@ Teleport the player who clicked to the specified location.
 
 Plays a sound for the player who clicked.
 
-There is a list of all sounds you can use: [https://www.spigotmc.org/wiki/cc-sounds-list/](https://www.spigotmc.org/wiki/cc-sounds-list/)
+There is a list of all sounds you can use:&#x20;
+
+* [For 1.8](https://helpch.at/docs/1.8.8/index.html?org/bukkit/Sound.html)
+* [For 1.9+](https://helpch.at/docs/1.9/index.html?org/bukkit/Sound.html)
+* [For 1.13+](https://helpch.at/docs/1.13/index.html?org/bukkit/Sound.html)
+
+You can see sounds for any specific version by editting this link (..docs/VERSION/..):&#x20;
+
+[https://helpch.at/docs/1.13/index.html?org/bukkit/Sound.html](https://helpch.at/docs/1.13/index.html?org/bukkit/Sound.html)
 
 #### PERMISSION:\<permission>
 
