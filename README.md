@@ -5,7 +5,7 @@ description: Get started with DecentHolograms.
 # 🏠 Get Started
 
 {% hint style="warning" %}
-This wiki is work in progress, if you find anything missing, please contact us on [Discord](https://discord.decentsoftware.eu).
+This wiki is work in progress, if you find anything missing, please contact us on [Discord](https://discord.decentsoftware.eu/).
 {% endhint %}
 
 ### :question:What's DecentHolograms?

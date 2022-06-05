@@ -8,7 +8,7 @@ description: General formatting of hologram line content.
 
 There are multiple different types of Hologram Line content. If other than text, the type must be defined in the lines content. (#\<type>: ...)
 
-![](../../.gitbook/assets/image.png)
+<img src="../../.gitbook/assets/image.png" alt="" data-size="original">
 
 ### Text
 
@@ -39,7 +39,7 @@ _// Red Wool (<1.13):_
 
 _// Light Blue Leather Chestplate:_
 
-\#ICON: LEATHER\_CHESTPLATE {display:{color:3847130}}
+\#ICON: LEATHER\_CHESTPLATE {display:{color:3847130\}}
 {% endhint %}
 
 ### Head

@@ -54,7 +54,7 @@ DHAPI.moveHologram("hologramName", location);
 ### Editting a hologram
 
 {% hint style="info" %}
-If you want to know more about line content, visit [this page](../get-started-1/format/).
+If you want to know more about line content, visit [this page](../general/format/).
 {% endhint %}
 
 ```java
@@ -112,5 +112,5 @@ HologramPage page = DHAPI.removeHologramPage(hologram, pageIndex);
 ```
 
 {% hint style="info" %}
-There are much more methods in the DHAPI class that you can play with. If you want me to explain/add anything else, please contact us on [Discord](https://discord.decentsoftware.eu).
+There are much more methods in the DHAPI class that you can play with. If you want me to explain/add anything else, please contact us on [Discord](https://discord.decentsoftware.eu/).
 {% endhint %}

@@ -137,4 +137,4 @@ There are more actions, all of them are explained [here](../advanced/actions.md)
 
 ### Conclusion
 
-And that's basically it. Of course, you can do much more with DecentHolograms. You can find all available commands [here](commands/). If you need any help, contact us on [Discord](https://discord.decentsoftware.eu).
+And that's basically it. Of course, you can do much more with DecentHolograms. You can find all available commands [here](commands/). If you need any help, contact us on [Discord](https://discord.decentsoftware.eu/).

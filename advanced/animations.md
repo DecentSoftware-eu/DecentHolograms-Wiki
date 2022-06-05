@@ -1,6 +1,6 @@
 # 🦿 Animations
 
-There are two types of animations, preset and custom. Custom animations are explained [here](../get-started-1/configuration/animation.md).
+There are two types of animations, preset and custom. Custom animations are explained [here](../general/configuration/animation.md).
 
 ### Format
 
