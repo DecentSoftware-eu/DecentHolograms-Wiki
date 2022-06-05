@@ -7,6 +7,27 @@ description: Main configuration file
 ## Default config.yml
 
 ```yaml
+# # # # # # # # # # # # # # # # #
+#
+# Welcome to DecentHolograms config.yml.
+#
+# - We recommend you to visit our wiki for
+# detailed explanation of all features and
+# configuration options as this plugin has
+# a ton of them.
+#
+# - You should also join our discord server for
+# more information, support and updates. Our
+# discord server is the main way of reporting
+# bugs or ideas for possible improvements.
+#
+# - Web: www.decentholograms.eu
+# - Wiki: wiki.decentholograms.eu
+# - Discord: discord.decentsoftware.eu
+# - GitHub: github.decentsoftware.eu
+#
+# # # # # # # # # #
+
 defaults:
   # Default line
   text: Blank Line
@@ -29,6 +50,27 @@ defaults:
 
 # Check for updates on plugin startup? [true/false]
 update-checker: true
+
+
+
+# # # # # # # # # # # # # # # # #
+#
+# Custom text replacements
+#
+# Replace specific patterns in Holograms with custom replacements, similar to HolographicDisplays
+#
+# # # # # # # # # #
+
+custom-replacements:
+  '[x]': '\u2588'
+  '[X]': '\u2588'
+  '[/]': '\u258C'
+  '[.]': '\u2591'
+  '[..]': '\u2592'
+  '[...]': '\u2593'
+  '[p]': '\u2022'
+  '[P]': '\u2022'
+  '[|]': '\u23B9'
 ```
 
 Main 'config.yml' file also contains configuration for [Features](features.md).
