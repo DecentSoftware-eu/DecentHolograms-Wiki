@@ -55,6 +55,44 @@ update-checker: true
 
 # # # # # # # # # # # # # # # # #
 #
+# Damage Display
+#
+# Temporary damage display that shows up on every successful hit
+#
+# # # # # # # # # #
+
+damage-display:
+  # Do you want this feature enabled? [true/false]
+  enabled: false
+  # How long will the hologram stay in ticks
+  duration: 40
+  # Damage placeholder: {damage}
+  # Animations and Placeholders DO work here
+  appearance: '&c{damage}'
+
+
+
+# # # # # # # # # # # # # # # # #
+#
+# Healing Display
+#
+# Temporary damage display that shows up on every health increase
+#
+# # # # # # # # # #
+
+healing-display:
+  # Do you want this feature enabled? [true/false]
+  enabled: false
+  # How long will the hologram stay in ticks
+  duration: 40
+  # Heal placeholder: {heal}
+  # Animations and Placeholders DO work here
+  appearance: '&a+ {heal}'
+
+
+
+# # # # # # # # # # # # # # # # #
+#
 # Custom text replacements
 #
 # Replace specific patterns in Holograms with custom replacements, similar to HolographicDisplays
@@ -62,15 +100,15 @@ update-checker: true
 # # # # # # # # # #
 
 custom-replacements:
-  '[x]': '\u2588'    #The symbol looks like this: █
-  '[X]': '\u2588'    #The symbol looks like this: █
-  '[/]': '\u258C'    #The symbol looks like this: ▌
-  '[.]': '\u2591'    #The symbol looks like this: ░
-  '[..]': '\u2592'   #The symbol looks like this: ▒
-  '[...]': '\u2593'  #The symbol looks like this: ▓
-  '[p]': '\u2022'    #The symbol looks like this: •
-  '[P]': '\u2022'    #The symbol looks like this: •
-  '[|]': '\u23B9'    #The symbol looks like this: ⎹
+  '[x]': '\u2588'    # The symbol looks like this: █
+  '[X]': '\u2588'    # The symbol looks like this: █
+  '[/]': '\u258C'    # The symbol looks like this: ▌
+  '[.]': '\u2591'    # The symbol looks like this: ░
+  '[..]': '\u2592'   # The symbol looks like this: ▒
+  '[...]': '\u2593'  # The symbol looks like this: ▓
+  '[p]': '\u2022'    # The symbol looks like this: •
+  '[P]': '\u2022'    # The symbol looks like this: •
+  '[|]': '\u23B9'    # The symbol looks like this: ⎹
 ```
 
 Main 'config.yml' file also contains configuration for [Features](features.md).
