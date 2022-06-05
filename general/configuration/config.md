@@ -62,15 +62,15 @@ update-checker: true
 # # # # # # # # # #
 
 custom-replacements:
-  '[x]': '\u2588'
-  '[X]': '\u2588'
-  '[/]': '\u258C'
-  '[.]': '\u2591'
-  '[..]': '\u2592'
-  '[...]': '\u2593'
-  '[p]': '\u2022'
-  '[P]': '\u2022'
-  '[|]': '\u23B9'
+  '[x]': '\u2588'    #The symbol looks like this: █
+  '[X]': '\u2588'    #The symbol looks like this: █
+  '[/]': '\u258C'    #The symbol looks like this: ▌
+  '[.]': '\u2591'    #The symbol looks like this: ░
+  '[..]': '\u2592'   #The symbol looks like this: ▒
+  '[...]': '\u2593'  #The symbol looks like this: ▓
+  '[p]': '\u2022'    #The symbol looks like this: •
+  '[P]': '\u2022'    #The symbol looks like this: •
+  '[|]': '\u23B9'    #The symbol looks like this: ⎹
 ```
 
 Main 'config.yml' file also contains configuration for [Features](features.md).
