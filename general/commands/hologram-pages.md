@@ -78,9 +78,9 @@ View actions set on specified click type in page.
 * \<page> - Index of the page to view.
 * \<clickType> - The ClickType.
 
-### <mark style="color:blue;">weplayer</mark>
+### <mark style="color:blue;">w</mark>
 
 ​
 
-* ​​
+* ​
 * ​
