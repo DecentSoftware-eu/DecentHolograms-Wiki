@@ -77,7 +77,3 @@ View actions set on specified click type in page.
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page to view.
 * \<clickType> - The ClickType.
-
-​
-
-​
