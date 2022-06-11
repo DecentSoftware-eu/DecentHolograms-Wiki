@@ -83,4 +83,4 @@ View actions set on specified click type in page.
 ​
 
 * ​​
-* ​​.​..Set.​..
+* ​
