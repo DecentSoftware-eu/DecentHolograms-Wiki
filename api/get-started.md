@@ -33,6 +33,7 @@ Replace TAG with the current version of DecentHolograms. (Latest release on [Git
         <groupId>com.github.decentsoftware-eu</groupId>
         <artifactId>decentholograms</artifactId>
         <version>TAG</version>
+        <scope>provided</scope>
     </dependency>
 </dependencies>
 ```
