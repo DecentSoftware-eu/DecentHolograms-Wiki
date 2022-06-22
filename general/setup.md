@@ -133,7 +133,7 @@ Now, when a player RIGHT clicks the first page, he will be switched to the next 
 /dh page addaction example 2 RIGHT PAGE:1
 {% endhint %}
 
-There are more actions, all of them are explained [here](../advanced/actions.md).
+There are more actions, all of them are explained [here](actions.md).
 
 ### Conclusion
 

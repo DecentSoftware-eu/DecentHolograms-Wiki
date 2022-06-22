@@ -12,7 +12,7 @@ There are multiple different types of Hologram Line content. If other than text,
 
 ### Text
 
-Just a text line, you can enter any text, use PAPI placeholders, [colors](colors.md) and [animations](../../advanced/animations.md).&#x20;
+Just a text line, you can enter any text, use PAPI placeholders, [colors](colors.md) and [animations](../animations.md).&#x20;
 
 #### Example text line:
 

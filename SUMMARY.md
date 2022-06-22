@@ -24,12 +24,9 @@
   * [Example - Recipe with Offsets](general/examples/example-recipe-with-offsets.md)
   * [Example - Tree](general/examples/example-tree.md)
   * [Example - Actions](general/examples/example-actions.md)
-
-## advanced
-
-* [🦿 Animations](advanced/animations.md)
-* [🖱 Actions](advanced/actions.md)
-* [🚩 Flags](advanced/flags.md)
+* [🦿 Animations](general/animations.md)
+* [🖱 Actions](general/actions.md)
+* [🚩 Flags](general/flags.md)
 
 ## api
 
