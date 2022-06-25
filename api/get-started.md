@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.decentsoftware-eu:decentholograms:TAG'
+    compileOnly 'com.github.decentsoftware-eu:decentholograms:TAG'
 }
 ```
 
