@@ -10,7 +10,7 @@ DecentHolograms fully support PAPI and you can use its placeholders almost anywh
 
 ### HolographicDisplays
 
-Convert hologram from HD to DecentHolograms using the following command.
+Convert holograms from HD to DecentHolograms using the following command.
 
 {% hint style="success" %}
 /dh convert HolographicDisplays
@@ -18,7 +18,7 @@ Convert hologram from HD to DecentHolograms using the following command.
 
 ### CMI
 
-Convert hologram from CMI to DecentHolograms using the following command.
+Convert holograms from CMI to DecentHolograms using the following command.
 
 {% hint style="success" %}
 /dh convert CMI
@@ -26,8 +26,16 @@ Convert hologram from CMI to DecentHolograms using the following command.
 
 ### GHolo
 
-Convert hologram from GHolo to DecentHolograms using the following command.
+Convert holograms from GHolo to DecentHolograms using the following command.
 
 {% hint style="success" %}
 /dh convert GHolo
+{% endhint %}
+
+### FutureHolograms
+
+Convert holograms from FutureHolograms to DecentHolograms using the following command.
+
+{% hint style="success" %}
+/dh convert FutureHolograms
 {% endhint %}
