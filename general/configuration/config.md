@@ -98,15 +98,15 @@ healing-display:
 # # # # # # # # # #
 
 custom-replacements:
-  '[x]': '\u2588'    # The symbol looks like this: █
-  '[X]': '\u2588'    # The symbol looks like this: █
-  '[/]': '\u258C'    # The symbol looks like this: ▌
-  '[.]': '\u2591'    # The symbol looks like this: ░
-  '[..]': '\u2592'   # The symbol looks like this: ▒
-  '[...]': '\u2593'  # The symbol looks like this: ▓
-  '[p]': '\u2022'    # The symbol looks like this: •
-  '[P]': '\u2022'    # The symbol looks like this: •
-  '[|]': '\u23B9'    # The symbol looks like this: ⎹
+  '[x]': '█'
+  '[X]': '█'
+  '[/]': '▌'
+  '[.]': '░'
+  '[..]': '▒'
+  '[...]': '▓'
+  '[p]': '•'
+  '[P]': '•'
+  '[|]': '⎹'
 ```
 
 Main 'config.yml' file also contains configuration for [Features](features.md).
