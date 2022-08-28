@@ -39,3 +39,11 @@ Convert holograms from FutureHolograms to DecentHolograms using the following co
 {% hint style="success" %}
 /dh convert FutureHolograms
 {% endhint %}
+
+### Holograms
+
+Convert holograms from Holograms to DecentHolograms using the following command.
+
+{% hint style="success" %}
+/dh convert Holograms
+{% endhint %}
