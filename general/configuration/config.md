@@ -37,7 +37,13 @@ defaults:
   update-range: 48
   # Default Hologram update interval in ticks.
   update-interval: 20
-  # Default heigths of different hologram line types.
+  # Maximum amount of cached pattern processing results
+  # Do not change if you do not know what it means
+  # Increasing this number will result in higher memory usage
+  # Range: 5 - 10000
+  # Default: 500
+  lru-cache-size: 500
+  # Default heights of different hologram line types.
   height:
     text: 0.3
     icon: 0.6
@@ -48,6 +54,16 @@ defaults:
 
 # Check for updates on plugin startup? [true/false]
 update-checker: true
+
+# Click cooldown in ticks
+click-cooldown: 20
+
+# Do we want to replace placeholders inside animation frames?
+#
+# WARNING! Setting this to true will have a negative impact
+# on CPU usage, so if you don't NEED to use placeholders inside
+# animation frames, keep this disabled.
+allow-placeholders-inside-animations: false
 
 
 
@@ -101,9 +117,9 @@ custom-replacements:
   '[x]': '█'
   '[X]': '█'
   '[/]': '▌'
-  '[.]': '░'
-  '[..]': '▒'
-  '[...]': '▓'
+  '[,]': '░'
+  '[,,]': '▒'
+  '[,,,]': '▓'
   '[p]': '•'
   '[P]': '•'
   '[|]': '⎹'
