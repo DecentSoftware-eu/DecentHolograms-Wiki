@@ -33,13 +33,21 @@ Create a new hologram.
 Aliases: 'create', 'c'
 {% endhint %}
 
-### <mark style="color:blue;">/dh h clone \<hologram> \<name> \[temp]</mark>
+### <mark style="color:blue;">/dh h clone \<hologram> \<name> \[temp] \[-l:world:x:y:z]</mark>
 
 Clone an existing hologram.
 
 * \<hologram> -  Name of the Hologram to clone.
 * \<name> - Name of the new, cloned hologram.
 * \[temp] - 'True', if you DON'T want the hologram to save, otherwise 'False'. \[Default: False] (Optional)
+* \[-l:world:x:y:z] - Optional location argument. The cloned hologram will be on that given location and even console can execute the command with this argument.
+
+**Examples:**
+
+* `/dh h clone test test_clone -l:world:0:100:0`
+* `/dh h clone test test_clone true`
+* `/dh h clone test test_clone`
+* `/dh h clone test test_clone -l:world:0:100:0 false`
 
 {% hint style="info" %}
 Aliases: 'copy'
