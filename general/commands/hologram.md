@@ -63,6 +63,13 @@ Delete existing hologram.
 Aliases: 'delete', 'del', 'remove', 'rem'
 {% endhint %}
 
+### <mark style="color:blue;">/dh h rename \<hologram> \<new\_name></mark>
+
+Rename existing hologram.
+
+* \<hologram> -  Name of the Hologram, you want to rename.
+* \<new\_name> - The Holograms new name.
+
 ### <mark style="color:blue;">/dh h setpermission \<hologram> \[permission]</mark>
 
 Set the current permission required to view the hologram.
