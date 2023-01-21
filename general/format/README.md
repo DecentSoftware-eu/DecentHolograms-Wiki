@@ -6,17 +6,13 @@ description: General formatting of hologram line content.
 
 ## Hologram Line Types
 
-DecentHolograms supports various types of content for hologram lines, including text, items, and entities. If the content is not text, the type must be defined in the line's content using the following format.
-
-{% hint style="success" %}
-\#\<type>: \<content>
-{% endhint %}
+There are multiple different types of Hologram Line content. If other than text, the type must be defined in the lines content. (#\<type>: ...)
 
 <img src="../../.gitbook/assets/image.png" alt="" data-size="original">
 
 ### Text
 
-A text line allows you to enter any text, including PAPI placeholders, colors and animations. You can use this type of line to display dynamic and personalized information to players.
+Just a text line, you can enter any text, use PAPI placeholders, [colors](colors.md) and [animations](../animations.md).&#x20;
 
 #### Example text line:
 
@@ -26,12 +22,12 @@ A text line allows you to enter any text, including PAPI placeholders, colors an
 
 ### Icon
 
-An Icon line displays a floating item, which can be any material, player head, PAPI placeholders, or modified NBT data.
+Icon line is just a floating item. You can use any material, create player heads, use PAPI placeholders or modify NBT data.
 
 #### Format:
 
 {% hint style="success" %}
-\#ICON: MATERIAL\[:DATA\_VALUE] \[(skull\_texture)] \[{NBT}]
+\#ICON: MATERIAL:DATA\_VALUE (skull\_texture) {NBT}
 {% endhint %}
 
 Of course, you don't have to enter all of the parameters. Here are a few examples:
@@ -44,10 +40,6 @@ _// Red Wool (<1.13):_
 _// Light Blue Leather Chestplate:_
 
 \#ICON: LEATHER\_CHESTPLATE {display:{color:3847130\}}
-
-_// d0by's head (1.13+, use SKULL\_ITEM in lower versions):_
-
-\#ICON: PLAYER\_HEAD (d0by)
 {% endhint %}
 
 ### Head
@@ -100,11 +92,19 @@ Yes, you can even display entities. All entity types can be found [here](https:/
 
 ## Additional Information
 
-It's important to note that certain materials and entity types may only be available on specific server versions. For example, using the Entity Type AXOLOTL on a 1.8 server will not work. Be sure to check the compatibility of the materials and entity types you wish to use with your server version.
+Some Materials and Entity Types will only work on certain versions. For example, you can't use Entity Type AXOLOTL on 1.8 server.
 
 ### Player Heads
 
-There are three methods to create player heads, all of which are shown in the examples below.
+There are three ways you can create player heads.
+
+{% hint style="warning" %}
+For versions below 1.13, use SKULL\_ITEM instead of PLAYER\_HEAD material.
+{% endhint %}
+
+{% hint style="info" %}
+We used ICON as the line type but these will also work with HEAD and SMALLHEAD.
+{% endhint %}
 
 #### Player Name:
 
@@ -126,14 +126,4 @@ You can use a Base64 string textures.
 
 {% hint style="success" %}
 \#ICON: PLAYER\_HEAD (`eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE2ZjAwNzNjNTg3MDNkOGQ0MWU1NWUwYTNhYmIwNDJiNzNmOGMxMDViYzQxYzJmMDJmZmUzM2YwMzgzY2YwYSJ9fX0=`)
-{% endhint %}
-
-#### Notes
-
-{% hint style="warning" %}
-For server versions below 1.13, please use the SKULL\_ITEM material instead of PLAYER\_HEAD when creating player head holograms.
-{% endhint %}
-
-{% hint style="info" %}
-Please note that the examples provided below use the ICON line type, but the same methods can also be used with the HEAD and SMALLHEAD line types.
 {% endhint %}

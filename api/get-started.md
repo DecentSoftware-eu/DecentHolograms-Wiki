@@ -1,8 +1,6 @@
 # ⚙ Get Started
 
-On this page, you can find how to add DecentHolograms into your plugins and use its API. Keep in mind, that you also need to have the DecentHolograms plugin on your server, in order for the API to work.
-
-Latest version of the plugin can be found in Releases on the GitHub page.
+How to get DecentHolograms API into your project:
 
 **Gradle:**
 

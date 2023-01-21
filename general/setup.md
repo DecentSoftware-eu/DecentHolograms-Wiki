@@ -1,54 +1,43 @@
 ---
-description: >-
-  This page covers general usage and editing of holograms, including
-  instructions on how to create, modify and manage them.
+description: General usage and editting of Holograms.
 ---
 
 # 🖥 Setup
 
+## Features
+
+* Holograms are made 100% using packets, there are no real entites in your worlds which gives us a lot of possibilities when it comes to per-player behaviour.
+* Holograms can have multiple pages.
+* Holograms can be clickable with many click action options.
+* Hologram lines have a system for text animations.
+* Hologram lines can be offset off the parent Hologram center.
+* You can setup permissions to view Holograms or Hologram lines.
+* There are a few preset features like Damage & Heal displays.
+* And much more...
+
 ## Permissions
 
-DecentHolograms is a plugin specifically designed for server administrators and as such, it simplifies permissions by requiring only one permission node, 'dh.admin', to access all of its features and functionality.
+DecentHolograms is a plugin made for server admins, therefore it doesn't need multiple different permission nodes for different actions. So, there is just one permission node you need to be able to do everything with DecentHolograms. And that is:
 
 {% hint style="success" %}
 dh.admin
 {% endhint %}
 
-## Commands
+## Editting Holograms
 
-With a wide range of commands, effectively utilizing this plugin may require a basic understanding of some general rules. This will be helpful to work with the commands effectively.
-
-### Arguments
-
-Parenthesis only specify the type of an argument, they are not part of the final command.
-
-| Parenthesis | Meaning                  |
-| ----------- | ------------------------ |
-| <>          | Required argument.       |
-| \[]         | Optional argument.       |
-| {}          | List of possible values. |
-
-### Tab Completion
-
-The majority of commands and sub-commands feature tab-completion functionality, which can be used to quickly type commands and determine valid values for arguments.
-
-## Editing Holograms
-
-This tutorial provides a basic guide for editing holograms, including instructions for creating and modifying them. For a complete list of commands, please refer to [this page](commands/).
+This is a simple tutorial to get started with editting holograms. Full list of all commands is [here](commands/).
 
 ### Create a hologram [\[more\]](commands/hologram.md)
 
-Creating a hologram is easy, simply use the command specified below to get started.
+You can simply create a hologram using the following command.
 
 {% hint style="success" %}
-/dh create \<name> \[initial content]
+/dh create \<name>
 {% endhint %}
-
-**TIP!** By default, the hologram will spawn with a single line that reads "Blank Line." You can change the default line content in the [config.yml](configuration/config.md) file or specify the content in the command as shown in the example provided.
 
 ### Edit lines [\[more\]](commands/hologram-line.md)
 
-A full list of possible line types and content for hologram lines can be found on [this page](format/).
+Possible line types and content for hologram lines can be found [here](format/).
 
 #### Add a line
 
@@ -70,7 +59,7 @@ A full list of possible line types and content for hologram lines can be found o
 
 ### Edit pages [\[more\]](commands/hologram-pages.md)
 
-Our holograms support multiple pages, allowing you to add additional content and navigate between them easily.
+You can add more pages and navigate between them.
 
 #### Add a page
 
@@ -94,7 +83,7 @@ Our holograms support multiple pages, allowing you to add additional content and
 
 ## Hologram Creation Example
 
-Here is an example of how to create a new hologram with multiple lines and pages using the available commands.
+Here is a little example of how you could create a new hologram with some lines and pages.
 
 ### Create the hologram
 
@@ -128,7 +117,7 @@ You can have as many pages as you'd like.
 
 ### Setup actions
 
-To allow players to navigate between pages, you can simply do this:
+To allow players to navigate between pages, you can simply do:
 
 {% hint style="success" %}
 /dh page addaction example 1 RIGHT NEXT\_PAGE
@@ -136,7 +125,7 @@ To allow players to navigate between pages, you can simply do this:
 /dh page addaction example 2 LEFT PREV\_PAGE
 {% endhint %}
 
-By setting up appropriate click actions, players can navigate between the pages by right-clicking the first page to switch to the next page, and left-clicking the second page to switch back to the first one.
+Now, when a player RIGHT clicks the first page, he will be switched to the next page and when he LEFT clicks the second page, he will be switched back to the first one.&#x20;
 
 #### You can also switch to a specific page
 
@@ -144,8 +133,8 @@ By setting up appropriate click actions, players can navigate between the pages 
 /dh page addaction example 2 RIGHT PAGE:1
 {% endhint %}
 
-We offer a variety of click actions, all of which are explained in detail on [this page](actions.md).
+There are more actions, all of them are explained [here](actions.md).
 
 ### Conclusion
 
-That concludes the basic overview of how to use DecentHolograms. The plugin offers many more advanced features and functionality, all of which can be found in the command reference page. If you need any assistance, please don't hesitate to reach out to us on our Discord channel.
+And that's basically it. Of course, you can do much more with DecentHolograms. You can find all available commands [here](commands/). If you need any help, contact us on [Discord](https://discord.decentsoftware.eu/).

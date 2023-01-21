@@ -2,7 +2,7 @@
 
 ### Format
 
-General format of an actions.
+General format of actions is:
 
 {% hint style="success" %}
 \<actionType>\[:args]

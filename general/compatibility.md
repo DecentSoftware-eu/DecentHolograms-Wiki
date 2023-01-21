@@ -6,7 +6,7 @@ description: List of plugins supported by DecentHolograms
 
 ### PlaceholderAPI
 
-DecentHolograms fully supports PlaceholderAPI (PAPI) and its placeholders can be used in various parts of the plugin such as hologram lines, actions and animations.
+DecentHolograms fully support PAPI and you can use its placeholders almost anywhere.
 
 ### HolographicDisplays
 
