@@ -6,7 +6,7 @@ description: General usage and editting of Holograms.
 
 ## Commands
 
-There is a lot of commands for editting holograms so we put them in its own category. You can access all of them using the command below.
+Due to the large number of commands for editing holograms, we have grouped them into their own category. You can access all of these commands by using the command provided below.
 
 {% hint style="success" %}
 /dh holograms \<subcommand>
@@ -20,7 +20,7 @@ Aliases: 'holograms', 'hologram', 'holo', 'h'
 
 ### <mark style="color:blue;">/dh h help</mark>
 
-Displays a list of all hologram-related commands.
+This command displays a comprehensive list of all hologram-related commands.
 
 ### <mark style="color:blue;">/dh h create \<name> \[content]</mark>
 
@@ -40,7 +40,7 @@ Clone an existing hologram.
 * \<hologram> -  Name of the Hologram to clone.
 * \<name> - Name of the new, cloned hologram.
 * \[temp] - 'True', if you DON'T want the hologram to save, otherwise 'False'. \[Default: False] (Optional)
-* \[-l:world:x:y:z] - Optional location argument. The cloned hologram will be on that given location and even console can execute the command with this argument.
+* \[-l:world:x:y:z] - Optional location argument, which allows you to specify the location where the cloned hologram should be placed. This argument can also be used by console users to execute the command.
 
 **Examples:**
 
