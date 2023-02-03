@@ -6,11 +6,11 @@ description: Configuration of custom animations.
 
 You can use your custom animations in holograms with the following format.
 
-> <#ANIM:name>\</#ANIM>
+> <#ANIM:name>Any text here\</#ANIM>
 
 Example line:
 
-> Animation: <#ANIM:example>\</#ANIM>
+> Animation: <#ANIM:example>Some Text\</#ANIM>
 
 ### Example animation (animation\_example.yml)
 
@@ -36,10 +36,17 @@ pause: 20
 #
 # List of strings that's going to be cycled
 # over during the animation.
+#
+# You can use '{text}' placeholder, to display
+# the text, that is inside this animation
+# in the hologram:
+# - <#ANIM:example>This text</ANIM>
+#
 steps:
-- 'Example 1'
+- 'Example 1 {text}'
 - 'Example 2'
 - 'Example 3'
 - 'Example 4'
 - 'Example 5'
 ```
+

@@ -16,7 +16,7 @@ Add a new line into hologram.
 
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page, on which the line is.
-* \<content> - [Content](../format/) of the new line.
+* \<content> - [Content](../format-and-colors/) of the new line.
 
 {% hint style="info" %}
 Aliases: 'add', 'append'
@@ -29,7 +29,7 @@ Set a new content to hologram line.
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page, on which the line is.
 * \<line> - Index of the line.
-* \<content> - New [content](../format/) of the line.
+* \<content> - New [content](../format-and-colors/) of the line.
 
 ### <mark style="color:blue;">/dh l insert \<hologram> \<page> \<line> \<content></mark>
 
@@ -38,7 +38,7 @@ Insert a new line into hologram at the position of the given line.
 * \<hologram> - Name of the hologram.
 * \<page> - Index of the page, on which the line is.
 * \<line> - Index of the line.
-* \<content> - [Content](../format/) of the new line.
+* \<content> - [Content](../format-and-colors/) of the new line.
 
 ### <mark style="color:blue;">/dh l remove \<hologram> \<page> \<line></mark>
 

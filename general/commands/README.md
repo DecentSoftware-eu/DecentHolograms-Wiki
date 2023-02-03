@@ -2,9 +2,9 @@
 description: General usage of commands.
 ---
 
-# ❕ Commands
+# ⌨ Commands
 
-In DecentHolograms, you can edit almost everything just by commands and editting config files is not required at all. Also, all the commands have Tab-Complete functionality, so it's even easier to use them.
+DecentHolograms offers a user-friendly command interface that allows you to edit almost everything without the need to edit config files. Additionally, all commands feature tab-completion functionality, making it even easier to use them.
 
 **You can view all commands by using:**
 
@@ -13,9 +13,19 @@ In DecentHolograms, you can edit almost everything just by commands and editting
 * [ ] /dh lines help - For help with Hologram Lines related commands.
 * [ ] /dh features help - For help with Features related commands.
 
+### Arguments
+
+Parenthesis only specify the type of an argument, they are not part of the final command.
+
+| Parenthesis | Meaning                  |
+| ----------- | ------------------------ |
+| <>          | Required argument.       |
+| \[]         | Optional argument.       |
+| {}          | List of possible values. |
+
 ### Aliases
 
-There is just one, main command that has many subcommands. To speed things up, there are some useful aliases that will make your life easier. These aliases are visible in Help messages and Tab Complete. Some of the most important ones are in the table below.
+DecentHolograms utilizes a single, main command with many subcommands. To streamline the process, we have added useful aliases to make it more convenient for you. These aliases are visible in help messages and tab-completion, and some of the most important ones are listed in the table below.
 
 | (Sub)command name               | Aliases                           |
 | ------------------------------- | --------------------------------- |

@@ -1,18 +1,20 @@
 # 🦿 Animations
 
-There are two types of animations, preset and custom. Custom animations are explained [here](../general/configuration/animation.md).
+DecentHolograms supports two types of animations: premade and custom. Custom animations can be configured in files and the process of doing so is explained in more detail on [this page](configuration/animation.md).
 
 ### Format
 
-General format of animations is:
+General format of animations.
 
 {% hint style="success" %}
 <#ANIM:\<name>\[:args]>Text\</#ANIM>
 {% endhint %}
 
-## Preset Animations
+**NOTE!** To use placeholders inside animations, you need to enable the feature in the [config.yml](configuration/config.md) file.
 
-There are some preset animations you can use, that will work with any text.
+## Premade Animations
+
+There are some premade animations you can use, that will work with any text.
 
 ### Colors
 
