@@ -6,8 +6,8 @@
 
 * [🖥 Setup](general/setup.md)
 * [🔗 Compatibility](general/compatibility.md)
-* [💾 Format & Colors](general/format-and-colors/README.md)
-  * [🎨 Colors](general/format-and-colors/colors.md)
+* [💾 Format & Colors](general/format/README.md)
+  * [🎨 Colors](general/format/colors.md)
 * [⌨ Commands](general/commands/README.md)
   * [Hologram](general/commands/hologram.md)
   * [Hologram Line](general/commands/hologram-line.md)

@@ -6,7 +6,7 @@ Latest version of the plugin can be found in Releases on the GitHub page.
 
 **Gradle:**
 
-```java
+```groovy
 repositories {
     maven { url 'https://jitpack.io' }
 }

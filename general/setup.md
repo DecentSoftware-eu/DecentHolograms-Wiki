@@ -48,7 +48,7 @@ Creating a hologram is easy, simply use the command specified below to get start
 
 ### Edit lines [\[more\]](commands/hologram-line.md)
 
-A full list of possible line types and content for hologram lines can be found on [this page](format-and-colors/).
+A full list of possible line types and content for hologram lines can be found on [this page](format/).
 
 #### Add a line
 

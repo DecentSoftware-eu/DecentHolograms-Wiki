@@ -54,7 +54,7 @@ DHAPI.moveHologram("hologramName", location);
 ### Editting a hologram
 
 {% hint style="info" %}
-If you want to know more about line content, visit [this page](../general/format-and-colors/).
+If you want to know more about line content, visit [this page](../general/format/).
 {% endhint %}
 
 ```java
