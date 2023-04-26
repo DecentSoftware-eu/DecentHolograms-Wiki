@@ -33,6 +33,8 @@ Executes a command as the player who clicked.
 
 Executes a command as console.
 
+{% hint style="warning" %} This action will not work for commands provided by either a BungeeCord/Velocity Proxy or plugin. {% endhint %}
+
 #### CONNECT:\<server>
 
 Send the player who clicked to another server. (Bungee only)
