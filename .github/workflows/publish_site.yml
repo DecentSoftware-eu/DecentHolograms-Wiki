@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - feature/move-to-mkdocs # TODO: Remove if merged.
     paths:
       - '.github/workflows/publish_site.yml'
       - 'docs/**'
