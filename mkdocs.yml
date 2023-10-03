@@ -42,11 +42,13 @@ plugins:
   - glightbox
 
 markdown_extensions:
+  # Already included extensions
   - admonition
   - attr_list
   - toc:
       permalink: true
       toc_depth: 3
+  # PyMDownX extensions
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
@@ -56,6 +58,7 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.tabbed:
       alternate_style: true
+  # Neoteroi Cards extension
   - neoteroi.cards
 
 nav:
