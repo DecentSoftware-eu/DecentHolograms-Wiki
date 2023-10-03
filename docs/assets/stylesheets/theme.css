@@ -1,0 +1,103 @@
+:root {
+    --md-primary-fg-color: #2344b0;
+    --md-primary-fg-color--light: #6791e0;
+    --md-primary-fg-color--lighter: #84a3db;
+    
+    --md-typeset-a-color: #6791e0;
+    --md-typeset-subtitle-color: #70737a;
+    --md-typeset-subtitle-color--lighter: #878b92;
+    
+    --md-cards-template-columns: 2;
+}
+
+.md-typeset a {
+    color: var(--md-primary-fg-color--light);
+}
+
+.md-nav__item .md-nav__link--active,
+.md-nav__item .md-nav__link--active code {
+    color: var(--md-primary-fg-color--light);
+}
+
+.md-typeset .admonition.command,
+.md-typeset details.command {
+    border-color: #00c853;
+    border-width: 0 0 0 .2rem;
+    
+    box-shadow: none;
+    
+    font-size: 1em;
+}
+
+.md-typeset img {
+    max-width: 75%;
+}
+
+.md-typeset h1 {
+    margin-bottom: 0;
+}
+
+.md-typeset h2.subtitle {
+    color: var(--md-typeset-subtitle-color);
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+/*
+ * Cards
+ */
+@media only screen and (max-width: 500px) {
+    :root {
+        --md-cards-template-columns: 2;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    :root {
+        --md-cards-template-columns: 1;
+    }
+}
+
+.nt-cards.nt-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--md-cards-template-columns), 1fr);
+    gap: .5rem;
+    max-width: 100vw;
+    overflow-x: auto;
+    padding: .5rem;
+}
+
+.nt-card {
+    margin: .1rem;
+    border: 1px solid var(--md-typeset-subtitle-color);
+    border-radius: .15rem;
+    -webkit-transition: color 125ms ease-in-out,
+                        border-color 125ms ease-in-out;
+    transition: color 125ms ease-in-out,
+                border-color 125ms ease-in-out;
+}
+
+.nt-card:hover {
+    color: var(--md-typeset-a-color);
+    border-color: var(--md-typeset-subtitle-color--lighter);
+}
+
+.nt-card > a {
+    color: var(--md-typeset-color);
+}
+
+.nt-card > a:hover {
+    color: var(--md-typeset-a-color);
+}
+
+.nt-card > a > div {
+    cursor: pointer;
+    padding: .2rem .5rem;
+}
+
+.nt-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: .5rem 0;
+    line-height: 22px;
+}

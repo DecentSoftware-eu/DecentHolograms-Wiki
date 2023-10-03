@@ -1,0 +1,22 @@
+{% if "material/tags" in config.plugins and tags %}
+  {% include "partials/tags.html" %}
+{% endif %}
+{% include "partials/actions.html" %}
+<h1>
+  {% if page.meta and page.meta.icon %}
+    <span class="twemoji">{% include ".icons/" ~ page.meta.icon ~ ".svg" %}</span>
+  {% endif %}
+  {{ page.title }}
+</h1>
+{% if page.meta and page.meta.subtitle %}
+  <h2 class="subtitle">{{ page.meta.subtitle }}</h2>
+{% endif %}
+{{ page.content }}
+{% if page.meta and (
+  page.meta.git_revision_date_localized or
+  page.meta.revision_date
+) %}
+  {% include "partials/source-file.html" %}
+{% endif %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}
