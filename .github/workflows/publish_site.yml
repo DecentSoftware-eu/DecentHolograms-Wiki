@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - feature/move-to-mkdocs
     paths:
       - '.github/workflows/publish_site.yml'
       - 'docs/**'
@@ -43,7 +44,7 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v3
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v2
         with:
           path: 'site/'
       - name: Deploy to GitHub Pages
