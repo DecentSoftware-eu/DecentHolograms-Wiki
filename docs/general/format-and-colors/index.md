@@ -7,7 +7,9 @@ icon: material/floppy
 
 DecentHolograms supports various types of content for hologram lines, including text, items, and entities. If the content is not text, the type must be defined in the line's content using the following format:
 
-> `#<type>: <content>`
+> ```html
+> #<type>: <content>
+> ```
 
 ![line type examples](../../assets/images/format/line-types.png){ loading="lazy" }
 
@@ -17,7 +19,9 @@ A text line allows you to enter any text, including PAPI placeholders, colors an
 
 #### Example text line:
 
-> `&fThis is a &btext line&f.`
+> ```
+> &fThis is a &btext line&f.
+> ```
 
 ### Icon
 
@@ -25,7 +29,9 @@ An Icon line displays a floating item, which can be any material, player head, P
 
 #### Format:
 
-> `#ICON: MATERIAL[:DATA_VALUE] [(player_name|skull_texture)] [{NBT}]`
+> ```
+> #ICON: MATERIAL[:DATA_VALUE] [(player_name|skull_texture)] [{NBT}]
+> ```
 
 Of course, you don't have to enter all of the parameters. Here are a few examples:
 
@@ -70,7 +76,9 @@ Yes, you can even display entities. All entity types can be found [here](https:/
 
 #### Format: { #format-entity }
 
-> `#ENTITY: ENTITY_TYPE`
+> ```
+> #ENTITY: ENTITY_TYPE
+> ```
 
 #### Examples: { #examples-entity }
 

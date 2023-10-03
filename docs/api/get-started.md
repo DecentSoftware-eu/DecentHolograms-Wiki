@@ -17,7 +17,7 @@ Latest version of the plugin can be found in Releases on the GitHub page.
         compileOnly 'com.github.decentsoftware-eu:decentholograms:{version}'
     }
     ```
-=== ":simple-maven: Maven"
+=== ":simple-apachemaven: Maven"
     ```xml
     <repositories>
       <repository>

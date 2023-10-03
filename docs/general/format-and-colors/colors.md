@@ -19,7 +19,7 @@ Gradients in DecentHolograms are defined using the following format:
 !!! tip
     You can use special color codes inside the gradients.
 
-> ```
+> ```h
 > <#RRGGBB>This text is going to have a gradient.</#RRGGBB>
 > ```
 

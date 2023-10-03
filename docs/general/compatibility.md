@@ -15,28 +15,38 @@ DecentHolograms fully supports PlaceholderAPI (PAPI) and its placeholders can be
 
 Convert holograms from HD to DecentHolograms using the following command:
 
-> `/dh convert HolographicDisplays`
+> ```
+> /dh convert HolographicDisplays
+> ```
 
 ## CMI
 
 Convert holograms from CMI to DecentHolograms using the following command:
 
-> `/dh convert CMI`
+> ```
+> /dh convert CMI
+> ```
 
 ## GHolo
 
 Convert holograms from GHolo to DecentHolograms using the following command:
 
-> `/dh convert GHolo`
+> ```
+> /dh convert GHolo
+> ```
 
 ## FutureHolograms
 
 Convert holograms from FutureHolograms to DecentHolograms using the following command:
 
-> `/dh convert FutureHolograms`
+> ```
+> /dh convert FutureHolograms
+> ```
 
 ## Holograms
 
 Convert holograms from Holograms to DecentHolograms using the following command:
 
-> `/dh convert Holograms`
+> ```
+> /dh convert Holograms
+> ```
