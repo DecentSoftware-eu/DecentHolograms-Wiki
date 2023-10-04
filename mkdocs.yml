@@ -1,7 +1,7 @@
 site_name: 'DecentHolograms Wiki'
 site_description: 'Wiki of the DecentHolograms plugin'
 site_author: 'decentsoftware-eu contributors'
-site_url: 'https://docs.andre601.ch/DecentHolograms-Wiki' # TODO: Change to wiki.decentholograms.eu if used.
+site_url: 'https://wiki.decentholograms.eu'
 
 copyright: |
   Documentation licensed under the <a href="https://github.com/DecentSoftware-eu/DecentHolograms-Wiki/blob/main/LICENSE">GNU GPL v3.0 License</a>.
