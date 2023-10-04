@@ -3,7 +3,7 @@ title: Example - Entity
 subtitle: A hologram that contains within it the entity
 ---
 
-```yaml
+```yaml title="hologram_entity.yml"
 location: world:0.500:100.000:0.500
 enabled: true
 display-range: 64

@@ -3,7 +3,7 @@ title: Example - Actions
 subtitle: A hologram that contains actions
 ---
 
-```yaml
+```yaml title="hologram_actions.yml"
 location: world:0.500:100.000:0.500
 enabled: true
 display-range: 64

@@ -19,7 +19,9 @@ When damage is dealt, display a temporary holographic text showing the amount of
 
 !!! info "This feature can be configured in the main `config.yml` file."
 
-```yaml
+```yaml title="config.yml"
+# ...
+
 damage-display:
   # Do you want this feature enabled? [true/false]
   enabled: false
@@ -38,6 +40,8 @@ damage-display:
   critical-appearance: '&4&lCrit!&4 {damage}'
   # Height offset
   height: 0
+
+# ...
 ```
 
 ## Heal Display
@@ -48,7 +52,9 @@ When entity heals, display a temporary holographic text showing the amount of he
 
 !!! info "This feature can be configured in the main `config.yml` file."
 
-```yaml
+```yaml title="config.yml"
+# ...
+
 healing-display:
   # Do you want this feature enabled? [true/false]
   enabled: false
@@ -63,4 +69,6 @@ healing-display:
   appearance: '&a+ {heal}'
   # Height offset
   height: 0
+
+# ...
 ```

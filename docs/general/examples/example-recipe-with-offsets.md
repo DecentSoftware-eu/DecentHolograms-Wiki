@@ -3,7 +3,7 @@ title: Example - Recipe with Offsets
 subtitle: A hologram that shows a minecraft recipe
 ---
 
-```yaml
+```yaml title="hologram_recipe.yml"
 location: world:0.500:100.000:0.500
 enabled: true
 display-range: 64

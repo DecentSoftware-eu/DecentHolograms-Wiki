@@ -3,7 +3,7 @@ title: Example - Demo
 subtitle: Hologram that contains multiple functions together
 ---
 
-```yaml
+```yaml title="hologram_demo.yml"
 location: world:0.500:100.000:0.500
 enabled: true
 display-range: 64

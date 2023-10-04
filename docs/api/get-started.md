@@ -8,7 +8,7 @@ On this page, you can find how to add DecentHolograms into your plugins and use 
 Latest version of the plugin can be found in Releases on the GitHub page.
 
 === ":simple-gradle: Gradle"
-    ```groovy
+    ```groovy title="build.gradle"
     repositories {
         maven { url = "https://jitpack.io" }
     }
@@ -18,7 +18,7 @@ Latest version of the plugin can be found in Releases on the GitHub page.
     }
     ```
 === ":simple-apachemaven: Maven"
-    ```xml
+    ```xml title="pom.xml"
     <repositories>
       <repository>
         <id>jitpack</id>

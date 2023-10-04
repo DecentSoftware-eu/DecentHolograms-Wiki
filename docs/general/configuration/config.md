@@ -6,7 +6,7 @@ subtitle: Main configuration file
 !!! note
     Main `config.yml` also contains configuration for [Features](features.md)
 
-```yaml
+```yaml title="config.yml"
 # # # # # # # # # # # # # # # # #
 #
 # Welcome to DecentHolograms config.yml.

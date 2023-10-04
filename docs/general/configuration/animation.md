@@ -14,9 +14,9 @@ subtitle: Configuration of custom animations
     <#ANIM:example>Some text</#ANIM>
     ```
 
-## Example Animation file (`animation_example.yml`)
+## Example Animation file
 
-```yaml
+```yaml title="animation_example.yml"
 #
 # Speed of the animation in ticks.
 # Represents the delay between animation steps.

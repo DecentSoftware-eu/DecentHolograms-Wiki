@@ -3,7 +3,7 @@ title: Example - Tree
 subtitle: A hologram that is simply a tree
 ---
 
-```yaml
+```yaml title="hologram_tree.yml"
 location: world:0.500:100.000:0.500
 enabled: true
 display-range: 64
