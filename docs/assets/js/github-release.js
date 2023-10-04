@@ -1,9 +1,10 @@
 document$.subscribe(async () => {
+    const api_code = document.querySelectorAll('[data-md-component="api-version"');
+    
     function loadApiInfo(data) {
         const version = data["version"];
         const versionToken = '{version}';
-        const codeBlocks = document.querySelectorAll('.md-content pre code');
-        for(const codeBlock of codeBlocks) {
+        for(const codeBlock of api_code) {
             codeBlock.innerHTML = codeBlock.innerHTML.replace(new RegExp(versionToken, 'g'), version);
         }
     }
