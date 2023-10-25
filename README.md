@@ -6,6 +6,8 @@ It is build using [MkDocs][mkdocs] and the [Material for MkDocs theme][material]
 
 ## Repository Structure
 
+Directories with `...` indicate multiple (more than one) files.
+
 ```
 .
 ├── .github/
@@ -16,24 +18,48 @@ It is build using [MkDocs][mkdocs] and the [Material for MkDocs theme][material]
 │   │   └── ...
 │   ├── assets/
 │   │   ├── images/
-│   │   │   └── ...
+│   │   │   ├── favicons/
+│   │   │   │   └── ...
+│   │   │   ├── format/
+│   │   │   │   └── line_types.png
+│   │   │   └── setup/
+│   │   │       └── ...
 │   │   ├── js/
 │   │   │   └── github-release.js
 │   │   ├── stylesheets/
 │   │   │   └── theme.css
 │   │   └── site.webmanifest
+│   ├── general/
+│   │   ├── commands/
+│   │   │   └── ...
+│   │   ├── configuration/
+│   │   │   └── ...
+│   │   ├── examples/
+│   │   │   └── ...
+│   │   ├── format-and-colors/
+│   │   │   └── ...
+│   │   └── ...
 │   └── ...
+├── hooks/
+│   └── CommandLexer/
+│       ├── commandlexer/
+│       │   └── ...
+│       └── setup.py
 ├── theme/
 │   ├── partials/
 │   │   └── ...
 │   └── ...
+├── .gitignore
 ├── LICENSE
-├── README.md
 ├── mkdocs.yml
+├── README.md
 └── requirements.txt
 ```
 
+### Important files/folders
+
 - `docs` is the main directory containing the markdown files that get rendered into static HTML pages by MkDocs for the [wiki].
+- `hooks` contains the custom CommandLexer used for Pygments to allow the custom code highlighting for the different `/dh ...` commands on the wiki.
 - `theme` contains overrides for the [Material for MkDocs theme][material] to customize some of its main behaviour (i.e. generating a page title and subtitle).
 - `mkdocs.yml` contains the configuration used by MkDocs. This includes the theme, plugins and extensions used.
 - `requirements.txt` contains the necessary dependencies that need to be installed during page publication. Note that MkDocs and PyMDown Extensions are included within Material for MkDocs when installing.
