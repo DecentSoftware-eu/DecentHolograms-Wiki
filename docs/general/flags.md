@@ -7,8 +7,9 @@ icon: material/flag
 
 In DecentHolograms, you can configure various flags on holograms and hologram lines. These flags mostly disable some functionality that you don't want or need.
 
-!!! info
-    A flag on a hologram affects all its Lines but different lines can have different flags without affecting each other or the parent hologram.
+/// info
+A flag on a hologram affects all its Lines but different lines can have different flags without affecting each other or the parent hologram.
+///
 
 ## List of Flags
 

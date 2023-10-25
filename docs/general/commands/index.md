@@ -34,12 +34,13 @@ DecentHolograms utilizes a single, main command with many subcommands. To stream
 | Features subcommand | features          | feature, f                        |
 | Pages subcommand    | pages             | page, p                           |
 
-!!! example
-    Instead of
-    ```
-    /decentholograms holograms create demo
-    ```
-    You can just use:
-    ```
-    /dh h c demo
-    ```
+/// example
+Instead of
+```
+/decentholograms holograms create demo
+```
+You can just use:
+```
+/dh h c demo
+```
+///
