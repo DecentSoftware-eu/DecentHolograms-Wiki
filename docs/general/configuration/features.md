@@ -17,7 +17,8 @@ When damage is dealt, display a temporary holographic text showing the amount of
 
 ### Configuration { #configuration-damage }
 
-!!! info "This feature can be configured in the main `config.yml` file."
+/// info | This feature can be configured in the main `config.yml` file.
+///
 
 ```yaml title="config.yml"
 # ...
@@ -50,7 +51,8 @@ When entity heals, display a temporary holographic text showing the amount of he
 
 ### Configuration { #configuration-heal }
 
-!!! info "This feature can be configured in the main `config.yml` file."
+/// info | This feature can be configured in the main `config.yml` file.
+///
 
 ```yaml title="config.yml"
 # ...

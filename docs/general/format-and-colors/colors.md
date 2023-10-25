@@ -16,16 +16,17 @@ DecentHolograms supports multiple formats for RGB colors, all of which are defin
 
 Gradients in DecentHolograms are defined using the following format:
 
-!!! tip
-    You can use special color codes inside the gradients.
+/// tip
+You can use formatting codes inside the gradients.
+///
 
-> ```h
+> ```command
 > <#RRGGBB>This text is going to have a gradient.</#RRGGBB>
 > ```
 
 Example gradient:
 
-> ```
+> ```command
 > <#00FFFF>&l&nDECENT HOLOGRAMS</#FF00FF>
 > ```
 
@@ -33,10 +34,11 @@ Example gradient:
 
 Rainbow Gradients in DecentHolograms are defined using the following formats:
 
-!!! tip
-    You can also put another number from 0 to 999 instead of the 1 to make the rainbow different.
+/// tip
+You can also put another number from 0 to 999 instead of the 1 to make the rainbow different.
+///
 
-> ```
+> ```command
 > <RAINBOW1>Rainbow Text</RAINBOW>
 > ```
 

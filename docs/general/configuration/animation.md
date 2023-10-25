@@ -5,14 +5,15 @@ subtitle: Configuration of custom animations
 
 ## Format
 
-> ```html
+> ```command
 > <#ANIM:<name>>Any text here</#ANIM>
 > ```
 
-!!! example
-    ```
-    <#ANIM:example>Some text</#ANIM>
-    ```
+/// example
+```command
+<#ANIM:example>Some text</#ANIM>
+```
+///
 
 ## Example Animation file
 

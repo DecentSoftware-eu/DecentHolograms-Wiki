@@ -7,7 +7,7 @@ icon: material/floppy
 
 DecentHolograms supports various types of content for hologram lines, including text, items, and entities. If the content is not text, the type must be defined in the line's content using the following format:
 
-> ```html
+> ```command
 > #<type>: <content>
 > ```
 
@@ -27,7 +27,7 @@ A text line allows you to enter any text, including PAPI placeholders, colors an
 
 An Icon line displays a floating item, which can be any material, player head, PAPI placeholders, or modified NBT data.
 
-#### Format:
+#### Format: { #format-icon }
 
 > ```
 > #ICON: MATERIAL[:DATA_VALUE] [(player_name|skull_texture)] [{NBT}]
@@ -51,7 +51,7 @@ Of course, you don't have to enter all of the parameters. Here are a few example
 Head lines are displayed as a helmet of a normal-size armor stand.  
 Format is the same as for [Icons](#icon) except that you start with `#HEAD:` and not `#ICON`.
 
-#### Examples:
+#### Examples: { #examples-head }
 
 > ```
 > // d0by's head (1.13+, use SKULL_ITEM in older versions):
@@ -68,11 +68,12 @@ Line also starts with `#SMALLHEAD`.
 
 ### Entity
 
-Yes, you can even display entities. All entity types can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html){ target="_blank" rel="noreferral" }.
+Yes, you can even display entities. All entity types can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html){ target="_blank" rel="nofollow" }.
 
-!!! note "Limitations"
-    Not all entities will work on all server versions.  
-    In addition does DecentHolograms **not** allow a collection of specific entities. A list of those can be found [here](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/src/main/java/eu/decentsoftware/holograms/api/utils/entity/DecentEntityType.java){ target="_blank" rel="noreferral" }.
+/// note | Limitations
+Not all entities will work on all server versions.  
+In addition does DecentHolograms **not** allow a collection of specific entities. A list of those can be found [here](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/src/main/java/eu/decentsoftware/holograms/api/utils/entity/DecentEntityType.java){ target="_blank" rel="nofollow" }.
+///
 
 #### Format: { #format-entity }
 
@@ -95,9 +96,10 @@ It's important to note that certain materials and entity types may only be avail
 
 There are three methods to create player heads, all of which are shown in the examples below.
 
-!!! note "Notes"
-    - The examples below use the [Icon](#icon) format but they also work with the [Head](#head) and [Small Head](#small-head) formats.
-    - `PLAYER_HEAD` needs to be replaced with `SKULL_ITEM` on Servers running 1.12 or older.
+/// note | Notes
+- The examples below use the [Icon](#icon) format but they also work with the [Head](#head) and [Small Head](#small-head) formats.
+- `PLAYER_HEAD` needs to be replaced with `SKULL_ITEM` on Servers running 1.12 or older.
+///
 
 #### Player Name:
 

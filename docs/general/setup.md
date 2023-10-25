@@ -33,12 +33,13 @@ This tutorial provided a basic guide for editing holograms, including instructio
 
 Creating a hologram is easy, simply use the command below to get started.
 
-> ```html
+> ```command
 > /dh create <name> [initial content]
 > ```
 
-!!! tip
-    By default, the hologram will spawn with a single line that reads "Blank Line". You can change the default line content in the [config.yml]() file or specify the content in the command as shown in the example provided.
+/// tip
+By default, the hologram will spawn with a single line that reads "Blank Line". You can change the default line content in the [config.yml]() file or specify the content in the command as shown in the example provided.
+///
 
 ### Edit lines [[More]](commands/hologram-line.md) { #edit-lines }
 
@@ -46,19 +47,19 @@ A full list of possible line types and content for hologram lines can be found o
 
 #### Add a line
 
-> ```html
+> ```command
 > /dh line add <hologram> <page> <content>
 > ```
 
 #### Set a line
 
-> ```html
+> ```command
 > /dh line set <hologram> <page> <line> <content>
 > ```
 
 #### Remove a line
 
-> ```html
+> ```command
 > /dh line remove <hologram> <page> <line>
 > ```
 
@@ -66,19 +67,19 @@ A full list of possible line types and content for hologram lines can be found o
 
 #### Add a page
 
-> ```html
+> ```command
 > /dh page add <hologram> [initial content]
 > ```
 
 #### Remove a page
 
-> ```html
+> ```command
 > /dh page remove <hologram> <page>
 > ```
 
 #### View a page
 
-> ```html
+> ```command
 > /dh page switch <hologram> <page>
 > ```
 

@@ -3,6 +3,8 @@ title: Example Holograms
 subtitle: Hologram examples
 
 icon: material/hammer
+
+template: index_list.html
 ---
 
 There are some example holograms you can download and put on your server.
@@ -13,3 +15,5 @@ There are some example holograms you can download and put on your server.
 2. Create a new YAML inside `plugins/DecentHolograms/holograms/`
 3. Paste the copied content into the YAML file.
 4. Save the changes and run `/dh reload`
+
+## Pages

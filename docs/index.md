@@ -6,8 +6,9 @@ icon: material/home
 hide_icon: true
 ---
 
-!!! note "Important"
-    Please note that this wiki is a work in progress and may be incomplete. If you find any missing information or have questions, please contact us on our Discord channel and we'll be happy to assist you.
+/// note | Important
+Please note that this wiki is a work in progress and may be incomplete. If you find any missing information or have questions, please contact us on our Discord channel and we'll be happy to assist you.
+///
 
 ## What's DecentHolograms?
 
@@ -32,11 +33,12 @@ If you need assistance or have any inquiries, please feel free to reach out to u
 
 We also welcome bug reports and suggestions on both our Discord and our GitHub repository.
 
-!!! warning "Official downloads"
-    Please note that the **only official downloads** can be found on our Spigot page and our GitHub repository!  
-    Any other site sharing DecentHologram jar files does so without our consent and may even share harmful malware such as viruses, backdoor systems or other kinds of exploits.
-    
-    **Only download from the Spigot Page or GitHub repository!**
+/// warning | Official downloads
+Please note that the **only official downloads** can be found on our Spigot page and our GitHub repository!  
+Any other site sharing DecentHologram jar files does so without our consent and may even share harmful malware and/or exploits.
+
+**Only download from the Spigot Page or GitHub repository!**
+///
 
 - [:simple-spigotmc: SpigotMC Page](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noreferral" }
 - [:simple-discord: Discord Server](https://discord.decentsoftware.eu){ target="_blank" rel="noreferral" }

@@ -7,9 +7,10 @@ icon: material/link-variant
 
 DecentHolograms fully supports PlaceholderAPI (PAPI) and its placeholders can be used in various parts of the plugin such as hologram lines, actions and animations.
 
-!!! info "Placeholders in animations"
-    By default are placeholders inside animations not parsed to reduce possible performance issues.  
-    To allow placeholders to be parsed, enable `allow-placeholders-inside-animations` in the `config.yml` of DecentHolograms.
+/// info | Placeholders in animations
+By default are placeholders inside animations not parsed to reduce possible performance issues.  
+To allow placeholders to be parsed, enable `allow-placeholders-inside-animations` in the `config.yml` of DecentHolograms.
+///
 
 ## HolographicDisplays
 

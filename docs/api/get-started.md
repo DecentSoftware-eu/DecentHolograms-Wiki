@@ -7,31 +7,34 @@ On this page, you can find how to add DecentHolograms into your plugins and use 
 
 Latest version of the plugin can be found in Releases on the GitHub page.
 
-=== ":simple-gradle: Gradle"
-    ```{ .groovy title="build.gradle" data-md-component="api-version" }
-    repositories {
-        maven { url = "https://jitpack.io" }
-    }
-    
-    depencencies {
-        compileOnly 'com.github.decentsoftware-eu:decentholograms:{version}'
-    }
-    ```
-=== ":simple-apachemaven: Maven"
-    ```{ .xml title="pom.xml" data-md-component="api-version" }
-    <repositories>
-      <repository>
-        <id>jitpack</id>
-        <url>https://jitpack.io/</url>
-      </repository>
-    </repositories>
-    
-    <dependencies>
-      <dependency>
-        <groupId>com.github.decentsoftware-eu</groupId>
-        <artifactId>decentholograms</artifactId>
-        <version>{version}</version>
-        <scope>provided</scope>
-      </dependency>
-    </dependencies>
-    ```
+/// tab | :simple-gradle: Gradle
+```{ .groovy title="build.gradle" data-md-component="api-version" }
+repositories {
+    maven { url = "https://jitpack.io" }
+}
+
+depencencies {
+    compileOnly 'com.github.decentsoftware-eu:decentholograms:{version}'
+}
+```
+///
+
+/// tab | :simple-apachemaven: Maven
+```{ .xml title="pom.xml" data-md-component="api-version" }
+<repositories>
+  <repository>
+    <id>jitpack</id>
+    <url>https://jitpack.io/</url>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>com.github.decentsoftware-eu</groupId>
+    <artifactId>decentholograms</artifactId>
+    <version>{version}</version>
+    <scope>provided</scope>
+  </dependency>
+</dependencies>
+```
+///

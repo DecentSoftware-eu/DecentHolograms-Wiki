@@ -3,8 +3,9 @@ title: Config
 subtitle: Main configuration file
 ---
 
-!!! note
-    Main `config.yml` also contains configuration for [Features](features.md)
+/// note
+Main `config.yml` also contains configuration for [Features](features.md)
+///
 
 ```yaml title="config.yml"
 # # # # # # # # # # # # # # # # #

@@ -9,13 +9,14 @@ Custom animations can be configured in files and the process of doing so is expl
 
 ## Format
 
-> ```html
+> ```command
 > <#ANIM:<name>>Text</#ANIM>
 > <#ANIM:<name>:<args>>Text</#ANIM>
 > ```
 
-!!! note
-    To use placeholders inside animations you need to enable `allow-placeholders-inside-animations` in the [`config.yml`](configuration/config.md).
+/// note
+To use placeholders inside animations you need to enable `allow-placeholders-inside-animations` in the [`config.yml`](configuration/config.md).
+///
 
 ## Premade Animations
 
@@ -23,7 +24,7 @@ There are some premade animations you can use, that will work with any text.
 
 ### Colors
 
-> ```
+> ```command
 > <#ANIM:colors>Text</#ANIM>
 > OR
 > &uText
@@ -31,34 +32,36 @@ There are some premade animations you can use, that will work with any text.
 
 ### Wave
 
-> ```html
+> ```command
 > <#ANIM:wave:<color1>,<color2>>Text</#ANIM>
 > ```
 
-!!! example
-    > ```
-    > <#ANIM:wave:&f,&b&l>Text</#ANIM>
-    > ```
+/// example
+```command
+<#ANIM:wave:&f,&b&l>Text</#ANIM>
+```
+///
 
 ### Burn
 
-> ```html
+> ```command
 > <#ANIM:burn:<color1>,<color2>>Text</#ANIM>
 > ```
 
-!!! example
-    > ```
-    > <#ANIM:burn:&f,&b&l>Text</#ANIM>
-    > ```
+/// example
+```command
+<#ANIM:burn:&f,&b&l>Text</#ANIM>
+```
+///
 
 ### Typewriter
 
-> ```
+> ```command
 > <#ANIM:typewriter>Text</#ANIM>
 > ```
 
 ### Scroll
 
-> ```
+> ```command
 > <#ANIM:scroll>Text</#ANIM>
 > ```

@@ -18,6 +18,19 @@ theme:
   logo: 'assets/images/favicons/android-chrome-512x512.png'
   icon:
     repo: 'octicons/mark-github-16'
+    admonition:
+      note: octicons/pencil-24
+      abstract: octicons/paste-24
+      info: octicons/info-24
+      tip: octicons/light-bulb-24
+      success: octicons/check-24
+      question: octicons/question-24
+      warning: octicons/alert-24
+      failure: octicons/x-circle-24
+      danger: octicons/zap-24
+      bug: octicons/bug-24
+      example: octicons/beaker-24
+      quote: octicons/comment-24
   palette:
     scheme: 'slate'
     primary: 'custom'
@@ -43,23 +56,34 @@ plugins:
 
 markdown_extensions:
   # Already included extensions
-  - admonition
   - attr_list
   - toc:
       permalink: true
       toc_depth: 3
   # PyMDownX extensions
-  - pymdownx.details
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab:
+      alternate_style: true
   - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
-  - pymdownx.tabbed:
-      alternate_style: true
-  # Neoteroi Cards extension
-  - neoteroi.cards
 
 nav:
   - index.md

@@ -9,10 +9,12 @@ DecentHolograms allows you to add click-actions to individual hologram pages tha
 
 Actions themself are in the following formats:
 
-> ```html
+> ```command
 > <action_type>
 > <action_type>:<args>
 > ```
+
+Note that you don't have to include the `<>` brackets!
 
 ## Click Types
 
@@ -25,32 +27,27 @@ These click types are used in the [`addaction` page command](commands/hologram-p
 
 ## Action Types
 
-> `<>` = Required
-> `[]` = Optional
->
-> The brackets themself are not needed.
+### `#!command MESSAGE:<message>` { #message }
 
-### `#!html MESSAGE:<message>` { #message }
+Sends `#!command <message>` to the player who clicked the hologram.
 
-Sends `#!html <message>` to the player who clicked the hologram.
+### `#!command COMMAND:<command>` { #command }
 
-### `#!html COMMAND:<command>` { #command }
+Executes `#!command <command>` as the player who clicked the hologram. If `#!command <command>` doesn't start with `/` will it be send as a message from the player.
 
-Executes `#!html <command>` as the player who clicked the hologram. If `#!html <command>` doesn't start with `/` will it be send as a message from the player.
+### `#!command CONSOLE:<command>` { #console }
 
-### `#!html CONSOLE:<command>` { #console }
+Executes `#!command <command>` as the console.
 
-Executes `#!html <command>` as the console.
+### `#!command CONNECT:<server>` { #connect }
 
-### `#!html CONNECT:<server>` { #connect }
+Sends the player who clicked to `#!command <server>`. Only works on a BungeeCord/Velocity network.
 
-Sends the player who clicked to `#!html <server>`. Only works on a BungeeCord/Velocity network.
-
-### `#!html TELEPORT:<world>:<x>:<y>:<z>` / `#!html TELEPORT:<x>:<y>:<z>` { #teleport }
+### `#!command TELEPORT:<world>:<x>:<y>:<z>` / `#!command TELEPORT:<x>:<y>:<z>` { #teleport }
 
 Teleports the player to the provided world and coordinates. If no world is provided will the world the player is in be used.
 
-### `#!html SOUND:<sound>` { #sound }
+### `#!command SOUND:<sound>` { #sound }
 
 Plays a sound for the player who clicked.
 
@@ -63,18 +60,18 @@ What sounds you can use depends on the server version. Here is a list of sounds:
 You can see a list of sounds for a specific version by replacing `1.13` in the link below with a matching version:  
 https://helpch.at/docs/1.13/index.html?org/bukkit/Sound.html
 
-### `#!html PERMISSION:<permission>` { #permission }
+### `#!command PERMISSION:<permission>` { #permission }
 
 Checks whether the player who clicked has the specified permission and if not, all the actions after this one will not be executed.
 
-### `#!html NEXT_PAGE:<hologram>` / `NEXT_PAGE` { #next_page }
+### `#!command NEXT_PAGE:<hologram>` / `NEXT_PAGE` { #next_page }
 
 Switches to the next page of the specified hologram. If no hologram is provided will the one the player clicked on be used.
 
-### `#!html PREV_PAGE:<hologram>` / `PREV_PAGE` { #prev_page }
+### `#!command PREV_PAGE:<hologram>` / `PREV_PAGE` { #prev_page }
 
 Switches to the previous page of the specified hologram. If no hologram is provided will the one the player clicked on be used.
 
-### `#!html PAGE:<hologram>:<page>` / `#!html PAGE:<page>` { #page }
+### `#!command PAGE:<hologram>:<page>` / `#!command PAGE:<page>` { #page }
 
 Switches to the specified page of the specified hologram. If no hologram is provided will the one the player clicked on be used.

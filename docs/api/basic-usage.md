@@ -53,8 +53,9 @@ DHAPI.moveHologram("name", location);
 
 ### Editing a hologram
 
-!!! info
-    Hologram lines use the exact same content as YAML files have. To learn more about available content options, visit [this page](../general/format-and-colors/index.md).
+/// info
+Hologram lines use the exact same content as YAML files have. To learn more about available content options, visit [this page](../general/format-and-colors/index.md).
+///
 
 ```java
 // Most methods below also work with a hologram name, but we will be using this

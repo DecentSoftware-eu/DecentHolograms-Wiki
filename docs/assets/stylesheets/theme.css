@@ -19,16 +19,6 @@
     color: var(--md-primary-fg-color--light);
 }
 
-.md-typeset .admonition.command,
-.md-typeset details.command {
-    border-color: #00c853;
-    border-width: 0 0 0 .2rem;
-    
-    box-shadow: none;
-    
-    font-size: 1em;
-}
-
 .md-typeset img {
     max-width: 75%;
 }
@@ -69,7 +59,7 @@
     }
 }
 
-.nt-cards.nt-grid {
+.index-cards {
     display: grid;
     grid-template-columns: repeat(var(--md-cards-template-columns), 1fr);
     gap: .5rem;
@@ -78,35 +68,34 @@
     padding: .5rem;
 }
 
-.nt-card {
+.card {
     margin: .1rem;
     border: 1px solid var(--md-typeset-subtitle-color);
     border-radius: .15rem;
     -webkit-transition: color 125ms ease-in-out,
-                        border-color 125ms ease-in-out;
+                        border-color 125ms ease-in-out,
+                        background-color 125ms ease-in-out;
     transition: color 125ms ease-in-out,
-                border-color 125ms ease-in-out;
+                border-color 125ms ease-in-out,
+                background-color 125ms ease-in-out;
 }
 
-.nt-card:hover {
+.card:hover {
     color: var(--md-typeset-a-color);
     border-color: var(--md-typeset-subtitle-color--lighter);
+    background-color: var(--md-typeset-table-color--light);
 }
 
-.nt-card > a {
+a.card {
     color: var(--md-typeset-color);
-}
-
-.nt-card > a:hover {
-    color: var(--md-typeset-a-color);
-}
-
-.nt-card > a > div {
-    cursor: pointer;
     padding: .2rem .5rem;
 }
 
-.nt-card-title {
+a.card:hover {
+    color: var(--md-typeset-a-color);
+}
+
+.card-content {
     font-size: 1rem;
     font-weight: bold;
     margin: .5rem 0;
