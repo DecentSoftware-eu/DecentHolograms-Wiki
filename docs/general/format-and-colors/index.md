@@ -126,3 +126,13 @@ You can use a Base64 String texture.
 > ```
 > #ICON: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE2ZjAwNzNjNTg3MDNkOGQ0MWU1NWUwYTNhYmIwNDJiNzNmOGMxMDViYzQxYzJmMDJmZmUzM2YwMzgzY2YwYSJ9fX0=)
 > ```
+
+#### HeadDatabase Head
+
+/// note
+This requires the plugin [HeadDatabase](https://www.spigotmc.org/resources/14280/) to be present and running on the server.
+///
+
+> ```
+> #ICON: PLAYER_HEAD (HEADDATABASE_1)
+> ```
