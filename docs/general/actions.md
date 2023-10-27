@@ -39,6 +39,10 @@ Executes `#!command <command>` as the player who clicked the hologram. If `#!com
 
 Executes `#!command <command>` as the console.
 
+/// warning | Important
+This action will not work with commands provided by a BungeeCord/Velocity proxy or a plugin running on one.
+///
+
 ### `#!command CONNECT:<server>` { #connect }
 
 Sends the player who clicked to `#!command <server>`. Only works on a BungeeCord/Velocity network.
