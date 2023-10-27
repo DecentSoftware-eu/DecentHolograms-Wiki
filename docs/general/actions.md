@@ -51,14 +51,8 @@ Teleports the player to the provided world and coordinates. If no world is provi
 
 Plays a sound for the player who clicked.
 
-What sounds you can use depends on the server version. Here is a list of sounds:
-
-- [For 1.8]()
-- [For 1.9+]()
-- [For 1.13+]()
-
-You can see a list of sounds for a specific version by replacing `1.13` in the link below with a matching version:  
-https://helpch.at/docs/1.13/index.html?org/bukkit/Sound.html
+What sounds you can use depends on the server version. A list of known sound names for each version can be found here:
+https://docs.andre601.ch/Spigot-Sounds{ target="_blank" rel="nofollo" }
 
 ### `#!command PERMISSION:<permission>` { #permission }
 

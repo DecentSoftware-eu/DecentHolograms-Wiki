@@ -1,5 +1,5 @@
 document$.subscribe(async () => {
-    const api_code = document.querySelectorAll('[data-md-component="api-version"');
+    const api_code = document.querySelectorAll('[data-md-component="api-version"]');
     
     function loadApiInfo(data) {
         const version = data["version"];
