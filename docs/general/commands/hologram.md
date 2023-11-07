@@ -141,7 +141,7 @@ For a list of all available subcommands run the following command:
 > Moves a hologram to the location of the other hologram on a specified axis.
 > 
 > - `#!command <hologram>` - Name of the Hologram.
-> - `#!command {X|Y|Z|XZ}` - Aligns the hologram on the X, Y, Z or X and Z axis of the `<otherHologram>`.
+> - `#!command {X|Y|Z|XZ}` - Aligns the hologram on the X, Y, Z or X and Z axis of the `#!command <otherHologram>`.
 > - `#!command <otherHologram>` - Name of the other Hologram.
 
 ### `#!command /dh h setfacing <hologram> <facing>` { #dh-h-setfacing }
