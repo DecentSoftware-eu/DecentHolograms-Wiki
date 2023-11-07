@@ -134,4 +134,4 @@ For a list of all available subcommands run the following command:
 > - `#!command <page>` - Index of the page, on which the line is.
 > - `#!command <line1>` - Index of the first line.
 > - `#!command <line2>` - Index of the second line.
-> - `#!command {X|Z|XZ}` - Align `#!html <line1>` with `#!html <line2>` on either the X, Z or both axis.
+> - `#!command {X|Z|XZ}` - Align `#!command <line1>` with `#!command <line2>` on either the X, Z or both axis.
