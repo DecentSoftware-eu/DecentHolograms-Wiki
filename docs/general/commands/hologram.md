@@ -35,11 +35,14 @@ For a list of all available subcommands run the following command:
 > - `#!command [temp]` - `true`, if you DON'T want the hologram to save, otherwise `false` (default). (Optional)
 > - `#!command [-l:world:x:y:z]` - Optional location argument, which allows you to specify the location where the cloned hologram should be placed. This argument can also be used by console users to execute the command.
 > 
-> !!! example "Examples"
->     - `/dh h clone test test_clone -l:world:0:100:0`
->     - `/dh h clone test test_clone true`
->     - `/dh h clone test test_clone`
->     - `/dh h clone test test_clone -l:world:0:100:0 false`
+> /// example | Examples
+> ```
+> /dh h clone test test_clone -l:world:0:100:0
+> /dh h clone test test_clone true
+> /dh h clone test test_clone
+> /dh h clone test test_clone -l:world:0:100:0 false
+> ```
+> ///
 
 ### `#!command /dh h delete <hologram>` { #dh-h-delete }
 
