@@ -1,6 +1,6 @@
 ---
 title: Features
-subtitle: Default features
+description: Default features
 ---
 
 ## Commands

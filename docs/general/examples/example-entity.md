@@ -1,6 +1,6 @@
 ---
 title: Example - Entity
-subtitle: A hologram that contains within it the entity
+description: A hologram that contains within it the entity
 ---
 
 ```yaml title="hologram_entity.yml"

@@ -1,5 +1,7 @@
 ---
 title: Compatibility
+description: List of compatible (hologram) plugins and how to migrate from them
+
 icon: material/link-variant
 ---
 

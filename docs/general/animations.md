@@ -1,5 +1,7 @@
 ---
 title: Animations
+description: How to use built-in animations from DecentHolograms
+
 icon: material/animation-play
 ---
 

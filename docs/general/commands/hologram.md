@@ -1,6 +1,6 @@
 ---
 title: Hologram
-subtitle: General usage and editing of Holograms
+description: General usage and editing of Holograms
 ---
 
 ## Commands

@@ -1,10 +1,10 @@
 ---
 title: Configuration
-subtitle: Configuration of DecentHolograms
+description: Configuration of DecentHolograms
 
 icon: material/folder-open
 
 template: index_list.html
 ---
 
-<!-- required for page build -->
+<!-- comment required for page build -->

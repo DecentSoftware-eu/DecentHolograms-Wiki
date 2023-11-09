@@ -1,5 +1,7 @@
 ---
 title: Commands
+description: List of all the Commands DecentHolograms offers
+
 icon: material/keyboard
 ---
 

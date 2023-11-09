@@ -1,6 +1,6 @@
 ---
 title: General
-subtitle: General commands of DecentHolograms
+description: General commands of DecentHolograms
 ---
 
 ## Commands

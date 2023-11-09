@@ -1,6 +1,6 @@
 ---
 title: Example - Tree
-subtitle: A hologram that is simply a tree
+description: A hologram that is simply a tree
 ---
 
 ```yaml title="hologram_tree.yml"

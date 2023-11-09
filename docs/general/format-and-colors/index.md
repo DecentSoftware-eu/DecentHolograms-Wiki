@@ -1,5 +1,7 @@
 ---
 title: Format & Colors
+description: Information about what formats DecentHologram offers
+
 icon: material/floppy
 ---
 

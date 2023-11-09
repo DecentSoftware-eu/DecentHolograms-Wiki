@@ -1,6 +1,6 @@
 ---
 title: Example - Demo
-subtitle: Hologram that contains multiple functions together
+description: Hologram that contains multiple functions together
 ---
 
 ```yaml title="hologram_demo.yml"

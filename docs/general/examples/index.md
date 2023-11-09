@@ -1,6 +1,6 @@
 ---
 title: Example Holograms
-subtitle: Hologram examples
+description: Hologram examples
 
 icon: material/hammer
 

@@ -1,6 +1,6 @@
 ---
 title: Config
-subtitle: Main configuration file
+description: Main configuration file
 ---
 
 /// note

@@ -1,6 +1,6 @@
 ---
 title: Hologram Pages
-subtitle: General usage and editing of hologram pages
+description: General usage and editing of hologram pages
 ---
 
 ## Commands

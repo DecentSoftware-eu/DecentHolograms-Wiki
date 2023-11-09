@@ -1,6 +1,6 @@
 ---
 title: Example - Recipe with Offsets
-subtitle: A hologram that shows a minecraft recipe
+description: A hologram that shows a minecraft recipe
 ---
 
 ```yaml title="hologram_recipe.yml"

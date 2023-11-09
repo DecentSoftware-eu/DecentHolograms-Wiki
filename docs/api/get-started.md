@@ -1,5 +1,7 @@
 ---
 title: Get Started
+description: How to get started with DecentHolograms' API
+
 icon: material/cog
 ---
 

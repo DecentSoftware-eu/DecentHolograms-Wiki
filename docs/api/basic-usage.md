@@ -1,5 +1,7 @@
 ---
 title: Basic Usage
+description: Basic examples of how to use the API of DecentHolograms
+
 icon: material/cog
 ---
 

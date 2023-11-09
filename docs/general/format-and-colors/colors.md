@@ -1,7 +1,14 @@
 ---
 title: Colors
+description: Information about what types of colors are supported
+
 icon: material/palette
 ---
+
+## Basic colors and formatting
+
+DecentHolograms supports all basic color and formatting options through the usage of the `&` color code.  
+For example, `&1` would be dark blue and `&l` would be bold.
 
 ## RGB (1.16+)
 

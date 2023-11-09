@@ -1,6 +1,6 @@
 ---
 title: Example - Actions
-subtitle: A hologram that contains actions
+description: A hologram that contains actions
 ---
 
 ```yaml title="hologram_actions.yml"

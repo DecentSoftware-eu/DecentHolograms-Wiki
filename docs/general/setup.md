@@ -1,5 +1,7 @@
 ---
 title: Setup
+description: How to use DecentHolograms
+
 icon: material/monitor
 ---
 

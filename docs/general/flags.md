@@ -1,6 +1,6 @@
 ---
 title: Flags
-subtitle: General usage of flags
+description: General usage of flags
 
 icon: material/flag
 ---

@@ -1,5 +1,7 @@
 ---
 title: Actions
+description: Adding and using Click-Actions in your Holograms
+
 icon: material/mouse
 ---
 

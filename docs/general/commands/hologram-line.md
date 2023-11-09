@@ -1,6 +1,6 @@
 ---
 title: Hologram Line
-subtitle: General usage and editing of hologram lines
+description: General usage and editing of hologram lines
 ---
 
 ## Commands

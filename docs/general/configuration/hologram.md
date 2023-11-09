@@ -1,6 +1,6 @@
 ---
 title: Hologram
-subtitle: Editing Hologram files
+description: Editing Hologram files
 ---
 
 You can edit everything in a hologram through the different [commands](../commands/index.md) and editing a hologram file is not recommended.  

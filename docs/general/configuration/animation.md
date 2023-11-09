@@ -1,6 +1,6 @@
 ---
 title: Animation
-subtitle: Configuration of custom animations
+description: Configuration of custom animations
 ---
 
 ## Format
