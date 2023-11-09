@@ -41,7 +41,7 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Create Pygment lexer
         working-directory: hooks/CommandLexer/
-        run: python setup.py develop
+        run: python -m pip install .
       - name: Build Docs
         run: mkdocs build
       - name: Configure Pages
