@@ -31,10 +31,10 @@
   
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.canonical_url }}">
-  <meta property="og:image" content="{{ page.base_url | url }}/assets/images/favicons/android-chrome-512x512.png">
+  <meta property="og:image" content="{{ config.site_url | url }}assets/images/favicons/android-chrome-512x512.png">
   <meta property="og:image:type" content="image/png">
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="{{ config.site_author | d('DecentSoftware Team') }}">
-  <meta name="twitter:image" content="{{ page.base_url | url }}/assets/images/favicons/android-chrome-512x512.png">
+  <meta name="twitter:image" content="{{ config.site_url | url }}assets/images/favicons/android-chrome-512x512.png">
 {% endblock %}
