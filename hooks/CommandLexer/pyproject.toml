@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "commandlexer"
+description = "A custom RegexLexer for DecentHolograms commands highlighting"
+version = "1.0.0"
+authors = [
+    { name = "Andre601" }
+]
+dependencies = ["pygments"]
+
+[project.entry-points."pygments.lexers"]
+commandlexer = "commandlexer.command_lexer:CommandLexer"

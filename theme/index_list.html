@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block content %}
+  {{ super() }}
+  
+  <div class="index-cards">
+    {% for subpage in nav.pages %}
+      {% if subpage.url.startswith(page.url) and subpage.url != page.url %}
+        <a href="{{ subpage.url | url }}" class="card">
+          <div class="card-content">
+            {{ subpage.title }}
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endblock %}

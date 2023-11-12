@@ -1,0 +1,123 @@
+site_name: 'DecentHolograms Wiki'
+site_description: 'Wiki of the DecentHolograms plugin'
+site_author: 'decentsoftware-eu contributors'
+site_url: 'https://docs.andre601.ch/DecentHolograms-Wiki'
+
+copyright: |
+  Documentation licensed under the <a href="https://github.com/DecentSoftware-eu/DecentHolograms-Wiki/blob/main/LICENSE">GNU GPL v3.0 License</a>.
+
+docs_dir: 'docs/'
+
+repo_name: 'DecentHolograms'
+repo_url: 'https://github.com/DecentSoftware-eu/DecentHolograms'
+
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  favicon: 'assets/images/favicons/android-chrome-512x512.png'
+  logo: 'assets/images/favicons/android-chrome-512x512.png'
+  icon:
+    repo: 'octicons/mark-github-16'
+    admonition:
+      note: octicons/pencil-24
+      abstract: octicons/paste-24
+      info: octicons/info-24
+      tip: octicons/light-bulb-24
+      success: octicons/check-24
+      question: octicons/question-24
+      warning: octicons/alert-24
+      failure: octicons/x-circle-24
+      danger: octicons/zap-24
+      bug: octicons/bug-24
+      example: octicons/beaker-24
+      quote: octicons/comment-24
+  palette:
+    scheme: 'slate'
+    primary: 'custom'
+  features:
+    - 'navigation.tabs'
+    - 'navigation.tabs.sticky'
+    - 'navigation.footer'
+    - 'navigation.indexes'
+    - 'content.code.copy'
+
+watch:
+  - theme
+
+extra_css:
+  - 'assets/stylesheets/theme.css'
+
+extra_javascript:
+  - 'assets/js/github-release.js'
+
+plugins:
+  - search
+  - glightbox
+
+markdown_extensions:
+  # Already included extensions
+  - attr_list
+  - toc:
+      permalink: true
+      toc_depth: 3
+  # PyMDownX extensions
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+
+nav:
+  - index.md
+  - General:
+    - general/setup.md
+    - general/compatibility.md
+    - 'Format & Colors':
+      - general/format-and-colors/index.md
+      - general/format-and-colors/colors.md
+    - Commands:
+      - general/commands/index.md
+      - general/commands/general.md
+      - general/commands/hologram.md
+      - general/commands/hologram-line.md
+      - general/commands/hologram-pages.md
+    - Configuration:
+      - general/configuration/index.md
+      - general/configuration/config.md
+      - general/configuration/animation.md
+      - general/configuration/features.md
+      - general/configuration/hologram.md
+      - general/configuration/lang.md
+    - Example Holograms:
+      - general/examples/index.md
+      - general/examples/example-demo.md
+      - general/examples/example-entity.md
+      - general/examples/example-recipe-with-offsets.md
+      - general/examples/example-tree.md
+      - general/examples/example-actions.md
+    - general/animations.md
+    - general/actions.md
+    - general/flags.md
+  - API:
+    - api/get-started.md
+    - api/basic-usage.md
+  - Spigot: 'http://decentholograms.eu/'
+  - Discord: 'https://discord.decentsoftware.eu/'
