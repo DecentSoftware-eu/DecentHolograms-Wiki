@@ -43,4 +43,4 @@ Any other site sharing DecentHologram jar files does so without our consent and 
 - [:simple-spigotmc: SpigotMC Page](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noreferral" }
 - [:simple-discord: Discord Server](https://discord.decentsoftware.eu){ target="_blank" rel="noreferral" }
 - [:simple-github: GitHub Repository](https://github.decentsoftware.eu){ target="_blank" rel="noreferral" }
-- [:octicons-graph-24: bStats (Plugin Statistics)](https://bstats.org/plugin/12797){ target="_blank" rel="noreferral" }
+- [:octicons-graph-24: bStats (Plugin Statistics)](https://bstats.org/plugin/bukkit/DecentHolograms/12797){ target="_blank" rel="noreferral" }
