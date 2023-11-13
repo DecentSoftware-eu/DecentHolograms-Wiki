@@ -59,7 +59,7 @@
     }
 }
 
-.index-cards {
+.md-typeset .index-cards {
     display: grid;
     grid-template-columns: repeat(var(--md-cards-template-columns), 1fr);
     gap: .5rem;
@@ -68,7 +68,7 @@
     padding: .5rem;
 }
 
-.card {
+.md-typeset .card {
     margin: .1rem;
     border: 1px solid var(--md-typeset-subtitle-color);
     border-radius: .15rem;
@@ -80,7 +80,7 @@
                 background-color 125ms ease-in-out;
 }
 
-.card:hover {
+.md-typeset .card:hover {
     color: var(--md-typeset-a-color);
     border-color: var(--md-typeset-subtitle-color--lighter);
     background-color: var(--md-typeset-table-color--light);
