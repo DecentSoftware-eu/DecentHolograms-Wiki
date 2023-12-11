@@ -7,4 +7,4 @@ icon: material/folder-open
 template: index_list.html
 ---
 
-<!-- comment required for page build -->
+<!-- Comment required to build this page -->
