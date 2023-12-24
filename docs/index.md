@@ -20,7 +20,7 @@ With a user-friendly command interface, you can easily create and customize holo
 
 - Our holograms are created entirely using packets, which eliminates the need for physical entities in your world, providing a wide range of possibilities for individual player behaviour.
 - Our holograms support multiple pages, allowing you to display more information in one place.
-- Our holograms are interactive, featuring a variety of clock actions for added functionality.
+- Our holograms are interactive, featuring a variety of click actions for added functionality.
 - Our holograms feature a system for text animations, adding dynamic visual elements to each line.
 - Our holograms support line offset, allowing you to position individual lines away from the center of the parent hologram.
 - Our holograms feature a permission system, allowing you to restrict access to specific holograms or lines for certain players.
