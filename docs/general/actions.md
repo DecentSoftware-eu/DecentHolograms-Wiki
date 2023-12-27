@@ -53,9 +53,10 @@ Sends the player who clicked to `#!command <server>`. Only works on a BungeeCord
 
 Teleports the player to the provided world and coordinates. If no world is provided will the world the player is in be used.
 
-### `#!command SOUND:<sound>` { #sound }
+### `#!command SOUND:<sound>` / `#!command SOUND:<sound>:<volume>:<pitch>` { #sound }
 
-Plays a sound for the player who clicked.
+Plays a sound for the player who clicked.  
+A volume and pitch can also be set to alter the sound. The values need to be numbers with `1.0` being the default volume and pitch.
 
 What sounds you can use depends on the server version. A list of known sound names for each version can be found here:
 https://docs.andre601.ch/Spigot-Sounds{ target="_blank" rel="nofollo" }
