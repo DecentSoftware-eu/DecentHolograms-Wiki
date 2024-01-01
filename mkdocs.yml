@@ -102,6 +102,7 @@ nav:
     - Commands:
       - general/commands/index.md
       - general/commands/general.md
+      - general/commands/features.md
       - general/commands/hologram.md
       - general/commands/hologram-line.md
       - general/commands/hologram-pages.md
