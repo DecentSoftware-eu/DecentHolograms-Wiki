@@ -50,6 +50,7 @@ extra_css:
 
 extra_javascript:
   - 'assets/js/github-release.js'
+  - 'assets/js/tab-sync.js'
 
 plugins:
   - search
@@ -126,5 +127,6 @@ nav:
   - API:
     - api/get-started.md
     - api/basic-usage.md
+    - api/events.md
   - Spigot: 'http://decentholograms.eu/'
   - Discord: 'https://discord.decentsoftware.eu/'

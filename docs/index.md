@@ -6,10 +6,6 @@ icon: material/home
 hide_icon: true
 ---
 
-/// note | Important
-Please note that this wiki is a work in progress and may be incomplete. If you find any missing information or have questions, please contact us on our Discord channel and we'll be happy to assist you.
-///
-
 ## What's DecentHolograms?
 
 DecentHolograms is a very versatile hologram plugin that offers a wide range of features and customization options, making it easy to create unique and personalized holograms.
@@ -18,14 +14,14 @@ With a user-friendly command interface, you can easily create and customize holo
 
 ## Features
 
-- Our holograms are created entirely using packets, which eliminates the need for physical entities in your world, providing a wide range of possibilities for individual player behaviour.
-- Our holograms support multiple pages, allowing you to display more information in one place.
-- Our holograms are interactive, featuring a variety of click actions for added functionality.
-- Our holograms feature a system for text animations, adding dynamic visual elements to each line.
-- Our holograms support line offset, allowing you to position individual lines away from the center of the parent hologram.
-- Our holograms feature a permission system, allowing you to restrict access to specific holograms or lines for certain players.
-- Our holograms include preset features such as damage and heal displays, providing ready-to-use functionality for your server.
-- And so much more...
+- Holograms are completely packed-based, eliminating the need for physical entities in your world, improving performance on the server while providing a wide range of possibilities for individual per-player behaviour.
+- Holograms support multiple pages, allowing you to display more information in a single place.
+- Holograms are interacive, allowing multiple click actions to be added for extended functionality.
+- Holograms offer a system for text animations, allowing dynamic visual elements for each line.
+- Holograms support per-line offsets, allowing you to shift the line's center away from the hologram itself.
+- Holograms allow permissions to set who can and can't see it. This works for the whole hologram, specific pages or even specific lines.
+- Pre-made features such as damage and healing displays are available, providing ready-to-use functionalities for your server.
+- And a lot more...
 
 ## Useful link
 
@@ -34,10 +30,12 @@ If you need assistance or have any inquiries, please feel free to reach out to u
 We also welcome bug reports and suggestions on both our Discord and our GitHub repository.
 
 /// warning | Official downloads
-Please note that the **only official downloads** can be found on our Spigot page and our GitHub repository!  
-Any other site sharing DecentHologram jar files does so without our consent and may even share harmful malware and/or exploits.
+Official downloads of DecentHolograms are only provided through its Spigot Page, GitHub Repository and the Discord Server.
 
-**Only download from the Spigot Page or GitHub repository!**
+Any other site offering downloads for DecentHolograms does so without or knowledge nor our endorsement or support.  
+Please do **not** download from such sites! They may contain changes that could add malware to your server or contain expoits and/or backdoors that could harm your server.
+
+**Only download the plugin from its original sources as mentioned above!**
 ///
 
 - [:simple-spigotmc: SpigotMC Page](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noreferral" }

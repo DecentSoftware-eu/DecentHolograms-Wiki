@@ -2,10 +2,11 @@
 title: Basic Usage
 description: Basic examples of how to use the API of DecentHolograms
 
-icon: material/cog
+icon: material/code-json
 ---
 
-The best way to use DecentHolograms API is the DHAPI class. This class was added in version 2.0.12 and is made, so that no matter what changes are made in the code or event the API, DHAPI class will stay the same changing just the implementation. Thanks to this, you can just implement a support for DecentHolograms once and will not have to change it no matter what version of DH is used. (After 2.0.12 of course)
+The best way to use the DecentHolograms API is through the DHAPI class. This class was added in version 2.0.12 of the plugin and was made to offer a consistent set of methods, no matter what changes are being made to the code itself. See it as a basic interface for the more complex API structure.  
+Thanks to this can you implement support for DecentHologram using only this class and it will work on any version of DecentHolograms (After 2.0.12 of course).
 
 ## Using DHAPI class
 
@@ -112,7 +113,7 @@ HologramPage page = DHAPI.insertHologramPage(hologram, page, lines);
 HologramPage page = DHAPI.removeHologramPage(hologram, page);
 ```
 
-## More
+### More
 
 There are a lot more methods in the DHAPI. Way too many to list here.  
 If you would like to see some more examples here, contact us on [Discord][discord]
