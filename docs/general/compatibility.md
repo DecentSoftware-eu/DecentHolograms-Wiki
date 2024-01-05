@@ -56,7 +56,7 @@ Special Actions:
 - :octicons-check-16: `#!command ICON:<item>` is converted to `#!command #ICON:<item>`
 - :octicons-check-16: `#!command ENTITY:<entity>` is converted to `#!command #ENTITY:<entity>`
 - :octicons-check-16: `[x]`, `[X]` and `[|]` are converted into their respective unicode characters.
-- :octicons-check-16: `#!command [#rrggbb text #rrggbb]` is converted to `#!command <#rrggbb>text</#rrggbb>`
+- :octicons-check-16: <code class="highlight"><span class="p">[</span><span class="nt">#rrggbb</span> text <span class="nt">#rrggbb</span><span class="p">]</span></code> is converted to <code class="highlight"><span class="p"><</span><span class="nt">#rrggbb</span><span class="p">></span>text<span class="p"><</span><span class="nt">/#rrggbb</span><span class="p">></span></code>
 
 ### Holograms
 
