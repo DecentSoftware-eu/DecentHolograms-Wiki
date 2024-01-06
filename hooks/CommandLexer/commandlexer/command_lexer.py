@@ -16,7 +16,7 @@ class CommandLexer(RegexLexer):
     tokens = {
         'root': [
             (r'^(\/)([^\S]+)', bygroups(Name.Tag, Text)),
-            (r'[&][0-9abcdefklmnoruABCDEFKLMNORU]', Name.Tag),
+            (r'[&][0-9abcdefklmnoruABCDEFKLMNORU]', Keyword),
             (r'[\[\{<]', Punctuation, 'option'),
             (r'\w', Text)
         ],
