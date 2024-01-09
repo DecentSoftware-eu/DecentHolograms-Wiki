@@ -57,7 +57,7 @@ repositories {
   // Other repositories, including jitpack
   maven {
     id = "codemc"
-    url = "https://repo.codemc.io/repositories/maven-public/"
+    url = "https://repo.codemc.io/repository/maven-public/"
   }
 }
 ```
