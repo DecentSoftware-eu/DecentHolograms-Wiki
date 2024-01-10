@@ -30,7 +30,7 @@ DecentHolograms utilizes a single, main command with many subcommands. To stream
 
 | Type                | (Sub)command name | Aliases                           |
 |---------------------|-------------------|-----------------------------------|
-| Main command        | /decenholograms   | /holograms, /hologram, /holo, /dh |
+| Main command        | /decentholograms   | /holograms, /hologram, /holo, /dh |
 | Hologram subcommand | holograms         | hologram, holo, h                 |
 | Lines subcommand    | lines             | line, l                           |
 | Features subcommand | features          | feature, f                        |
