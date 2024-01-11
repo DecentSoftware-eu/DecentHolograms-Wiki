@@ -69,7 +69,7 @@ repositories {
   <!-- Other repositories, including jitpack -->
   <repository>
     <id>codemc</id>
-    <url>https://repo.codemc.io/repositories/maven-public/</url>
+    <url>https://repo.codemc.io/repository/maven-public/</url>
   </repository>
 </repositories>
 ```
