@@ -65,14 +65,14 @@ For a list of all available subcommands run the following command:
 
 ----
 
-### `#!command /dh h create <name> [-l:world:x:y:z] [content]` { #dh-h-create }
+### `#!command /dh h create <name> [-l:<world>:<x>:<y>:<z>] [content]` { #dh-h-create }
 
 > Aliases: `create`, `c`
 > 
 > Create a new hologram.
 > 
 > - `#!command <name>` - Name of the created Hologram.
-> - `#!command [-l:world:x:y:z]` - Optional location argument, which allows you to specify the location where the hologram should be placed. This argument can also be used by console users to execute the command.
+> - `#!command [-l:<world>:<x>:<y>:<z>]` - Optional location argument, which allows you to specify the location where the hologram should be placed. This argument can also be used by console users to execute the command.
 > - `#!command [content]` - Content of the first line. (Optional)
 
 ----
