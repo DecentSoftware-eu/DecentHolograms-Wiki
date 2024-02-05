@@ -43,7 +43,7 @@ For a list of all available subcommands run the following command:
 
 ----
 
-### `#!command /dh h clone <hologram> <name> [temp] [-l:world:x:y:z]` { #dh-h-clone }
+### `#!command /dh h clone <hologram> <name> [temp] [-l:<world>:<x>:<y>:<z>]` { #dh-h-clone }
 
 > Aliases: `copy`
 > 
@@ -52,14 +52,14 @@ For a list of all available subcommands run the following command:
 > - `#!command <hologram>` - Name of the Hologram to clone.
 > - `#!command <name>` - Name of the new, clones Hologram.
 > - `#!command [temp]` - `true`, if you DON'T want the hologram to save, otherwise `false` (default). (Optional)
-> - `#!command [-l:world:x:y:z]` - Optional location argument, which allows you to specify the location where the cloned hologram should be placed. This argument can also be used by console users to execute the command.
+> - `#!command [-l:<world>:<x>:<y>:<z>]` - Optional location argument, which allows you to specify the location where the cloned hologram should be placed. This argument can also be used by console users to execute the command.
 > 
 > /// example | Examples
 > ```
-> /dh h clone test test_clone -l:world:0:100:0
-> /dh h clone test test_clone true
 > /dh h clone test test_clone
-> /dh h clone test test_clone -l:world:0:100:0 false
+> /dh h clone test test_clone true
+> /dh h clone test test_clone -l:world:0:100:0
+> /dh h clone test test_clone true -l:world:0:100:0
 > ```
 > ///
 
@@ -74,6 +74,14 @@ For a list of all available subcommands run the following command:
 > - `#!command <name>` - Name of the created Hologram.
 > - `#!command [-l:<world>:<x>:<y>:<z>]` - Optional location argument, which allows you to specify the location where the hologram should be placed. This argument can also be used by console users to execute the command.
 > - `#!command [content]` - Content of the first line. (Optional)
+>
+> /// example | Examples
+> ```
+> /dh h create test
+> /dh h create test -l:world:0:100:0
+> /dh h create test First Line
+> /dh h create test -l:world:0:100:0 First Line
+> ```
 
 ----
 
