@@ -31,48 +31,70 @@ These click types are used in the [`addaction` page command](commands/hologram-p
 
 ### `#!command MESSAGE:<message>` { #message }
 
-Sends `#!command <message>` to the player who clicked the hologram.
+> Sends a message to the player who clicked the hologram.
+> 
+> - `#!command <message>` - The message to send. Supports Placeholders, including PlaceholderAPI.
 
 ### `#!command COMMAND:<command>` { #command }
 
-Executes `#!command <command>` as the player who clicked the hologram. If `#!command <command>` doesn't start with `/` will it be send as a message from the player.
+> Executes a command as the player who clicked the hologram. Should the specified command not start with a `/` will it instead be send as a message by the player.
+>
+> - `#!command <command>` - The command to execute as the player. Supports Placeholders, including PlaceholderAPI.
 
 ### `#!command CONSOLE:<command>` { #console }
 
-Executes `#!command <command>` as the console.
-
-/// warning | Important
-This action will not work with commands provided by a BungeeCord/Velocity proxy or a plugin running on one.
-///
+> /// warning | Important
+> Commands only available through a proxy cannot be executed by this Action.
+> ///
+>
+> Executes the specified command through the console.
+>
+> - `#!command <command>` - The command to execute as the player. Supports Placeholders, including PlaceholderAPI.
 
 ### `#!command CONNECT:<server>` { #connect }
 
-Sends the player who clicked to `#!command <server>`. Only works on a BungeeCord/Velocity network.
+> Sends the player who clicked the hologram to the specified Server. This action only works with Servers connected to a BungeeCord/Velocity proxy.
+>
+> - `#!command <server>` - Name of the server the player should be connected to.
 
 ### `#!command TELEPORT:<world>:<x>:<y>:<z>` / `#!command TELEPORT:<x>:<y>:<z>` { #teleport }
 
-Teleports the player to the provided world and coordinates. If no world is provided will the world the player is in be used.
+> Teleports the player who clicked the hologram to the specified coordinates, and optionally world.
+>
+> - `#!command <world>` - World to teleport the player to. This is optional and defaults to the world the player is in.
+> - `#!command <x>` - X coordinate to teleport the player to.
+> - `#!command <y>` - Y coordinate to teleport the player to.
+> - `#!command <z>` - Z coordinate to teleport the player to.
 
 ### `#!command SOUND:<sound>:<volume>:<pitch>` / `#!command SOUND:<sound>` { #sound }
 
-Plays a sound for the player who clicked the hologram.  
-If no volume and pitch are provided will `1.0` be used for both, playing the sound with default volume and pitch.
-
-What sounds you can use depends on the server version. A list of known sound names for each version can be found here:
-https://docs.andre601.ch/Spigot-Sounds{ target="_blank" rel="nofollo" }
+> Plays the specified sound, optionally with a set volume and pitch, to the player who clicked the Hologram.
+> 
+> - `#!command <sound>` - Name of the sound to play. A list of available sounds is found [here](https://docs.andre601.ch/Spigot-Sounds){ target="_blank" rel="nofollow" }
+> - `#!command <volume>` - Optional volume to set. Default if not set is `1.0`.
+> - `#!command <pitch>` - Optional pitch to set. Default if not set is `1.0`.
 
 ### `#!command PERMISSION:<permission>` { #permission }
 
-Checks whether the player who clicked has the specified permission and if not, all the actions after this one will not be executed.
+> Checks whether the player who clicked the Hologram has the specified permission. Unlike other actions does this one act differently by stopping any actions after it from executing, should the player not have the permission.
+> 
+> - `#!command <permission>` - The permission to check.
 
 ### `#!command NEXT_PAGE:<hologram>` / `NEXT_PAGE` { #next_page }
 
-Switches to the next page of the specified hologram. If no hologram is provided will the one the player clicked on be used.
+> Changes the page of the (optionally specified) Hologram to the next one, if one is available.
+> 
+> - `#!command <hologram>` - Optional Hologram to change the page of. Defaults to the Hologram the player clicked on, if not set.
 
 ### `#!command PREV_PAGE:<hologram>` / `PREV_PAGE` { #prev_page }
 
-Switches to the previous page of the specified hologram. If no hologram is provided will the one the player clicked on be used.
+> Changes the page of the (optionally specified) Hologram to the previous page, if one is available.
+> 
+> - `#!command <hologram>` - Optional Hologram to change the page of. Defaults to the Hologram the player clicked on, if not set.
 
 ### `#!command PAGE:<hologram>:<page>` / `#!command PAGE:<page>` { #page }
 
-Switches to the specified page of the specified hologram. If no hologram is provided will the one the player clicked on be used.
+> Changes to the specified page on the (optionally specified) Hologram, if one is available.
+> 
+> - `#!command <hologram>` - Optional Hologram to change the page of. Defaults to the Hologram the player clicked on, if not set.
+> - `#!command <page>` - Page to switch to on the Hologram.
