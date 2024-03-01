@@ -61,7 +61,7 @@ These click types are used in the [`addaction` page command](commands/hologram-p
 
 > Teleports the player who clicked the hologram to the specified coordinates, and optionally world.
 >
-> - `#!command <world>` - World to teleport the player to. This is optional and defaults to the world the player is in.
+> - `#!command <world>` - Optional world to teleport the player to. Defaults to the World the player is in, if not specified.
 > - `#!command <x>` - X coordinate to teleport the player to.
 > - `#!command <y>` - Y coordinate to teleport the player to.
 > - `#!command <z>` - Z coordinate to teleport the player to.
