@@ -129,9 +129,7 @@ nav:
     - Basic Usage:
       - api/basic-usage/index.md
       - api/basic-usage/dhapi.md
-      - api/basic-usage/hologram.md
-      - api/basic-usage/hologrampage.md
-      - api/basic-usage/hologramline.md
+      - api/basic-usage/faq.md
     - api/events.md
   - Spigot: 'http://decentholograms.eu/'
   - Discord: 'https://discord.decentsoftware.eu/'
