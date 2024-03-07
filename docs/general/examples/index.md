@@ -1,10 +1,10 @@
 ---
+template: index_list.html
+
 title: Example Holograms
 description: Hologram examples
 
 icon: material/hammer
-
-template: index_list.html
 ---
 
 There are some example holograms you can download and put on your server.
