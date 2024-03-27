@@ -82,6 +82,7 @@ For a list of all available subcommands run the following command:
 > /dh h create test First Line
 > /dh h create test -l:world:0:100:0 First Line
 > ```
+> ///
 
 ----
 
