@@ -49,7 +49,7 @@ These click types are used in the [`addaction` page command](commands/hologram-p
 >
 > Executes the specified command through the console.
 >
-> - `#!command <command>` - The command to execute as the player. Supports Placeholders, including PlaceholderAPI.
+> - `#!command <command>` - The command to execute as the console. Supports Placeholders, including PlaceholderAPI.
 
 ### `#!command CONNECT:<server>` { #connect }
 
