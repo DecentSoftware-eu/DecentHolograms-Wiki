@@ -51,7 +51,7 @@ For a list of all available subcommands run the following command:
 > 
 > - `#!command <hologram>` - Name of the Hologram to clone.
 > - `#!command <name>` - Name of the new, clones Hologram.
-> - `#!command [temp]` - `true`, if you DON'T want the hologram to save, otherwise `false` (default). (Optional)
+> - `#!command [temp]` - Optional boolean to set, whether the cloned hologram should be temporary (not save to file) or not. Default is `false`
 > - `#!command [-l:<world>:<x>:<y>:<z>]` - Optional location argument, which allows you to specify the location where the cloned hologram should be placed. This argument can also be used by console users to execute the command.
 > 
 > /// example | Examples
