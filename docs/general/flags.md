@@ -22,26 +22,9 @@ These are all flags, that are currently available:
 
 ## Commands
 
-You can configure flags using the following commands. All these commands have Tab-completion so you don't need to type everything manually.
+The following commands can be used to add and remove flags from holograms or even hologram lines:
 
-For Holograms:
-
-> ```command
-> /dh h addflag <hologram> <flag>
-> /dh h removeflag <hologram> <flag>
-> ```
->
-> - `#!command <hologram>` - Name of the Hologram.
-> - `#!command <flag>` - Name of the Flag.
-
-For Hologram Lines:
-
-> ```command
-> /dh l addflag <hologram> <page> <line> <flag>
-> /dh l removeflag <hologram> <page> <line> <flag>
-> ```
->
-> - `#!command <hologram>` - Name of the Hologram.
-> - `#!command <page>` - Index of the page.
-> - `#!command <line>` - Index of the line.
-> - `#!command <flag>` - Name of the Flag.
+- [`#!command /dh h addflag <hologram> <flag>`](commands/hologram.md#dh-h-addflag)
+- [`#!command /dh h removeflag <hologram> <flag>`](commands/hologram.md#dh-h-removeflag)
+- [`#!command /dh l addflag <hologram> <page> <line> <flag>`](commands/hologram-line.md#dh-l-addflag)
+- [`#!command /dh l removeflag <hologram> <page> <line> <flag>`](commands/hologram-line.md#dh-l-removeflag)
