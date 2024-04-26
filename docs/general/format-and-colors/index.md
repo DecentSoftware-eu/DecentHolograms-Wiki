@@ -5,136 +5,147 @@ description: Information about what formats DecentHologram offers
 icon: material/floppy
 ---
 
-## Hologram Line Types
+DecentHologram allows to display more than just text. Using a specific pattern, one can display a floating item, item as a head of a (small) armor stand or even entities.
 
-DecentHolograms supports various types of content for hologram lines, including text, items, and entities. If the content is not text, the type must be defined in the line's content using the following format:
+![example](../../assets/images/format/line-types.png){ loading="lazy" }
 
-> ```command
-> #<type>: <content>
-> ```
-
-![line type examples](../../assets/images/format/line-types.png){ loading="lazy" }
-
-### Text
-
-A text line allows you to enter any text, including PAPI placeholders, colors and animations. You can use this type of line to display dynamic and personalized information to players.
-
-#### Example text line:
-
-> ```
-> &fThis is a &btext line&f.
-> ```
-
-### Icon
-
-An Icon line displays a floating item, which can be any material, player head, PAPI placeholders, or modified NBT data.
-
-#### Format: { #format-icon }
-
-> ```
-> #ICON: MATERIAL[:DATA_VALUE] [(player_name|skull_texture)] [{NBT}]
-> ```
-
-Of course, you don't have to enter all of the parameters. Here are a few examples:
-
-> ```
-> // Red Wool (Pre 1.13):
-> #ICON: WOOL:14
-> 
-> // Light Blue Leather Chestplate:
-> #ICON: LEATHER_CHESTPLATE {display:{color:3847130}}
-> 
-> // d0by's head (1.13+, use SKULL_ITEM in older versions):
-> #ICON: PLAYER_HEAD (d0by)
-> ```
-
-### Head
-
-Head lines are displayed as a helmet of a normal-size armor stand.  
-Format is the same as for [Icons](#icon) except that you start with `#HEAD:` and not `#ICON`.
-
-#### Examples: { #examples-head }
-
-> ```
-> // d0by's head (1.13+, use SKULL_ITEM in older versions):
-> #HEAD: PLAYER_HEAD (d0by)
-> 
-> // Grass Block
-> #HEAD: GRASS_BLOCK
-> ```
-
-### Small Head
-
-The same thing as [Head](#head) but on a small armor stand.  
-Line also starts with `#SMALLHEAD`.
-
-### Entity
-
-Yes, you can even display entities. All entity types can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html){ target="_blank" rel="nofollow" }.
-
-/// note | Limitations
-Not all entities will work on all server versions.  
-In addition does DecentHolograms **not** allow a collection of specific entities. A list of those can be found [here](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/src/main/java/eu/decentsoftware/holograms/api/utils/entity/DecentEntityType.java){ target="_blank" rel="nofollow" }.
+/// note | Placeholders
+Internal placeholders and placeholders from PlaceholderAPI can be used in text lines but also the other line types.  
+As an example: Instead of a player name can you use `{player}` to display the head of who is looking at the hologram.
 ///
 
-#### Format: { #format-entity }
+## Text Line
 
-> ```
-> #ENTITY: ENTITY_TYPE
-> ```
+This is the default line type used by DecentHolograms. Only when the Line follows a specific pattern (Shown below) will the displayed content not be a floating text.
 
-#### Examples: { #examples-entity }
+/// tab | Format
+```command
+<text>
+```
+///
 
-> ```
-> #ENTITY: PIG
-> #ENTITY: AXOLOTL
-> ```
+/// tab | Example
+```command
+&aThis is a normal &f&lText Line&a!
+```
+///
+
+----
+
+## `#ICON` (Floating Item) { #icon }
+
+Displays a floating item in the Hologram.  
+Do keep in mind that the item will spin around, which can't be disabled by the plugin. If you want non-moving items, use the [`#HEAD`](#head) or [`#SMALLHEAD`](#smallhead) Line Type.
+
+/// tab | Format
+```command
+#ICON: <item>[:<data>] [options]
+```
+
+--8<-- "format-options.md"
+///
+
+/// tab | Examples
+```
+/// Red Wool (Only works on versions before 1.13)
+#ICON: WOOL:14
+
+/// Light Blue Leather Chestplate
+#ICON: LEATHER_CHESTPLATE {display:{color:3847130}}
+
+/// Player Head of d0by (Use SKULL_ITEM on versions before 1.13)
+#ICON: PLAYER_HEAD (d0by)
+```
+///
+
+----
+
+## `#HEAD` { #head }
+
+Displays the item/block as an armor stand's Head gear.  
+Items displayed this way won't rotate, but may have a visible offset to the Hologram's center.
+
+/// tab | Format
+```command
+#HEAD: <item>[:<data>] [options]
+```
+
+--8<-- "format-options.md"
+///
+
+/// tab | Examples
+```
+/// Player Head of d0by (Use SKULL_ITEM on versions before 1.13)
+#HEAD: PLAYER_HEAD (d0by)
+
+/// Grass Block
+#HEAD: GRASS_BLOCK
+```
+///
+
+----
+
+## `#SMALLHEAD` { #smallhead }
+
+Displays the item/block as a small armor stand's Head gear.  
+Items displayed this way won't rotate, but may have a visible offset to the Hologram's center.
+
+/// tab | Format
+```command
+#SMALLHEAD: <item>[:<data>] [options]
+```
+
+--8<-- "format-options.md"
+///
+
+/// tab | Examples
+```
+/// Player Head of d0by (Use SKULL_ITEM on versions before 1.13)
+#SMALLHEAD: PLAYER_HEAD (d0by)
+
+/// Grass Block
+#SMALLHEAD: GRASS_BLOCK
+```
+///
+
+----
+
+## `#ENTITY` { #entity }
+
+Displays an entity. A list of all available entities can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html){ target="_blank" rel="nofollow" }.
+
+/// note | Notes
+- The entity will be displayed in a sitting position, if it has one. This can't be changed.
+- Certain Entity types can not be used in the Hologram. A list can be seen [here](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/src/main/java/eu/decentsoftware/holograms/api/utils/entity/DecentEntityType.java){ target="_blank" rel="nofollow" }.
+///
+
+/// tab | Format
+```command
+#ENTITY: <entity>
+```
+///
+
+/// tab | Examples
+```
+#ENTITY: PIG
+#ENTITY: AXOLOTL
+```
+///
+
+----
 
 ## Additional Information
 
-It's important to note that certain materials and entity types may only be available on specific server versions. For example, using the Entity Type AXOLOTL on a 1.8 server will not work. Be sure to check the compatibility of the materials and entity types you wish to use with your server versions.
+### Version-specific items/entities
 
-### Player Heads
+You can only use items and entities that actually exist for the Server's Minecraft Version. In addition can the names be different for the same item/entity, if Mojang changed them in-between versions.  
+As an example, the `GRASS` item was renamed to `SHORT_GRASS` in 1.20.4, meaning that on any version before it, you use `GRASS` while on 1.20.4 and newer you use `SHORT_GRASS`.
 
-There are three methods to create player heads, all of which are shown in the examples below.
+### Player Head Textures
 
-/// note | Notes
-- The examples below use the [Icon](#icon) format but they also work with the [Head](#head) and [Small Head](#small-head) formats.
-- `PLAYER_HEAD` needs to be replaced with `SKULL_ITEM` on Servers running 1.12 or older.
-///
+The following options can be set for the `<value>` in `(<value>)`:
 
-#### Player Name:
-
-> ```
-> #ICON: PLAYER_HEAD (d0by)
-> ```
-
-#### Per-Player Head
-
-Displays the head of the player looking at the hologram.
-
-> ```
-> // {player} placeholder from DecentHolograms
-> #ICON: PLAYER_HEAD ({player})
-> 
-> // %player_name% from PlaceholderAPI
-> #ICON: PLAYER_HEAD (%player_name%)
-> ```
-
-#### Texture
-
-You can use a Base64 String texture.
-
-> ```
-> #ICON: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE2ZjAwNzNjNTg3MDNkOGQ0MWU1NWUwYTNhYmIwNDJiNzNmOGMxMDViYzQxYzJmMDJmZmUzM2YwMzgzY2YwYSJ9fX0=)
-> ```
-
-#### HeadDatabase Head
-
-/// note
-This requires the plugin [HeadDatabase](https://www.spigotmc.org/resources/14280/) to be present and running on the server.
-///
-
-> ```
-> #ICON: PLAYER_HEAD (HEADDATABASE_1)
-> ```
+- Player name (i.e. `d0by`).
+- Placeholder resolving to a Player name such as `{player}`. This will result in the player seeing their own head in the hologram.
+- A Base64-encoded Texture String. You can find those on sites such as https://minecraft-heads.com{ target="_blank" rel="nofollow" }.
+- `HEADDATABASE_<id>` where `<id>` is a number from https://minecraft-heads.com{ target="_blank" rel="nofollow" } (Requires the plugin [HeadDatabase](https://www.spigotmc.org/resources/14280/){ target="_blank" rel="nofollow" }).

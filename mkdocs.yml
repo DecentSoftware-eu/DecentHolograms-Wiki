@@ -39,6 +39,7 @@ theme:
     - 'navigation.tabs.sticky'
     - 'navigation.footer'
     - 'navigation.indexes'
+    - 'content.code.annotate'
     - 'content.code.copy'
     - 'content.tooltips'
     - 'content.tabs.link'
@@ -87,6 +88,8 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
+  - pymdownx.snippets:
+      base_path: 'snippets'
 
 not_in_nav: |
   general/index.md

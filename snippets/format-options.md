@@ -1,0 +1,4 @@
+- `[:<data>]` only works on versions before 1.13 where `<data>` is the data value for the item to use. Note that the `[]` are **not** required.
+- `[options]` can be replaced with any of the following options (They can all be used together!):
+    - `(<value>)` where `<value>` is any of the options listed in the [Player Heads](#player-head-textures) section of this page. The `()` are required!
+    - `{<nbt>}` where `<nbt>` is any valid NBT data (i.e. `CustomModelData:1`). The `{}` are required!
