@@ -41,3 +41,11 @@
     white-space: nowrap;
     display: block;
 }
+
+.md-icon-color--success {
+    color: #00c853;
+}
+
+.md-icon-color--warning {
+    color: #ff9100;
+}

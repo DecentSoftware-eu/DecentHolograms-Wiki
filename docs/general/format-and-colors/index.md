@@ -32,7 +32,7 @@ This is the default line type used by DecentHolograms. Only when the Line follow
 
 ----
 
-## `#ICON` (Floating Item) { #icon }
+## `#!command #ICON: <item>` { #icon }
 
 Displays a floating item in the Hologram.  
 Do keep in mind that the item will spin around, which can't be disabled by the plugin. If you want non-moving items, use the [`#HEAD`](#head) or [`#SMALLHEAD`](#smallhead) Line Type.
@@ -60,7 +60,7 @@ Do keep in mind that the item will spin around, which can't be disabled by the p
 
 ----
 
-## `#HEAD` { #head }
+## `#!command #HEAD: <item>` { #head }
 
 Displays the item/block as an armor stand's Head gear.  
 Items displayed this way won't rotate, but may have a visible offset to the Hologram's center.
@@ -85,7 +85,7 @@ Items displayed this way won't rotate, but may have a visible offset to the Holo
 
 ----
 
-## `#SMALLHEAD` { #smallhead }
+## `#!command #SMALLHEAD: <item>` { #smallhead }
 
 Displays the item/block as a small armor stand's Head gear.  
 Items displayed this way won't rotate, but may have a visible offset to the Hologram's center.
@@ -110,13 +110,16 @@ Items displayed this way won't rotate, but may have a visible offset to the Holo
 
 ----
 
-## `#ENTITY` { #entity }
+## `#!command #ENTITY: <entity>` { #entity }
 
-Displays an entity. A list of all available entities can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html){ target="_blank" rel="nofollow" }.
+Displays an entity. A list of all available entities can be found [here][entities]{ target="_blank" rel="nofollow" }.
 
 /// note | Notes
 - The entity will be displayed in a sitting position, if it has one. This can't be changed.
-- Certain Entity types can not be used in the Hologram. A list can be seen [here](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/src/main/java/eu/decentsoftware/holograms/api/utils/entity/DecentEntityType.java){ target="_blank" rel="nofollow" }.
+- Certain Entity types can not be used in the Hologram. A list can be seen [here][blacklist]{ target="_blank" rel="nofollow" } (Last updated: April 27th, 2024).
+
+[entities]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+[blacklist]: https://github.com/DecentSoftware-eu/DecentHolograms/blob/f28df4373f4d56e17eb33005885222f726ac1350/src/main/java/eu/decentsoftware/holograms/api/utils/entity/DecentEntityType.java#L21-L51
 ///
 
 /// tab | Format
@@ -147,5 +150,5 @@ The following options can be set for the `<value>` in `(<value>)`:
 
 - Player name (i.e. `d0by`).
 - Placeholder resolving to a Player name such as `{player}`. This will result in the player seeing their own head in the hologram.
-- A Base64-encoded Texture String. You can find those on sites such as https://minecraft-heads.com{ target="_blank" rel="nofollow" }.
+- A Base64-encoded Texture String. You can find those on sites such as https://minecraft-heads.com{ target="_blank" rel="nofollow" } and are usually refered to as "value".
 - `HEADDATABASE_<id>` where `<id>` is a number from https://minecraft-heads.com{ target="_blank" rel="nofollow" } (Requires the plugin [HeadDatabase](https://www.spigotmc.org/resources/14280/){ target="_blank" rel="nofollow" }).

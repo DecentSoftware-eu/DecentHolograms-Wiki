@@ -21,39 +21,34 @@ DecentHolograms supports multiple formats for RGB colors, all of which are defin
 
 ## Gradients
 
-Gradients in DecentHolograms are defined using the following format:
-
-/// tip
-You can use formatting codes inside the gradients.
-///
-
-> ```command
-> <#RRGGBB>This text is going to have a gradient.</#RRGGBB>
-> ```
-
-Example gradient:
-
-> ```command
-> <#00FFFF>&l&nDECENT HOLOGRAMS</#FF00FF>
-> ```
+:   /// tip | Formatting codes can be used in-between the gradients.
+    ///
+    
+    Gradients can be defined using `#!command <#rrggbb>text</#rrggbb>` where `#!command <#rrggbb>` is the starting color and `#!command </#rrggbb>` the ending color.
+    
+    /// example
+    ```command
+    <#FF0000>Gradient!</#00FF00>
+    ```
+    ///
 
 ## Rainbow Gradients
 
-Rainbow Gradients in DecentHolograms are defined using the following formats:
+:   A rainbow gradient can be created using `<RAINBOW0>text</RAINBOW>`. The `1` can be replaced with any number from 0 to 999 to change the rainbow.
+    
+    /// example
+    ```command
+    <RAINBOW1>Rainbow Gradient!</RAINBOW>
+    ```
+    ///
 
-/// tip
-You can also put another number from 0 to 999 instead of the 1 to make the rainbow different.
-///
+## Rainbow Color (Animated) { #rainbow-color }
 
-> ```command
-> <RAINBOW1>Rainbow Text</RAINBOW>
-> ```
-
-## Rainbow Color
-
-Rainbow Color is an animated color that cycles through all colors gradually, giving the text a dynamic and visually striking effect.  
-Former HolographicDisplays users may be familiar with this one, as it uses the same color code:
-
-> ```
-> &uSome color-changing text
-> ```
+:   Using `<#ANIM:colors>`, you can make your Text cycle through all available color codes.  
+    This is similar to what you may know from HolographicDisplays and does in fact also provide a `&u` color code for your convenience.
+    
+    /// example
+    ```command
+    &uAnimated rainbow text!
+    ```
+    ///

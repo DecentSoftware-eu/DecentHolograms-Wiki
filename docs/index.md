@@ -30,12 +30,12 @@ If you need assistance or have any inquiries, please feel free to reach out to u
 We also welcome bug reports and suggestions on both our Discord and our GitHub repository.
 
 /// warning | Official downloads
-Official downloads of DecentHolograms are only provided through its Spigot Page, GitHub Repository and the Discord Server.
+Downloads for DecentHolograms are only provided on its Spigot Page, GitHub Repository and the DecentSoftware Discord.
 
-Any other site offering downloads for DecentHolograms does so without or knowledge nor our endorsement or support.  
-Please do **not** download from such sites! They may contain changes that could add malware to your server or contain expoits and/or backdoors that could harm your server.
+Any other site sharing downloads of DecentHolograms does so without or knowledge, nor our consent.  
+Do **not** download the plugin from such pages! The jar can contain malware, exploits or backdoors that can harm your server.
 
-**Only download the plugin from its original sources as mentioned above!**
+**Only download the plugin from its original sources!**
 ///
 
 - [:simple-spigotmc: SpigotMC Page](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noreferral" }

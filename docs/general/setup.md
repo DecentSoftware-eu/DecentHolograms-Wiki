@@ -15,13 +15,7 @@ With a wide range of commands, effectively utilizing this plugin may require a b
 
 ### Arguments
 
-Parenthesis only specifiy the type of an argument, they are **not** part of the final command.
-
-| Parenthesis | Meaning                  |
-|-------------|--------------------------|
-| `<>`        | Required argument.       |
-| `[]`        | Optional argument.       |
-| `{}`        | List of possible values. |
+--8<-- "arguments.md:2"
 
 ### Tab Completion
 
@@ -29,61 +23,14 @@ The majority of commands and sub-commands feature tab-completion functionality, 
 
 ## Editing Holograms
 
-This tutorial provided a basic guide for editing holograms, including instructions for creating and modifying them. For a complete list of commands, please refer to [this page]().
+The below section will give you a basic example of creating and managing a hologram. For more info, visit the following pages:
 
-### Create a Hologram [[More]](commands/hologram.md) { #create-a-hologram }
+<div class="grid cards" markdown>
 
-Creating a hologram is easy, simply use the command below to get started.
+- ### [:material-floppy: Format & Colors](format-and-colors/index.md)
+- ### [:material-keyboard: Commands](commands/index.md)
 
-> ```command
-> /dh create <name> [initial content]
-> ```
-
-/// tip
-By default, the hologram will spawn with a single line that reads "Blank Line". You can change the default line content in the [config.yml]() file or specify the content in the command as shown in the example provided.
-///
-
-### Edit lines [[More]](commands/hologram-line.md) { #edit-lines }
-
-A full list of possible line types and content for hologram lines can be found on [this page]().
-
-#### Add a line
-
-> ```command
-> /dh line add <hologram> <page> <content>
-> ```
-
-#### Set a line
-
-> ```command
-> /dh line set <hologram> <page> <line> <content>
-> ```
-
-#### Remove a line
-
-> ```command
-> /dh line remove <hologram> <page> <line>
-> ```
-
-### Edit pages [[More]](commands/hologram-pages.md) { #edit-pages }
-
-#### Add a page
-
-> ```command
-> /dh page add <hologram> [initial content]
-> ```
-
-#### Remove a page
-
-> ```command
-> /dh page remove <hologram> <page>
-> ```
-
-#### View a page
-
-> ```command
-> /dh page switch <hologram> <page>
-> ```
+</div>
 
 ## Hologram Creation Example
 
@@ -91,50 +38,47 @@ Here is an example of how to create a new hologram with multiple lines and pages
 
 ### Create the hologram
 
-> ```
-> /dh create example
-> ```
-
-![creating a hologram](../assets/images/setup/hologram-create.png){ loading="lazy" }
+:   /// info | To execute as console, you have to add the `-l:<world>:<x>:<y>:<z>` argument.
+    ///
+    
+    ```
+    /dh create example
+    ```
+    
+    ![creating a hologram](../assets/images/setup/hologram-create.png){ loading="lazy" }
 
 ### Edit lines
 
-> ```
-> /dh line set example 1 1 &3&lDECENT HOLOGRAMS  
-> /dh line add example 1 &fHolograms plugin
-> ```
-
-![editing a hologram](../assets/images/setup/hologram-edit.png){ loading="lazy" }
+:   
+    ```
+    /dh line set example 1 1 &3&lDECENT HOLOGRAMS  
+    /dh line add example 1 &fHolograms plugin
+    ```
+    
+    ![editing a hologram](../assets/images/setup/hologram-edit.png){ loading="lazy" }
 
 ### Add another page
 
-You can have as many pages as you'd like.
-
-> ```
-> /dh page add example
-> /dh page switch example 2
-> ```
-
-![adding a page to a hologram](../assets/images/setup/hologram-page.png){ loading="lazy" }
+:   You can have as many pages as you'd like.
+    
+    ```
+    /dh page add example
+    /dh page switch example 2
+    ```
+    
+    ![adding a page to a hologram](../assets/images/setup/hologram-page.png){ loading="lazy" }
 
 ### Setup actions
 
-To allow players to navigate between pages, you can simply do this:
-
-> ```
-> /dh page addaction example 1 RIGHT NEXT_PAGE
-> /dh page addaction example 2 LEFT PREV_PAGE
-> ```
-
-By setting up appropriate click actions, players can navigate between the pages by right-clicking the first page to switch to the next page, and left-clicking the second page to switch back to the first page.
-
-#### You can also switch to a specific page { #switch-to-specific-page }
-
-> ```
-> /dh page addaction example 2 RIGHT PAGE:1
-> ```
-
-We offer a variety of click actions, all of which are explained in detail on [this page](actions.md).
+:   To allow players to navigate between pages, you can simply do this:
+    
+    ```
+    /dh page addaction example 1 RIGHT NEXT_PAGE
+    /dh page addaction example 2 LEFT PREV_PAGE
+    ```
+    
+    This allows players to navigate between the pages by left/right-clicking the hologram.  
+    More actions are available and can be found [here](actions.md).    
 
 ## Conclusion
 

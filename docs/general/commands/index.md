@@ -14,15 +14,7 @@ DecentHolograms offers a user-friendly command interface that allows you to edit
 - `/dh lines help` - For help with Hologram Lines related commands.
 - `/dh features help` - For help with Features related commands.
 
-## Arguments
-
-Parenthesis only specifiy the type of an argument, they are **not** part of the final command.
-
-| Parenthesis | Meaning                  |
-|-------------|--------------------------|
-| `<>`        | Required argument.       |
-| `[]`        | Optional argument.       |
-| `{}`        | List of possible values. |
+--8<-- "arguments.md"
 
 ## Aliases
 
