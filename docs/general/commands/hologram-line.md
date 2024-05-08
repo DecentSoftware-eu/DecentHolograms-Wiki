@@ -153,7 +153,7 @@ For a list of all available subcommands run the following command:
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
     - `#!command <line>` - Index of the line.
-    - `#!command <conten>` - [Content](../format-and-colors/index.md) of a line.
+    - `#!command <content>` - [Content](../format-and-colors/index.md) of a line.
 
 ----
 
