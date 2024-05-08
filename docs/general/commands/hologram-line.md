@@ -26,7 +26,7 @@ For a list of all available subcommands run the following command:
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line should be.
-    - `#!command [conten]` - Optional [Content](../format-and-colors/index.md) of the new line. Defaults to the [`defaults.text` config option](../configuration/config.md).
+    - `#!command [content]` - Optional [Content](../format-and-colors/index.md) of the new line. Defaults to the [`defaults.text` config option](../configuration/config.md).
 
 ----
 
