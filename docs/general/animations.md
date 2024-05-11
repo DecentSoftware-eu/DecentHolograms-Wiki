@@ -7,8 +7,6 @@ icon: material/animation-play
 
 DecentHolograms supports two types of animations: Premade and custom.
 
-Custom animations can be configured in files and the process of doing so is explained in more detail on [this page](configuration/animation.md).
-
 ## Format
 
 :   
@@ -71,3 +69,10 @@ There are some premade animations you can use, that will work with any text.
     ```command
     <#ANIM:scroll>Text</#ANIM>
     ```
+
+## Custom Animations
+
+Custom animations are made by creating a YAML file inside the plugin's `animations` folder and can be used using the same format as [premade animations](#premade-animations).  
+However, unlike premade animations can you not use extra options to customize the animation. The only thing you can do is using the `{text}` placeholder inside the animation file to display the text put in-between the `<#ANIM>` tags.
+
+An example animation file is created on the plugin's first startup, but can also be found [on this page](configuration/animation.md).
