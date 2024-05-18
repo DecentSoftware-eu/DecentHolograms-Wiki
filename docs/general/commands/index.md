@@ -38,3 +38,15 @@ You can just use:
 /dh h c demo
 ```
 ///
+
+## Permissions
+
+DecentHolograms offers specific sets of permissions for you to use.
+
+| Permission                          | Description                                                                                                                                                       |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `dh.default`                        | Grants access to the main `/decentholograms` command (Only showing plugin info) and [`/dh version`](general.md#dh-version).                                       |
+| `dh.admin`                          | Grants access to all commands and sub-commands of the plugin.                                                                                                     |
+| `dh.command`                        | Same as `dh.admin`, granting access to all commands and sub-commands of the plugin.                                                                               |
+| `dh.command.<command>`              | Grants access to a specific command of the plugin. I.e. `dh.command.version` allows access to [`/dh version`](general.md#dh-version).                             |
+| `dh.command.<command>.<subcommand>` | Grants access to a specific sub-command of the plugin. I.e. `dh.command.holograms.create` allows access to [`/dh holograms create ...`](hologram.md#dh-h-create). |

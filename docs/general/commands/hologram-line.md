@@ -7,7 +7,8 @@ description: General usage and editing of hologram lines
 
 ## Commands
 
-:   **Aliases:** `line`, `l`
+**Aliases:** `line`, `l`  
+**Permission:** `dh.command.lines`
 
 /// info | Command help
 For a list of all available subcommands run the following command:  
@@ -20,7 +21,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l add <hologram> <page> [content]` { #dh-l-add }
 
-:   **Aliases:** `append`
+:   **Aliases:** `append`  
+    **Permission:** `dh.command.lines.add`
     
     Add a new line into hologram.
     
@@ -32,7 +34,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l addflag <hologram> <page> <line> <flag>` { #dh-l-addflag }
 
-:   Adds a [flag](../flags.md) to a hologram line.
+:   **Permission:** `dh.command.lines.addflag`
+    
+    Adds a [flag](../flags.md) to a hologram line.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
@@ -41,21 +45,25 @@ For a list of all available subcommands run the following command:
 
 ----
 
-### `#!command /dh l align <hologram> <page> <line1> <line2> {X|Z|XZ}` { #dh-l-align }
+### `#!command /dh l align <hologram> <page> <line1> <line2> {X|Z|XZ|FACING}` { #dh-l-align }
 
-:   Aligns `#!command <line1>` with `#!command <line2>` on the specified axis.
+  
+:   **Permission:** `dh.command.lines.align`
+    
+    Aligns `#!command <line1>` with `#!command <line2>` on the specified axis or facing angle.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
     - `#!command <line1>` - Index of the first line.
     - `#!command <line2>` - Index of the second line.
-    - `#!command {X|Z|XZ}` - Align `#!command <line1>` with `#!command <line2>` on either the X, Z, or X and Z axis.
+    - `#!command {X|Z|XZ|FACING}` - Align `#!command <line1>` with `#!command <line2>` on either the X, Z, or X and Z axis, or sets its facing angle to that of `#!command <line2>`.
 
 ----
 
 ### `#!command /dh l edit <hologram> <page> <line>` { #dh-l-edit }
 
-:   **Aliases:** `e`
+:   **Aliases:** `e`  
+    **Permission:** `dh.command.lines.edit`
     
     Gives you a chat message to click on to get a pre-made command to edit the specified line.
     
@@ -67,7 +75,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l height <hologram> <page> <line> <height>` { #dh-l-height }
 
-:   **Aliases:** `setheight`
+:   **Aliases:** `setheight`  
+    **Permission:** `dh.command.lines.height`
     
     Set the height of a line.
     
@@ -80,7 +89,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l info <hologram> <page> <line>` { #dh-l-info }
 
-:   Display some general info about a hologram line.
+:   **Permission:** `dh.command.lines.info`
+    
+    Display some general info about a hologram line.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
@@ -90,7 +101,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l insert <hologram> <page> <line> [content]` { #dh-l-insert }
 
-:   Insert a new line into hologram at the position of the given line number.
+:   **Permission:** `dh.command.lines.insert`
+    
+    Insert a new line into hologram at the position of the given line number.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
@@ -101,7 +114,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l offsetx <hologram> <page> <line> <offset>` { #dh-l-offsetx }
 
-:   **Aliases:** `offx`, `xoff`, `xoffset`
+:   **Aliases:** `offx`, `xoff`, `xoffset`  
+    **Permission:** `dh.command.lines.offsetx`
     
     Set the X offset of a hologram line.
     
@@ -114,7 +128,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l offsetz <hologram> <page> <line> <offset>` { #dh-l-offsetz }
 
-:   **Aliases:** `offz`, `zoff`, `zoffset`
+:   **Aliases:** `offz`, `zoff`, `zoffset`  
+    **Permission:** `dh.command.lines.offsetz`
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
@@ -125,7 +140,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l remove <hologram> <page> <line>` { #dh-l-remove }
 
-:   **Aliases:** `del`, `delete`, `rem`
+:   **Aliases:** `del`, `delete`, `rem`  
+    **Permission:** `dh.command.lines.remove`
     
     Remove a line from hologram.
     
@@ -137,7 +153,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l removeflag <hologram> <page> <line> <flag>` { #dh-l-removeflag }
 
-:   Removes a [flag](../flags.md) from a hologram line.
+:   **Permission:** `dh.command.lines.removeflag`
+    
+    Removes a [flag](../flags.md) from a hologram line.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
@@ -148,7 +166,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l set <hologram> <page> <line> <content>` { #dh-l-set }
 
-:   Set a new content to hologram line.
+:   **Permission:** `dh.command.lines.set`
+    
+    Set a new content to hologram line.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the line is.
@@ -159,7 +179,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l setfacing <hologram> <page> <line> <facing>` { #dh-l-setfacing }
 
-:   **Aliases:** `facing`, `face`
+:   **Aliases:** `facing`, `face`  
+    **Permission:** `dh.command.lines.setfacing`
     
     Set the rotation of hologram line facing (Yaw). This only has an effect on `#HEAD:`, `#SMALLHEAD:` and `#ENTITY:` content lines.
     
@@ -172,7 +193,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l setpermission <hologram> <page> <line> [permission]` { #dh-l-setpermission }
 
-:   **Aliases:** `perm`, `permission`, `setperm`
+:   **Aliases:** `perm`, `permission`, `setperm`  
+    **Permission:** `dh.command.lines.setpermission`
     
     Set a permission required to view a hologram line.
     
@@ -185,7 +207,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh l swap <hologram> <page> <line1> <line2>` { #dh-l-swap }
 
-:   Swap two lines in a hologram.
+:   **Permission:** `dh.command.lines.swap`
+    
+    Swap two lines in a hologram.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Index of the page, on which the lines are.

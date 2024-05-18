@@ -7,7 +7,8 @@ description: General usage and editing of hologram pages
 
 ## Commands
 
-:   **Aliases:** `page`, `p`
+**Aliases:** `page`, `p`  
+**Permission:** `dh.command.pages`
 
 /// info | Command help
 For a list of all available subcommands run the following command:  
@@ -20,7 +21,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p actions <hologram> <page> <clickType> [listPage]` { #dh-p-actions }
 
-:   View actions set on the specified [Click type](../actions.md#click-types) in page of a hologram.
+:   **Permission:** `dh.command.pages.actions`
+    
+    View actions set on the specified [Click type](../actions.md#click-types) in page of a hologram.
     
     - `#!command <hologram>` - Name of the hologram.
     - `#!command <page>` - Index of the page.
@@ -31,7 +34,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p add <hologram> [content]` { #dh-p-add }
 
-:   **Aliases:** `append`
+:   **Aliases:** `append`  
+    **Permission:** `dh.command.pages.add`
     
     Add a new page into hologram.
     
@@ -42,7 +46,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p addaction <hologram> <page> <clickType> <action>` { #dh-p-addaction }
 
-:   Adds the specified [`<action>`](../actions.md) for the specified `#!command <clickType>` to a hologram page.
+:   **Permission:** `dh.command.pages.addaction`
+    
+    Adds the specified [`<action>`](../actions.md) for the specified `#!command <clickType>` to a hologram page.
     
     - `#!command <hologram>` - Name of the hologram.
     - `#!command <page>` - Index of the page.
@@ -53,7 +59,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p clearactions <hologram> <page> <clickType>` { #dh-p-clearactions }
 
-:   Clears `#!command <page>` of all [Actions](../actions.md) specified for `#!command <clickType>`.
+:   **Permission:** `dh.command.pages.clearactions`
+    
+    Clears `#!command <page>` of all [Actions](../actions.md) specified for `#!command <clickType>`.
     
     - `#!command <hologram>` - Name of the hologram.
     - `#!command <page>` - Index of the page.
@@ -63,7 +71,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p insert <hologram> <page> [content]` { #dh-p-insert }
 
-:   Insert a new page into hologram.
+:   **Permission:** `dh.command.pages.insert`
+    
+    Insert a new page into hologram.
     
     - `#!command <hologram>` - Name of the hologram.
     - `#!command <page>` - Position of the page to insert the new one before.
@@ -73,7 +83,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p remove <hologram> <page>` { #dh-p-remove }
 
-:   **Aliases:** `del`, `delete`, `rem`
+:   **Aliases:** `del`, `delete`, `rem`  
+    **Permission:** `dh.command.pages.remove`
     
     Remove a page from hologram.
     
@@ -84,7 +95,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p removeaction <hologram> <page> <clickType> <index>` { #dh-p-removeaction }
 
-:   **Aliases:** `remaction`
+:   **Aliases:** `remaction`  
+    **Permission:** `dh.command.pages.removeaction`
     
     Removes an [Action](../actions.md) for `#!command <clickType>` from `#!command <page>`.
     
@@ -97,7 +109,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p swap <hologram> <page1> <page2>` { #dh-p-swap }
 
-:   Swaps `#!command <page1>` with `#!command <page2>`.
+:   **Permission:** `dh.command.pages.swap`
+    
+    Swaps `#!command <page1>` with `#!command <page2>`.
     
     - `#!command <hologram>` - Name of the hologram.
     - `#!command <page1>` - Index of the first page.
@@ -107,7 +121,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh p switch <hologram> <page> [player]` { #dh-p-switch }
 
-:   **Aliases:** `go`, `view`
+:   **Aliases:** `go`, `view`  
+    **Permission:** `dh.command.pages.switch`
     
     Switch to another page in a hologram.
     

@@ -151,23 +151,47 @@ The following options can be set for the `<value>` in `(<value>)`:
 /// tab | Player Name
 A valid player name.
 
-**Example:** `d0by`
+//// example
+Displays the head of the player `d0by`.
+
+```
+#ICON: PLAYER_HEAD (d0by)
+```
+////
 ///
 
 /// tab | Placeholder
 A placeholder that gets turned into a Player name. Internal placeholders and PlaceholderAPI ones work.
 
-**Example:** `{player}`
+//// example
+Displays the head of the player looking at the hologram.
+
+```
+#ICON: PLAYER_HEAD ({player})
+```
+////
 ///
 
 /// tab | Base64-encoded texture
 A Base64-encoded texture value can be used. They can often be found on sites such as https://minecraft-heads.com{ target="_blank" rel="nofollow" } and are usually refered to as `value`.
 
-**Example:** [`eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYzNmRlZTgwNmJhNDdhMmM0MGU5NWI1N2ExMmYzN2RlNmMyZTY3N2YyMTYwMTMyYTA3ZTI0ZWVmZmE2In19fQ==`](https://minecraft-heads.com/custom-heads/head/1){ target="_blank" rel="nofollow" }
+//// example
+Displays the texture of https://minecraft-heads.com/custom-heads/head/1{ target="_blank" rel="nofollow" }.
+ 
+```
+#ICON: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYzNmRlZTgwNmJhNDdhMmM0MGU5NWI1N2ExMmYzN2RlNmMyZTY3N2YyMTYwMTMyYTA3ZTI0ZWVmZmE2In19fQ==)
+```
+////
 ///
 
 /// tab | HeadDatabase Head
 `HEADDB_<id>` can be used where `<id>` is the number one can find on https://minecraft-heads.com{ target="_blank" rel="nofollow" }. It can usually be found in the URL.
 
-**Example:** [`HEADDB_1`](https://minecraft-heads.com/custom-heads/head/1){ target="_blank" rel="nofollow" }
+//// example
+Displays the texture of https://minecraft-heads.com/custom-heads/head/1{ target="_blank" rel="nofollow" } using the HeadDatabase Plugin.
+
+```
+#ICON: PLAYER_HEAD (HEADDB_1)
+```
+////
 ///

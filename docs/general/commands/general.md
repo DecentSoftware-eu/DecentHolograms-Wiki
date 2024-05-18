@@ -18,7 +18,9 @@ For a list of available subcommands run the following command:
 
 ### `#!command /dh convert <plugin> [file]` { #dh-convert }
 
-:   Converts holograms from another hologram plugin.  
+:   **Permission:** `dh.command.convert`
+    
+    Converts holograms from another hologram plugin.  
     The hologram plugin does not have to be on the server. Only its files!
     
     - `#!command <plugin>` - The Hologram plugin to convert holograms from. See [this page](../compatibility.md) for a list.
@@ -28,7 +30,9 @@ For a list of available subcommands run the following command:
 
 ### `#!command /dh list [page]` { #dh-list }
 
-:   Lists all holograms loaded from a hologram file.
+:   **Permission:** `dh.command.list`
+    
+    Lists all holograms loaded from a hologram file.
    
     - `#!command [page]` - Page in the list to move to.
 
@@ -36,12 +40,16 @@ For a list of available subcommands run the following command:
 
 ### `#!command /dh reload` { #dh-reload }
 
-:   Reloads the plugin.
+:   **Permission:** `dh.command.reload`
+    
+    Reloads the plugin.
 
 ----
 
 ### `#!command /dh version` { #dh-version }
 
-:   **Aliases:** `about`, `ver`
+:   **Permission:** `dh.command.version`
+    
+    **Aliases:** `about`, `ver`
     
     Shows some info about your current DecentHolograms version.

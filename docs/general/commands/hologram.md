@@ -7,7 +7,8 @@ description: General usage and editing of Holograms
 
 ## Commands
 
-:   **Aliases:** `hologram`, `holo`, `h`
+**Aliases:** `hologram`, `holo`, `h`  
+**Permission:** `dh.command.holograms`
 
 /// info | Command help
 For a list of all available subcommands run the following command:  
@@ -20,7 +21,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h addflag <hologram> <flag>` { #dh-h-addflag }
 
-:   Adds a [flag](../flags.md) to a hologram.
+:   **Permission:** `dh.command.holograms.addflag`
+    
+    Adds a [flag](../flags.md) to a hologram.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <flag>` - Name of the [Flag](../flags.md) to add.
@@ -29,7 +32,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h align <hologram> {X|Y|Z|XZ|FACING} <otherHologram>` { #dh-h-align }
 
-:   Moves a hologram to the location of the other hologram on a specified axis.
+:   **Permission:** `dh.command.holograms.align`
+    
+    Moves a hologram to the location of the other hologram on a specified axis.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command {X|Y|Z|XZ|FACING}` - Aligns the hologram on either the X, Y, Z, or X and Z axis of the `#!command <otherHologram>`, or sets the same facing angle as the `#!command <otherHologram>`.
@@ -39,7 +44,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h center <hologram>` { #dh-h-center }
 
-:   Moves a hologram into the center of the block on its current X and Z location.
+:   **Permission:** `dh.command.holograms.center`
+    
+    Moves a hologram into the center of the block on its current X and Z location.
     
     - `#!command <hologram>` - Name of the Hologram.
 
@@ -47,7 +54,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h clone <hologram> <name> [temp] [-l:<world>:<x>:<y>:<z>]` { #dh-h-clone }
 
-:   **Aliases:** `copy`
+:   **Aliases:** `copy`  
+    **Permission:** `dh.command.holograms.clone`
     
     Clone an existing hologram.
     
@@ -69,7 +77,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h create <name> [-l:<world>:<x>:<y>:<z>] [content]` { #dh-h-create }
 
-:   **Aliases:** `create`, `c`
+:   **Aliases:** `create`, `c`  
+    **Permission:** `dh.command.holograms.create`
     
     Create a new hologram.
     
@@ -90,7 +99,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h delete <hologram>` { #dh-h-delete }
 
-:   **Aliases:** `del`, `remove`, `rem`
+:   **Aliases:** `del`, `remove`, `rem`  
+    **Permission:** `dh.command.holograms.delete`
     
     Delete an existing hologram.
     
@@ -100,7 +110,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h disable <hologram>` { #dh-h-disable }
 
-:   **Aliases:** `off`
+:   **Aliases:** `off`  
+    **Permission:** `dh.command.holograms.disable`
     
     Disable a hologram. While disabled, it won't be displayed to anyone.
     
@@ -110,7 +121,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h downorigin <hologram> {true|false}` { #dh-h-downorigin }
 
-:   Sets the value of down origin. If true, hologram's location will be relative to its bottom.
+:   **Permission:** `dh.command.holograms.downorigin`
+    
+    Sets the value of down origin. If true, hologram's location will be relative to its bottom.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command {true|false}` - Whether the hologram's location should be relative to its bottom line or not.
@@ -119,7 +132,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h enable <hologram>` { #dh-h-enable }
 
-:   **Aliases:** `on`
+:   **Aliases:** `on`  
+    **Permission:** `dh.command.holograms.enable`
     
     Enable a hologram.
     
@@ -129,7 +143,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h info <hologram>` { #dh-h-info }
 
-:   Prints some general info about a hologram.
+:   **Permission:** `dh.command.holograms.info`
+    
+    Prints some general info about a hologram.
     
     - `#!command <hologram>` - Name of the Hologram.
 
@@ -137,7 +153,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h lines <hologram> <page> [listPage]` { #dh-h-lines }
 
-:   Lists all the holograms lines.
+:   **Permission:** `dh.command.holograms.lines`
+    
+    Lists all the holograms lines.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <page>` - Page to list the lines of.
@@ -147,7 +165,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h move <hologram> <x> <y> <z>` { #dh-h-move }
 
-:   **Aliases:** `mv`
+:   **Aliases:** `mv`  
+    **Permission:** `dh.command.holograms.move`
     
     Teleports the given hologram to the given coordinates.
     
@@ -160,7 +179,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h movehere <hologram>` { #dh-h-movehere }
 
-:   **Aliases:** `mvhr`
+:   **Aliases:** `mvhr`  
+    **Permission:** `dh.command.holograms.movehere`
     
     Teleports the given hologram to your location.
     
@@ -170,7 +190,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h near <distance>` { #dh-h-near }
 
-:   Lists of holograms in the specified distance from you.
+:   **Permission:** `dh.command.holograms.near`
+    
+    Lists of holograms in the specified distance from you.
     
     - `#!command <distance>` - Distance to check in blocks.
 
@@ -178,7 +200,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h removeflag <hologram> <flag>` { #dh-h-removeflag }
 
-:   Removes a [flag](../flags.md) from the hologram.
+:   **Permission:** `dh.command.holograms.removeflag`
+    
+    Removes a [flag](../flags.md) from the hologram.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <flag>` - Name of the [Flag](../flags.md) you want to remove.
@@ -187,7 +211,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h rename <hologram> <new_name>` { #dh-h-rename }
 
-:   Rename an existing hologram.
+:   **Permission:** `dh.command.holograms.rename`
+    
+    Rename an existing hologram.
     
     - `#!command <hologram>` - Name of the Hologram, you want to rename.
     - `#!command <new_name>` - The Hologram's new name.
@@ -196,7 +222,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h setdisplayrange <hologram> <range>` { #dh-h-setdisplayrange }
 
-:   Set maximum distance a player can be from a hologram to see it.
+:   **Permission:** `dh.command.holograms.setdisplayrange`
+    
+    Set maximum distance a player can be from a hologram to see it.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <range>` - Number between `1` and `64` to set the display range in blocks.
@@ -205,7 +233,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h setfacing <hologram> <facing>` { #dh-h-setfacing }
 
-:   **Aliases:** `facing`, `face`, `setface`
+:   **Aliases:** `facing`, `face`, `setface`  
+    **Permission:** `dh.command.holograms.setfacing`
     
     Set the rotation of hologram facing (yaw). Only affects `#HEAD:`, `#SMALLHEAD:` and `#ENTITY:` content lines.
     
@@ -216,7 +245,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h setpermission <hologram> [permission]` { #dh-h-setpermission }
 
-:   **Aliases:** `permission`, `setperm`, `perm`
+:   **Aliases:** `permission`, `setperm`, `perm`  
+    **Permission:** `dh.command.holograms.setpermission`
     
     Set the current permission required to view the hologram.
     
@@ -227,7 +257,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h setupdateinterval <hologram> <interval>`
 
-:   **Aliases:** `updateinterval`
+:   **Aliases:** `updateinterval`  
+    **Permission:** `dh.command.holograms.setupdateinterval`
     
     Set update interval.
     
@@ -237,8 +268,10 @@ For a list of all available subcommands run the following command:
 ----
 
 ### `#!command /dh h setupdaterange <hologram> <range>`
-
-:   Set maximum distance a player can be from a hologram to see it's updates.
+  
+:   **Permission:** `dh.command.holograms.setupdaterange`
+    
+    Set maximum distance a player can be from a hologram to see it's updates.
     
     - `#!command <hologram>` - Name of the Hologram.
     - `#!command <range>` - Number between `1` and `64` to set the update range in blocks.
@@ -247,7 +280,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh h teleport <hologram>` { #dh-h-teleport }
 
-:   **Aliases:** `tele`, `tp`
+:   **Aliases:** `tele`, `tp`  
+    **Permission:** `dh.command.holograms.teleport`
     
     Teleports you to the given hologram.
     
@@ -256,7 +290,9 @@ For a list of all available subcommands run the following command:
 ----
 
 ### `#!command /dh h update <hologram>` { #dh-h-update }
-
-:   Hide the hologram and then Show it again.
+  
+:   **Permission:** `dh.command.holograms.update`
+    
+    Hide the hologram and then Show it again.
     
     - `#!command <hologram>` - Name of the Hologram.

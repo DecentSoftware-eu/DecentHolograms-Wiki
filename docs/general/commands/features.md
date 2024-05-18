@@ -7,7 +7,8 @@ description: General usage of special features for a hologram
 
 ## Commands
 
-:   **Aliases:** `feature`, `f`
+**Aliases:** `feature`, `f`  
+**Permission:** `dh.command.features`
 
 /// info | Command help
 For a list of all available subcommands run the following command:  
@@ -20,7 +21,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh f disable <feature>` { #dh-f-disable }
 
-:   **Aliases:** `off`
+:   **Aliases:** `off`  
+    **Permission:** `dh.command.features.disable`
     
     Disables a Feature.
     
@@ -30,7 +32,8 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh f enable <feature>` { #dh-f-enable }
 
-:   **Aliases:** `on`
+:   **Aliases:** `on`  
+    **Permission:** `dh.command.features.enable`
     
     Enables a Feature.
     
@@ -40,7 +43,9 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh f info <feature>` { #dh-f-info }
 
-:   Gives information about a specific feature.
+:   **Permission:** `dh.command.features.info`
+    
+    Gives information about a specific feature.
     
     - `#!command <feature>` - The feature to retrieve infos about.
 
@@ -48,12 +53,16 @@ For a list of all available subcommands run the following command:
 
 ### `#!command /dh f list` { #dh-f-list }
 
-:   Lists all available features.
+:   **Permission:** `dh.command.features.list`
+    
+    Lists all available features.
 
 ----
 
 ### `#!command /dh f reload <feature>` { #dh-f-reload }
 
-:   Reloads a specific feature.
+:   **Permission:** `dh.command.features.reload`
+    
+    Reloads a specific feature.
     
     - `#!command <feature>` - The feature to reload.
