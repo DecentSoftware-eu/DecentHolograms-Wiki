@@ -25,20 +25,25 @@ With a user-friendly command interface, you can easily create and customize holo
 
 ## Useful link
 
-If you need assistance or have any inquiries, please feel free to reach out to us on our discord channel.
+### Official Downloads
 
-We also welcome bug reports and suggestions on both our Discord and our GitHub repository.
+DecentHolograms can be downloaded from the below listed pages.  
+**Any other page offering DecentHolograms for download is doing so without our permission and may even share malware!**
 
-/// warning | Official downloads
-Downloads for DecentHolograms are only provided on its Spigot Page, GitHub Repository and the DecentSoftware Discord.
+<div class="grid cards" markdown>
 
-Any other site sharing downloads of DecentHolograms does so without or knowledge, nor our consent.  
-Do **not** download the plugin from such pages! The jar can contain malware, exploits or backdoors that can harm your server.
+- [:simple-modrinth: Modrinth](https://modrinth.com/plugin/decentholograms){ target="_blank" rel="noreferral" }
+- [:simple-spigotmc: SpigotMC](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noreferral" }
+- [:simple-github: GitHub](https://github.com/DecentSoftware-eu/DecentHolograms){ target="_blank" rel="noreferral" }
 
-**Only download the plugin from its original sources!**
-///
+</div>
 
-- [:simple-spigotmc: SpigotMC Page](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noreferral" }
+### Other Links
+
+<div class="grid cards" markdown>
+
 - [:simple-discord: Discord Server](https://discord.decentsoftware.eu){ target="_blank" rel="noreferral" }
-- [:simple-github: GitHub Repository](https://github.decentsoftware.eu){ target="_blank" rel="noreferral" }
 - [:octicons-graph-24: bStats (Plugin Statistics)](https://bstats.org/plugin/bukkit/DecentHolograms/12797){ target="_blank" rel="noreferral" }
+- [:octicons-bug-24: Issue Tracker](https://github.com/DecentSoftware-eu/DecentHolograms/issues){ target="_blank" rel="noreferral" }
+
+</div>
