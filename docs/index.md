@@ -1,6 +1,6 @@
 ---
-title: Get Started
-subtitle: Getting started with DecentHolograms
+title: Welcome
+subtitle: Welcome to the DecentHolograms Wiki!
 
 icon: material/home
 hide_icon: true
@@ -14,14 +14,60 @@ With a user-friendly command interface, you can easily create and customize holo
 
 ## Features
 
-- Holograms are completely packed-based, eliminating the need for physical entities in your world, improving performance on the server while providing a wide range of possibilities for individual per-player behaviour.
-- Holograms support multiple pages, allowing you to display more information in a single place.
-- Holograms are interacive, allowing multiple click actions to be added for extended functionality.
-- Holograms offer a system for text animations, allowing dynamic visual elements for each line.
-- Holograms support per-line offsets, allowing you to shift the line's center away from the hologram itself.
-- Holograms allow permissions to set who can and can't see it. This works for the whole hologram, specific pages or even specific lines.
-- Pre-made features such as damage and healing displays are available, providing ready-to-use functionalities for your server.
-- And a lot more...
+<div class="grid cards" markdown>
+
+-   ### Packet-based
+    
+    ----
+    
+    All Holograms are packet-based, meaning they only exist for the client, but not for the server, eliminating the need for physical entities on the Server that eats up resources.  
+    It also opens the door for various per-player features such as parsing placeholders for the player looking on the Hologram
+
+-   ### Multiple Pages
+    
+    ----
+    
+    A hologram can have multiple pages to display to players, allowing you to split large amounts of information up into smaller parts that a player can go through, while keeping everything in a single Hologram.
+
+-   ### Interactions
+    
+    ----
+    
+    Holograms can be interacted with by the player.  
+    Using [click actions](general/actions.md), you can send messages, execute commands, switch servers, switch pages and more for when a player left- or right-clicks a Hologram.
+
+-   ### Animations
+    
+    ----
+    
+    Holograms offer the option of text-based animations to be displayed. This includes [built-in animations](general/animations.md#premade-animations) and [custom animations](general/animations.md#custom-animations) to show.
+
+-   ### Line-offsets
+    
+    ----
+    
+    Want to have the text all be aligned to the left? Using [x-offset](general/commands/hologram-line.md#dh-l-offsetx) and [z-offset](general/commands/hologram-line.md#dh-l-offsetz) commands, one can align individual lines on the X and Z axis respectively. This however does not make them always align properly from all angles.
+
+-   ### Permissions
+    
+    ----
+    
+    You can asign a permission that a player needs to see a specific [hologram](general/commands/hologram.md#dh-h-setpermission) or even [hologram line](general/commands/hologram-line.md#dh-l-setpermission).  
+    This allows you to display content based on certain conditions.
+
+-   ### Multiple Line Types
+    
+    ----
+    
+    DecentHolograms allows you to display more than just basic text. It allows you to display [floating items](general/format-and-colors/index.md#icon), Blocks/Items as a [Armor Stand head](general/format-and-colors/index.md#head) (Including the [small variant](general/format-and-colors/index.md#smallhead)) or even [Entities](general/format-and-colors/index.md#entity).
+
+-   ### API
+    
+    ----
+    
+    An [extensive API](api/get-started.md) is offered, allowing other plugins to hook easily into DecentHolograms and make and manage their own Holograms with all the features offered by DecentHolograms itself.
+
+</div>
 
 ## Useful link
 
