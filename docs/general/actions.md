@@ -139,7 +139,7 @@ The following action types are available to use.
 
 ----
 
-### `#!command NEXT_PAGE[:<hologram>]` / `NEXT_PAGE` { #next_page }
+### `#!command NEXT_PAGE[:<hologram>]` { #next_page }
 
 :   Changes the page of the (optionally specified) Hologram to the next one, if one is available.
     
@@ -156,11 +156,11 @@ The following action types are available to use.
 
 ----
 
-### `#!command PREV_PAGE:<hologram>` / `PREV_PAGE` { #prev_page }
+### `#!command PREV_PAGE[:<hologram>]` { #prev_page }
 
 :   Changes the page of the (optionally specified) Hologram to the previous page, if one is available.
     
-    - `#!command <hologram>` - Optional Hologram `#!command <hologram>` to change the page of. Defaults to the Hologram the player clicked on, if not set.
+    - `#!command [:<hologram>]` - Optional Hologram `#!command <hologram>` to change the page of. Defaults to the Hologram the player clicked on, if not set.
 
     /// details | Examples
         type: example
@@ -173,7 +173,7 @@ The following action types are available to use.
 
 ----
 
-### `#!command PAGE:[<hologram>:]<page>` / `#!command PAGE:<page>` { #page }
+### `#!command PAGE:[<hologram>:]<page>` { #page }
 
 :   Changes to the specified page on the (optionally specified) Hologram, if one is available.
     
