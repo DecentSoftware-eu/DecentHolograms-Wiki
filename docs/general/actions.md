@@ -84,7 +84,7 @@ CONNECT:lobby # Connects the player to the server named "lobby".
 
 ----
 
-### `#!command TELEPORT:[<world>:]<x>:<y>:<z>` { #teleport }
+### `#!command TELEPORT:[<world>:]<x>:<y>:<z>[:<yaw>:<pitch>]` { #teleport }
 
 Teleports the player who clicked the hologram to the specified coordinates, and optionally world.
 
