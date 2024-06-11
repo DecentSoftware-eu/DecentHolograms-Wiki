@@ -255,7 +255,7 @@ For a list of all available subcommands run the following command:
 
 ----
 
-### `#!command /dh h setupdateinterval <hologram> <interval>`
+### `#!command /dh h setupdateinterval <hologram> <interval>` { #dh-h-setupdateinterval }
 
 :   **Aliases:** `updateinterval`  
     **Permission:** `dh.command.holograms.setupdateinterval`
@@ -267,7 +267,7 @@ For a list of all available subcommands run the following command:
 
 ----
 
-### `#!command /dh h setupdaterange <hologram> <range>`
+### `#!command /dh h setupdaterange <hologram> <range>` { #dh-h-setupdaterange }
   
 :   **Permission:** `dh.command.holograms.setupdaterange`
     
