@@ -65,7 +65,9 @@ Executes the specified command through the console.
 /// details | Example
     type: example
 
+```
 CONSOLE:say {player} clicked on a Hologram! # Executes "/say {player} clicked on a Hologram!" as the console.
+```
 ///
 
 ----
@@ -79,7 +81,9 @@ Sends the player who clicked the hologram to the specified Server. This action o
 /// details | Example
     type: example
 
+```
 CONNECT:lobby # Connects the player to the server named "lobby".
+```
 ///
 
 ----
@@ -97,10 +101,12 @@ Teleports the player who clicked the hologram to the specified coordinates, and 
 /// details | Example
     type: example
 
+```
 TELEPORT:0:100:0              # Teleports player to 0,100,0 in the World they are.
 TELEPORT:world:0:100:0        # Teleports player to 0,100,0 in World "world".
 TELEPORT:0:100:0:-180:0       # Teleports player to 0,100,0 in the World they are, facing North.
 TELEPORT:world:0:100:0:-180:0 # Teleports player to 0,100,0 in World "world", facing North.
+```
 ///
 
 ----
