@@ -185,13 +185,13 @@ Displays the texture of https://minecraft-heads.com/custom-heads/head/1{ target=
 ///
 
 /// tab | HeadDatabase Head
-`HEADDB_<id>` can be used where `<id>` is the number one can find on https://minecraft-heads.com{ target="_blank" rel="nofollow" }. It can usually be found in the URL.
+`HEADDATABASE_<id>` can be used where `<id>` is the number one can find on https://minecraft-heads.com{ target="_blank" rel="nofollow" }. It can usually be found in the URL.
 
 //// example
 Displays the texture of https://minecraft-heads.com/custom-heads/head/1{ target="_blank" rel="nofollow" } using the HeadDatabase Plugin.
 
 ```
-#ICON: PLAYER_HEAD (HEADDB_1)
+#ICON: PLAYER_HEAD (HEADDATABASE_1)
 ```
 ////
 ///
