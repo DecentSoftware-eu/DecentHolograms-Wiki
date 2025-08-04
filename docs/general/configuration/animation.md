@@ -3,15 +3,22 @@ title: Animation
 description: Configuration of custom animations
 ---
 
-## Format
+The `animations` folder contains all the custom animations you want to use with each custom animation being its own YAML file.
 
-> ```command
-> <#ANIM:<name>>Any text here</#ANIM>
-> ```
+## Usage
+
+To use a custom animation, use the `#!command <#ANIM:<name>>[text]</#ANIM>` format you use for [built-in animation](../animations.md), replacing `#!command <name>` with the file-name (without the `.yml` file extension) and `#!command [text]` with optional text that should be used in the animation through the `#!command {text}` placeholder.
+
+/// note
+Filenames starting with `animation_` will have this part removed when creating an animation.  
+This exists as a backwards-compatability due to how DecentHolograms expected specific filenames in the past.
+///
 
 /// example
+This example would display the animation from the example file shown below.
+
 ```command
-<#ANIM:example>Some text</#ANIM>
+<#AMIM:example>Hello World!</#ANIM>
 ```
 ///
 
