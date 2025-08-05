@@ -25,33 +25,8 @@ This example would display the animation from the example file shown below.
 ## Example Animation file
 
 ```yaml title="animation_example.yml"
-#
-# Speed of the animation in ticks.
-# Represents the delay between animation steps.
-#
-# For speed of 2, the animation will wait
-# two ticks between each step.
 speed: 2
-
-#
-# Pause of the animation in ticks.
-# Represents the delay between animation runs.
-#
-# For speed of 20, the animation will wait
-# 20 ticks between each run.
 pause: 20
-
-#
-# Steps of the animation
-#
-# List of strings that's going to be cycled
-# over during the animation.
-#
-# You can use '{text}' placeholder, to display
-# the text, that is inside this animation
-# in the hologram:
-# - <#ANIM:example>This text</ANIM>
-#
 steps:
 - 'Example 1 {text}'
 - 'Example 2'
@@ -59,3 +34,28 @@ steps:
 - 'Example 4'
 - 'Example 5'
 ```
+
+## Options
+
+### `speed`
+
+:   **Type:** Integer
+
+    Defines the delay in ticks between each [`steps`](#steps) to wait.  
+    20 ticks = 1 second.
+
+### `pause`
+
+:   **Type:** Integer
+
+    Defines the delay in tick for the Animation to wait once it completed the [`steps`](#steps) list before starting again.  
+    20 ticks = 1 second.
+
+### `steps`
+
+:   **Type:** List of Strings
+
+    Sets the individual frames the animation should go through.  
+    Supports PlaceholderAPI placeholders, if `allow-placeholders-inside-animations` is enabled in the [config.yml](config.yml).
+
+    `{text}` can be used to display the text that can be put in-between the `<#ANIM></#ANIM>` tags when using the custom animation.
