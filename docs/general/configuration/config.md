@@ -8,140 +8,42 @@ Main `config.yml` also contains configuration for [Features](features.md)
 ///
 
 ```yaml title="config.yml"
-# # # # # # # # # # # # # # # # #
-#
-# Welcome to DecentHolograms config.yml.
-#
-# - We recommend you to visit our wiki for
-# detailed explanation of all features and
-# configuration options as this plugin has
-# a ton of them.
-#
-# - You should also join our discord server for
-# more information, support and updates. Our
-# discord server is the main way of reporting
-# bugs or ideas for possible improvements.
-#
-# - Web: www.decentholograms.eu
-# - Wiki: wiki.decentholograms.eu
-# - Discord: discord.decentsoftware.eu
-# - GitHub: github.decentsoftware.eu
-#
-# # # # # # # # # #
-
 defaults:
-  # Default line
   text: Blank Line
-  # Default Hologram display range in blocks.
   display-range: 48
-  # Default Hologram update range in blocks.
   update-range: 48
-  # Default Hologram update interval in ticks.
   update-interval: 20
-  # Maximum amount of cached pattern processing results
-  # Do not change if you do not know what it means
-  # Increasing this number will result in higher memory usage
-  # Range: 5 - 10000
-  # Default: 500
   lru-cache-size: 500
-  # Default heights of different hologram line types.
   height:
     text: 0.3
     icon: 0.6
     head: 0.75
     smallhead: 0.6
-  # Default value of Down Origin
   down-origin: false
 
-# Check for updates on plugin startup? [true/false]
 update-checker: true
-
-# Click cooldown in ticks
 click-cooldown: 5
-
-# Do we want to replace placeholders inside animation frames?
-#
-# WARNING! Setting this to true will have a negative impact
-# on CPU usage, so if you don't NEED to use placeholders inside
-# animation frames, keep this disabled.
 allow-placeholders-inside-animations: false
-
-# If true, the visibility of holograms will be updated when a player gets teleported or respawned.
-#
-# By default, this is disabled because it causes visual glitches where even if a player gets teleported
-# by a fraction of a block, the holograms still disappear and reappear for them.
-#
-# Some clients (or client versions?) need this though, so if you are experiencing issues with holograms
-# not showing up after a player gets teleported or respawned, you can enable this.
 update-visibility-on-teleport: false
-
-# Set this to true if you want holograms to appear at the player's eye level.
-# When enabled, holograms will be positioned at the player's eye height when created or moved.
-# When disabled, holograms will be positioned at the player's feet height when created or moved (default).
 holograms-eye-level-positioning: false
 
-
-
-# # # # # # # # # # # # # # # # #
-#
-# Damage Display
-#
-# Temporary damage display that shows up on every successful hit
-#
-# # # # # # # # # #
-
 damage-display:
-  # Do you want this feature enabled? [true/false]
   enabled: false
-  # Do you want to display damage for players? [true/false]
   players: true
-  # Do you want to display damage for mobs? [true/false]
   mobs: true
-  # Do you want to display 0 (or less) damage? [true/false]
   zero-damage: false
-  # How long will the hologram stay in ticks
   duration: 40
-  # Damage placeholder: {damage}
-  # Animations and Placeholders DO work here
   appearance: '&c{damage}'
-  # Appearance of the damage, if the damage is critical
   critical-appearance: '&4&lCrit!&4 {damage}'
-  # Height offset
   height: 0
-
-
-
-# # # # # # # # # # # # # # # # #
-#
-# Healing Display
-#
-# Temporary damage display that shows up on every health increase
-#
-# # # # # # # # # #
 
 healing-display:
-  # Do you want this feature enabled? [true/false]
   enabled: false
-  # Do you want to display healing for players? [true/false]
   players: true
-  # Do you want to display healing for mobs? [true/false]
   mobs: true
-  # How long will the hologram stay in ticks
   duration: 40
-  # Heal placeholder: {heal}
-  # Animations and Placeholders DO work here
   appearance: '&a+ {heal}'
-  # Height offset
   height: 0
-
-
-# # # # # # # # # # # # # # # # #
-#
-# Custom text replacements
-#
-# Replace specific patterns in Holograms with custom replacements, similar to HolographicDisplays
-#
-# # # # # # # # # #
 
 custom-replacements:
   '[x]': '█'
@@ -154,3 +56,128 @@ custom-replacements:
   '[P]': '•'
   '[|]': '⎹'
 ```
+
+## Options
+
+### `defaults`
+
+These options mostly affect newly created holograms by defining their default values.  
+Already existing Holograms do not get affected by any changes made in these options.
+
+#### `defaults.text`
+
+:   **Type:** String
+
+    Sets the default text that should be displayed when creating a new hologram.
+
+#### `defaults.display-range`
+
+:   **Type:** Integer
+
+    Sets the default distance in which the Hologram should be shown.  
+    Note that the display may be influenced by the player's and server's view distance.
+
+#### `defaults.update-range`
+
+:   **Type:** Integer
+
+    Sets the default distance in which the Hologram should update animations and placeholders.
+
+#### `defaults.update-interval`
+
+:   **Type:** Integer
+    
+    Sets the default interval in ticks for the Hologram to update.  
+    20 ticks = 1 second.
+
+#### `defaults.lru-cache-size`
+
+:   **Type:** Integer (5-10,000)
+
+    Sets the maximum amount of cached pattern processing results.  
+    Usually you don't need to change the default value.
+
+    Note that increasing the number can result in a higher Memory usage.
+
+#### `defaults.height`
+
+##### `defaults.height.text`
+
+:   **Type:** Float
+
+    Sets the default line height/distance in blocks for a Text line.
+
+##### `defaults.height.icon`
+
+:   **Type:** Float
+
+    Sets the default line height/distance in blocks for a `#ICON` (floating item) line.
+
+##### `defaults.height.head`
+
+:   **Type:** Float
+
+    Sets the default line height/distance in blocks for a `#HEAD` (armor stand head) line.
+
+##### `defaults.height.smallhead`
+
+:   **Type:** Float
+
+    Sets the default line height/distance in blocks for a `#SMALLHEAD` (small armor stand head) line.
+
+#### `defaults.down-origin`
+
+:   **Type:** Boolean
+
+    Sets whether the Hologram's location should be based on its bottom or top part.
+
+### `update-checker`
+
+:   **Type:** Boolean
+    
+    Enables/Disables the Update checker of DecentHolograms.
+
+### `click-cooldown`
+
+:   **Type:** Integer
+
+    Defines the Cooldown in ticks to apply between clicks.  
+    20 ticks = 1 second.
+
+### `allow-placeholders-inside-animations`
+
+:   **Type:** Boolean
+
+    Sets whether placeholders inside animations should be replaced.
+
+    /// note
+    Enabling this can have a negative impact on your server's CPU usage, so if you don't need to have placeholders parsed inside animations, keep this option disabled.
+    ///
+
+### `update-visibility-on-teleport`
+
+:   **Type:** Boolean
+
+    Whether Hologram visibility should be updated whenever a player is being teleported.  
+    This causes a visual glitch where even teleportations of only a few blocks cause the hologram to disappear and reappear, but is the only reliable "fix" for older MC versions containing a bug with entities disappearing on Player teleportation.
+
+### `holograms-eye-level-positioning`
+
+:   **Type:** Boolean
+
+    Sets whether holograms should be positioned at the player's eye-level instead of their feet position when being created or moved to the player.
+
+### `damage-display`
+
+:   This section is explained in the [Features](features.md#damage-display) page.
+
+### `heal-display`
+
+:   This section is explained in the [Features](features.md#heal-display) page.
+
+### `custom-replacements`
+
+:   **Type:** Map of String and String
+
+    Allows you to define a collection of patterns that should be replaced with another symbol or text.  
+    The default is similar to HolographicDisplay's pattern feature, replacing patterns such as `[x]` with their respective Unicode equivalent.
