@@ -56,6 +56,6 @@ steps:
 :   **Type:** List of Strings
 
     Sets the individual frames the animation should go through.  
-    Supports PlaceholderAPI placeholders, if `allow-placeholders-inside-animations` is enabled in the [config.yml](config.yml).
+    Supports PlaceholderAPI placeholders, if `allow-placeholders-inside-animations` is enabled in the [config.yml](config.md).
 
     `{text}` can be used to display the text that can be put in-between the `<#ANIM></#ANIM>` tags when using the custom animation.
