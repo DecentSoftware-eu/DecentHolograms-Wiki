@@ -137,6 +137,14 @@ nav:
       - api/basic-usage/index.md
       - api/basic-usage/dhapi.md
       - api/basic-usage/faq.md
-    - api/events.md
+    - Events:
+      - api/events/index.md
+      - api/events/decenthologramsevent.md
+      - api/events/decenthologramsreloadevent.md
+      - api/events/hologramclickevent.md
+      - api/events/hologramdisableevent.md
+      - api/events/hologramenableevent.md
+      - api/events/hologramregisterevent.md
+      - api/events/hologramunregisterevent.md
   - Spigot: 'http://decentholograms.eu/'
   - Discord: 'https://discord.decentsoftware.eu/'
