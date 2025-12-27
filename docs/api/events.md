@@ -35,3 +35,35 @@ The event offers the following methods:
 - `getHologramPage()` - Gets the HologramPage that has been clicked.
 - `getClickType()` - Gets the click type (Whether it was left or right click and whether the player sneaked while clicking).
 - `getEntityId()` - Gets the ID of the clicked entity.
+
+## HologramDisableEvent
+
+This event is called whenever a Hologram gets disabled through `Hologram.disable(DisableCause)`.
+
+The event offers the following methods:
+
+- `getHologram()` - Gets the Hologram that got disabled.
+
+## HologramEnableEvent
+
+This event is called whenever a Hologram gets enabled through `Hologram.enable()`.
+
+The event offers the following methods:
+
+- `getHologram()` - Gets the Hologram that got enabled.
+
+## HologramRegisterEvent
+
+This event is called whenever a Hologram is registered through `HologramManager.registerHologram(Hologram)`.
+
+The event offers the following methods:
+
+- `getHologram()` - Gets the Hologram that got registered.
+
+## HologramUnregisterEvent
+
+This event is called whenever a Hologram is unregistered through `HologramManager.destroy()`.
+
+The event offers the following methods:
+
+- `getHologram()` - The Hologram that got unregistered.
