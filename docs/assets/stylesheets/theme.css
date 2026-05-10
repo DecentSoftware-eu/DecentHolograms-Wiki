@@ -1,5 +1,7 @@
 :root {
-    --md-primary-fg-color: #2344b0;
+    --md-primary-fg-color--value: 35, 68, 176;
+
+    --md-primary-fg-color: rgb(var(--md-primary-fg-color--value));
     --md-primary-fg-color--light: #6791e0;
     --md-primary-fg-color--lighter: #84a3db;
     
@@ -8,12 +10,22 @@
     --md-typeset-subtitle-color--lighter: #878b92;
 }
 
-.md-typeset a {
+[data-md-color-scheme] {
+    --mx-topbar-bg: rgba(var(--md-primary-fg-color--value), 0.54);
+}
+
+.md-tabs {
+    background-color: unset;
+}
+
+.md-typeset a,
+.md-typeset a code {
     color: var(--md-primary-fg-color--light);
 }
 
 .md-nav__item .md-nav__link--active,
-.md-nav__item .md-nav__link--active code {
+.md-nav__item .md-nav__link--active code,
+.md-nav--primary .md-nav__item .md-nav__link--active {
     color: var(--md-primary-fg-color--light);
 }
 

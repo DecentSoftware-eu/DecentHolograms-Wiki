@@ -6,3 +6,7 @@ hooks/CommandLexer/build/
 hooks/CommandLexer/commandlexer/__pycache__/
 hooks/CommandLexer/commandlexer.egg-info/
 hooks/__pycache__/
+
+# Ignore other
+__pycache__/
+venv/

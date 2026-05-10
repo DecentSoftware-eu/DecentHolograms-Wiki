@@ -34,32 +34,32 @@ With a user-friendly command interface, you can easily create and customize holo
     ----
     
     Holograms can be interacted with by the player.  
-    Using [click actions](general/actions.md), you can send messages, execute commands, switch servers, switch pages and more for when a player left- or right-clicks a Hologram.
+    Using [click actions](features/actions.md), you can send messages, execute commands, switch servers, switch pages and more for when a player left- or right-clicks a Hologram.
 
 -   ### Animations
     
     ----
     
-    Holograms offer the option of text-based animations to be displayed. This includes [built-in animations](general/animations.md#premade-animations) and [custom animations](general/animations.md#custom-animations) to show.
+    Holograms offer the option of text-based animations to be displayed. This includes [built-in animations](features/animations/index.md) and [custom animations](features/animations/custom-animations.md) to show.
 
 -   ### Line-offsets
     
     ----
     
-    Want to have the text all be aligned to the left? Using [x-offset](general/commands/hologram-line.md#dh-l-offsetx) and [z-offset](general/commands/hologram-line.md#dh-l-offsetz) commands, one can align individual lines on the X and Z axis respectively. This however does not make them always align properly from all angles.
+    Want to have the text all be aligned to the left? Using [x-offset](commands/hologram-lines/offsetx.md) and [z-offset](commands/hologram-lines/offsetz.md) commands, one can align individual lines on the X and Z axis respectively. This however does not make them always align properly from all angles.
 
 -   ### Permissions
     
     ----
     
-    You can asign a permission that a player needs to see a specific [hologram](general/commands/hologram.md#dh-h-setpermission) or even [hologram line](general/commands/hologram-line.md#dh-l-setpermission).  
+    You can asign a permission that a player needs to see a specific [hologram](commands/hologram/setpermission.md) or even [hologram line](commands/hologram-lines/setpermission.md).  
     This allows you to display content based on certain conditions.
 
 -   ### Multiple Line Types
     
     ----
     
-    DecentHolograms allows you to display more than just basic text. It allows you to display [floating items](general/format-and-colors/index.md#icon), Blocks/Items as a [Armor Stand head](general/format-and-colors/index.md#head) (Including the [small variant](general/format-and-colors/index.md#smallhead)) or even [Entities](general/format-and-colors/index.md#entity).
+    DecentHolograms allows you to display more than just basic text. It allows you to display [floating items](features/line-content.md#icon), Blocks/Items as a [(small) Armor Stand head](features/line-content.md#head-smallhead) or even [Entities](features/line-content.md#entity).
 
 -   ### API
     
@@ -76,20 +76,16 @@ With a user-friendly command interface, you can easily create and customize holo
 DecentHolograms can be downloaded from the below listed pages.  
 **Any other page offering DecentHolograms for download is doing so without our permission and may even share malware!**
 
-<div class="grid cards" markdown>
-
-- [:simple-modrinth: Modrinth](https://modrinth.com/plugin/decentholograms){ target="_blank" rel="noreferral" }
-- [:simple-spigotmc: SpigotMC](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noreferral" }
-- [:simple-github: GitHub](https://github.com/DecentSoftware-eu/DecentHolograms){ target="_blank" rel="noreferral" }
-
-</div>
+/// html | div.grid.cards
+- [:simple-modrinth: Modrinth](https://modrinth.com/plugin/decentholograms){ target="_blank" rel="noopener" }
+- [:simple-spigotmc: SpigotMC](https://www.spigotmc.org/resources/96927/){ target="_blank" rel="noopener" }
+- [:simple-github: GitHub](https://github.com/DecentSoftware-eu/DecentHolograms){ target="_blank" rel="noopener" }
+///
 
 ### Other Links
 
-<div class="grid cards" markdown>
-
-- [:simple-discord: Discord Server](https://discord.decentsoftware.eu){ target="_blank" rel="noreferral" }
-- [:octicons-graph-24: bStats (Plugin Statistics)](https://bstats.org/plugin/bukkit/DecentHolograms/12797){ target="_blank" rel="noreferral" }
-- [:octicons-bug-24: Issue Tracker](https://github.com/DecentSoftware-eu/DecentHolograms/issues){ target="_blank" rel="noreferral" }
-
-</div>
+/// html | div.grid.cards
+- [:simple-discord: Discord Server](https://discord.decentsoftware.eu){ target="_blank" rel="noopener" }
+- [:octicons-graph-24: bStats (Plugin Statistics)](https://bstats.org/plugin/bukkit/DecentHolograms/12797){ target="_blank" rel="noopener" }
+- [:octicons-bug-24: Issue Tracker](https://github.com/DecentSoftware-eu/DecentHolograms/issues){ target="_blank" rel="noopener" }
+///

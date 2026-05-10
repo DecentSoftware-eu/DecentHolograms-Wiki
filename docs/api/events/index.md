@@ -22,7 +22,7 @@ These events are primarely focused around Holograms.
     
     ----
 
-    Called whenever the [`/dh reload`](../../general/commands/general.md#dh-reload) is executed.
+    Called whenever the [`/dh reload`](../../commands/reload.md) is executed.
 
 -   ### [HologramClickEvent](hologramclickevent.md)
     

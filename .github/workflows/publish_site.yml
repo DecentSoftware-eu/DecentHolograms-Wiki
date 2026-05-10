@@ -10,7 +10,7 @@ on:
       - 'docs/**'
       - 'hooks/**'
       - 'theme/**'
-      - 'mkdocs.yml'
+      - 'properdocs.yml'
       - 'requirements.txt'
 
 permissions:
@@ -43,7 +43,7 @@ jobs:
         working-directory: hooks/CommandLexer/
         run: python -m pip install .
       - name: Build Docs
-        run: mkdocs build
+        run: properdocs build
       - name: Configure Pages
         uses: actions/configure-pages@v4
       - name: Upload Artifact
