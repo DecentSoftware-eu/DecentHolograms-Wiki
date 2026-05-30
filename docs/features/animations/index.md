@@ -52,13 +52,13 @@ Colors the entire text in the first color and has the second color slowly move t
 
 /// tab | Format
 ```command
-<#ANIM:<color1>:<color2>>Text</#ANIM>
+<#ANIM:wave:<color1>:<color2>>Text</#ANIM>
 ```
 ///
 
 /// tab | Example
 ```command
-<#ANIM:&f:&b&l>Hello World</#ANIM>
+<#ANIM:wave:&f:&b&l>Hello World</#ANIM>
 ```
 ///
 
@@ -71,13 +71,13 @@ Colors the entire text in the first color and changes it from left to right to t
 
 /// tab | Format
 ```command
-<#ANIM:<color1>:<color2>>Text</#ANIM>
+<#ANIM:burn:<color1>:<color2>>Text</#ANIM>
 ```
 ///
 
 /// tab | Example
 ```command
-<#ANIM:&f:&e&l>Hello World</#ANIM>
+<#ANIM:burn:&f:&e&l>Hello World</#ANIM>
 ```
 ///
 
