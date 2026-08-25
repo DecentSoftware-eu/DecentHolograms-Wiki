@@ -37,7 +37,7 @@ MESSAGE:Hello {player}!
 
 ### `#!command COMMAND:<command>`
 
-Execizes a command as the player who clicked the Hologram.  
+Executes a command as the player who clicked the Hologram.  
 The `#!command <command>` value needs to start with a `/` to run as a command. If not, will the text be send as a message by the player.
 
 - `#!command <command>` - The command to execute as the player.
