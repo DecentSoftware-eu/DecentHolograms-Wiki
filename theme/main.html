@@ -2,12 +2,17 @@
 
 {% block site_meta %}
   {{ super() }}
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ page.base_url | url}}/assets/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ page.base_url | url}}/assets/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ page.base_url | url}}/assets/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="{{ page.base_url | url}}/assets/site.manifest">
-  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ page.base_url | url }}/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ page.base_url | url }}/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ page.base_url | url }}/assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="{{ page.base_url | url }}/assets/site.webmanifest">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
   {% set site_title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
     <meta property="og:title" content="{{ page.meta.title }} - {{ site_title }}">
@@ -19,7 +24,7 @@
     <meta property="og:title" content="{{ site_title }}">
     <meta property="twitter:title" content="{{ site_title }}">
   {% endif %}
-  
+
   {% if page and page.meta and page.meta.description %}
     <meta property="og:description" content="{{ page.meta.description }}">
     <meta property="twitter:description" content="{{ page.meta.description }}">
@@ -27,14 +32,41 @@
     <meta property="og:description" content="{{ config.site_description }}">
     <meta property="twitter:description" content="{{ config.site_description }}">
   {% endif %}
-  <meta name="theme-color" content="#2344B0">
-  
+  <meta name="theme-color" content="#0f0f12">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.canonical_url }}">
-  <meta property="og:image" content="{{ config.site_url | url }}assets/images/favicons/android-chrome-512x512.png">
+  <meta property="og:image" content="{{ config.site_url | url }}assets/images/logo.png">
   <meta property="og:image:type" content="image/png">
-  
+
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="{{ config.site_author | d('DecentSoftware Team') }}">
-  <meta name="twitter:image" content="{{ config.site_url | url }}assets/images/favicons/android-chrome-512x512.png">
+  <meta name="twitter:image" content="{{ config.site_url | url }}assets/images/logo.png">
+{% endblock %}
+
+{% block extrahead %}
+  <link rel="stylesheet" href="{{ '''assets/stylesheets/theme.css''' | url }}?v=2.3.1">
+  <link rel="stylesheet" href="{{ '''assets/stylesheets/admonition.css''' | url }}?v=2.3.1">
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    // Product switcher dropdown handlers (click-outside & escape)
+    document.addEventListener('click', function(e) {
+      var dropdown = document.querySelector('.sidebar-product-dropdown');
+      if (!dropdown || !dropdown.hasAttribute('open')) return;
+      if (!dropdown.contains(e.target) || e.target.closest('.sidebar-product-item')) {
+        dropdown.removeAttribute('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        var dropdown = document.querySelector('.sidebar-product-dropdown');
+        if (dropdown && dropdown.hasAttribute('open')) {
+          dropdown.removeAttribute('open');
+        }
+      }
+    });
+  </script>
 {% endblock %}

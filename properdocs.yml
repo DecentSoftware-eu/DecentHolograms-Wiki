@@ -14,8 +14,8 @@ repo_url: 'https://github.com/DecentSoftware-eu/DecentHolograms'
 theme:
   name: 'materialx'
   custom_dir: 'theme'
-  favicon: 'assets/images/favicons/android-chrome-512x512.png'
-  logo: 'assets/images/favicons/android-chrome-512x512.png'
+  favicon: 'assets/images/favicons/favicon.ico'
+  logo: 'assets/images/decentholograms.png'
   icon:
     repo: 'octicons/mark-github-16'
     admonition:
@@ -35,8 +35,6 @@ theme:
     scheme: 'slate'
     primary: 'custom'
   features:
-    - 'navigation.tabs'
-    - 'navigation.tabs.sticky'
     - 'navigation.footer'
     - 'navigation.indexes'
     - 'content.code.annotate'
